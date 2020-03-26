@@ -1,13 +1,15 @@
--- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `zoo` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `zoo`;
+-- MySQL dump 10.13  Distrib 5.6.46, for Win64 (x86_64)
 --
 -- Host: localhost    Database: zoo
 -- ------------------------------------------------------
--- Server version	8.0.19
+-- Server version	5.6.46-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,22 +23,20 @@
 
 DROP TABLE IF EXISTS `animal`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `animal` (
-  `Animal_ID` smallint NOT NULL AUTO_INCREMENT,
+  `Animal_ID` smallint(6) NOT NULL AUTO_INCREMENT,
   `Name` varchar(20) NOT NULL,
   `Sex` varchar(6) NOT NULL,
   `Common_Name` varchar(20) DEFAULT NULL,
   `Species` varchar(50) DEFAULT NULL,
-  `Health` tinyint DEFAULT NULL,
+  `Health` tinyint(4) DEFAULT NULL,
   `Diet` varchar(40) NOT NULL,
-  `Exhibit_ID` tinyint NOT NULL,
+  `Exhibit_ID` tinyint(4) NOT NULL,
   PRIMARY KEY (`Animal_ID`),
   KEY `Exhibit_ID` (`Exhibit_ID`),
-  CONSTRAINT `animal_ibfk_1` FOREIGN KEY (`Exhibit_ID`) REFERENCES `exhibit` (`Exhibit_ID`) ON UPDATE CASCADE,
-  CONSTRAINT `Diet_Constraint` CHECK ((`Diet` in (_cp850'Herbivore',_cp850'Omnivore',_cp850'Carnivore'))),
-  CONSTRAINT `Gender_Constraint` CHECK ((`Sex` in (_cp850'Male',_cp850'Female')))
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `animal_ibfk_1` FOREIGN KEY (`Exhibit_ID`) REFERENCES `exhibit` (`Exhibit_ID`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -55,15 +55,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `employee`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `employee` (
-  `Employee_ID` smallint NOT NULL AUTO_INCREMENT,
+  `Employee_ID` smallint(6) NOT NULL AUTO_INCREMENT,
   `F_Name` varchar(50) NOT NULL,
   `L_Name` varchar(50) NOT NULL,
-  `Job_ID` smallint DEFAULT NULL,
-  `Exhibit_ID` tinyint DEFAULT NULL,
-  `Show_ID` smallint DEFAULT NULL,
-  `Shop_ID` tinyint DEFAULT NULL,
+  `Job_ID` smallint(6) DEFAULT NULL,
+  `Exhibit_ID` tinyint(4) DEFAULT NULL,
+  `Show_ID` smallint(6) DEFAULT NULL,
+  `Shop_ID` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`Employee_ID`),
   KEY `Exhibit_ID` (`Exhibit_ID`),
   KEY `Show_ID` (`Show_ID`),
@@ -73,7 +73,7 @@ CREATE TABLE `employee` (
   CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`Show_ID`) REFERENCES `shows` (`Show_ID`),
   CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`Shop_ID`) REFERENCES `shop` (`Shop_ID`),
   CONSTRAINT `employee_ibfk_4` FOREIGN KEY (`Job_ID`) REFERENCES `job` (`Job_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,13 +92,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `exhibit`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `exhibit` (
-  `Exhibit_ID` tinyint NOT NULL AUTO_INCREMENT,
+  `Exhibit_ID` tinyint(4) NOT NULL AUTO_INCREMENT,
   `Exhibit_Status` varchar(6) NOT NULL,
-  PRIMARY KEY (`Exhibit_ID`),
-  CONSTRAINT `Status_Constraint` CHECK ((`Exhibit_Status` in (_cp850'Open',_cp850'Closed')))
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`Exhibit_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,13 +116,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `job`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `job` (
-  `Job_ID` smallint NOT NULL AUTO_INCREMENT,
+  `Job_ID` smallint(6) NOT NULL AUTO_INCREMENT,
   `Job_Name` varchar(20) NOT NULL,
   PRIMARY KEY (`Job_ID`),
   UNIQUE KEY `Job_Name` (`Job_Name`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,9 +141,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `member`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `member` (
-  `Membership_ID` mediumint NOT NULL AUTO_INCREMENT,
+  `Membership_ID` mediumint(9) NOT NULL AUTO_INCREMENT,
   `F_Name` varchar(50) NOT NULL,
   `L_Name` varchar(50) NOT NULL,
   `Phone_Number` varchar(15) DEFAULT NULL,
@@ -152,7 +151,7 @@ CREATE TABLE `member` (
   `Expiration_Date` datetime NOT NULL,
   `Address` varchar(60) NOT NULL,
   PRIMARY KEY (`Membership_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -171,14 +170,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `product`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `product` (
-  `Product_ID` int NOT NULL AUTO_INCREMENT,
+  `Product_ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(30) NOT NULL,
   `Price` decimal(6,2) DEFAULT NULL,
-  `Available_Qty` smallint DEFAULT NULL,
+  `Available_Qty` smallint(6) DEFAULT NULL,
   PRIMARY KEY (`Product_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,16 +196,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `products_of_transaction`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products_of_transaction` (
-  `Transaction_ID` int NOT NULL,
-  `Product_ID` int NOT NULL,
-  `Quantity` smallint NOT NULL,
+  `Transaction_ID` int(11) NOT NULL,
+  `Product_ID` int(11) NOT NULL,
+  `Quantity` smallint(6) NOT NULL,
   PRIMARY KEY (`Transaction_ID`,`Product_ID`),
   KEY `Product_ID` (`Product_ID`),
   CONSTRAINT `products_of_transaction_ibfk_1` FOREIGN KEY (`Transaction_ID`) REFERENCES `transactions` (`Transaction_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `products_of_transaction_ibfk_2` FOREIGN KEY (`Product_ID`) REFERENCES `product` (`Product_ID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,16 +224,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `shop`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `shop` (
-  `Shop_ID` tinyint NOT NULL AUTO_INCREMENT,
+  `Shop_ID` tinyint(4) NOT NULL AUTO_INCREMENT,
   `Shop_Name` varchar(20) DEFAULT NULL,
   `Shop_Type` varchar(10) DEFAULT NULL,
   `Shop_Status` varchar(6) NOT NULL,
-  PRIMARY KEY (`Shop_ID`),
-  CONSTRAINT `Shop_Status_Constraint` CHECK ((`Shop_Status` in (_cp850'Open',_cp850'Closed'))),
-  CONSTRAINT `Shop_Type_Constraint` CHECK ((`Shop_Type` in (_cp850'Admissions',_cp850'Dining',_cp850'Gift Shop')))
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`Shop_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -253,14 +250,14 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `shows`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `shows` (
-  `Show_ID` smallint NOT NULL AUTO_INCREMENT,
+  `Show_ID` smallint(6) NOT NULL AUTO_INCREMENT,
   `Date_Time` datetime DEFAULT NULL,
   `Description` varchar(100) DEFAULT NULL,
   `Location` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`Show_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -279,15 +276,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `stocked_by`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `stocked_by` (
-  `Shop_ID` tinyint NOT NULL,
-  `Product_ID` int NOT NULL,
+  `Shop_ID` tinyint(4) NOT NULL,
+  `Product_ID` int(11) NOT NULL,
   PRIMARY KEY (`Shop_ID`,`Product_ID`),
   KEY `Product_ID` (`Product_ID`),
   CONSTRAINT `stocked_by_ibfk_1` FOREIGN KEY (`Shop_ID`) REFERENCES `shop` (`Shop_ID`),
   CONSTRAINT `stocked_by_ibfk_2` FOREIGN KEY (`Product_ID`) REFERENCES `product` (`Product_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,18 +302,18 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `transactions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `transactions` (
-  `Transaction_ID` int NOT NULL AUTO_INCREMENT,
-  `Visitor_ID` int NOT NULL,
+  `Transaction_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Visitor_ID` int(11) NOT NULL,
   `Date_Time` datetime NOT NULL,
-  `Shop_ID` tinyint NOT NULL,
+  `Shop_ID` tinyint(4) NOT NULL,
   PRIMARY KEY (`Transaction_ID`),
   KEY `Shop_ID` (`Shop_ID`),
   KEY `Visitor_ID` (`Visitor_ID`),
   CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`Shop_ID`) REFERENCES `shop` (`Shop_ID`),
   CONSTRAINT `transactions_ibfk_2` FOREIGN KEY (`Visitor_ID`) REFERENCES `visitor` (`Visitor_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -335,22 +332,21 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `visitor`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `visitor` (
-  `Visitor_ID` int NOT NULL AUTO_INCREMENT,
+  `Visitor_ID` int(11) NOT NULL AUTO_INCREMENT,
   `F_Name` varchar(50) NOT NULL,
   `L_Name` varchar(50) NOT NULL,
   `Ticket_Type` varchar(6) NOT NULL,
-  `Is_Member` tinyint NOT NULL,
-  `Group_ID` int NOT NULL,
+  `Is_Member` tinyint(4) NOT NULL,
+  `Group_ID` int(11) NOT NULL,
   `Date_Time` datetime NOT NULL,
   `Phone_Number` varchar(15) NOT NULL,
-  `Membership_ID` mediumint DEFAULT NULL,
+  `Membership_ID` mediumint(9) DEFAULT NULL,
   PRIMARY KEY (`Visitor_ID`),
   KEY `Membership_ID` (`Membership_ID`),
-  CONSTRAINT `visitor_ibfk_1` FOREIGN KEY (`Membership_ID`) REFERENCES `member` (`Membership_ID`),
-  CONSTRAINT `Ticket_Type_Constraint` CHECK ((`Ticket_Type` in (_cp850'Child',_cp850'Adult',_cp850'Senior')))
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `visitor_ibfk_1` FOREIGN KEY (`Membership_ID`) REFERENCES `member` (`Membership_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,6 +358,14 @@ LOCK TABLES `visitor` WRITE;
 INSERT INTO `visitor` VALUES (1,'Larry','Folgers','Adult',0,1,'2020-03-22 09:15:00','6194128854',NULL),(2,'Kyle','Hopper','Adult',1,2,'2020-03-22 10:12:23','6197448533',1),(3,'Alan','Hopper','Child',0,2,'2020-03-22 10:12:23','6197495446',NULL),(4,'Landon','Yeter','Adult',1,4,'2020-03-23 08:40:11','6186330220',2),(5,'Sherry','Taz','Adult',0,4,'2020-03-23 08:40:11','2155546452',NULL),(6,'Brian','Stack','Adult',0,4,'2020-03-23 08:40:11','6188879612',NULL),(7,'Sherman','Gillis','Senior',0,3,'2020-03-23 12:47:13','6185523201',NULL);
 /*!40000 ALTER TABLE `visitor` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'zoo'
+--
+
+--
+-- Dumping routines for database 'zoo'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -372,4 +376,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-25 21:34:11
+-- Dump completed on 2020-03-25 21:44:12
