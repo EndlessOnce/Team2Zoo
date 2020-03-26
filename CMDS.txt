@@ -1,0 +1,120 @@
+Create Table Exhibit(
+Exhibit_ID tinyint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Exhibit_Status varchar(6) NOT NULL,
+CONSTRAINT Status_Constraint CHECK(Exhibit_Status IN ("Open", "Closed"))
+);
+
+CREATE TABLE Animal(
+Animal_ID smallint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Name varchar(20) NOT NULL,
+Sex varchar(6) NOT NULL,
+Common_Name varchar(20),
+Species varchar(50),
+Health tinyint,
+Diet varchar(40) NOT NULL,
+Exhibit_ID tinyint NOT NULL,
+FOREIGN KEY (Exhibit_ID) REFERENCES Exhibit (Exhibit_ID)
+ON UPDATE CASCADE,
+CONSTRAINT Gender_Constraint CHECK(Sex IN ("Male", "Female")),
+CONSTRAINT Diet_Constraint CHECK(Diet IN ("Herbivore", "Omnivore", "Carnivore"))
+);
+
+
+CREATE TABLE Shows(
+Show_ID smallint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Date_Time datetime,
+Description varchar(100),
+Location varchar(30)
+);
+
+CREATE TABLE Shop(
+Shop_ID tinyint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Shop_Name varchar(20),
+Shop_Type varchar(10),
+Shop_Status varchar(6) NOT NULL,
+CONSTRAINT Shop_Type_Constraint CHECK(Shop_Type IN ("Admissions", "Dining", "Gift Shop")),
+CONSTRAINT Shop_Status_Constraint CHECK(Shop_Status IN ("Open", "Closed"))
+);
+
+CREATE TABLE Job(
+Job_ID smallint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Job_Name varchar(20) NOT NULL UNIQUE
+);
+
+CREATE TABLE Employee(
+Employee_ID smallint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+F_Name varchar(50) NOT NULL,
+L_Name varchar(50) NOT NULL,
+Job_ID smallint,
+Exhibit_ID tinyint,
+Show_ID smallint,
+Shop_ID tinyint,
+FOREIGN KEY (Exhibit_ID) REFERENCES Exhibit (Exhibit_ID),
+FOREIGN KEY (Show_ID) REFERENCES Shows (Show_ID),
+FOREIGN KEY (Shop_ID) REFERENCES Shop (Shop_ID),
+FOREIGN KEY (Job_ID) REFERENCES Job (Job_ID)
+);
+
+
+CREATE TABLE Member(
+Membership_ID mediumint NOT NULL PRIMARY KEY AUTO_INCREMENT,
+F_Name varchar(50) NOT NULL,
+L_Name varchar(50) NOT NULL,
+Phone_Number varchar(15),
+Join_Date datetime NOT NULL,
+Expiration_Date datetime NOT NULL,
+Address varchar(60) NOT NULL
+);
+
+
+CREATE TABLE Visitor(
+Visitor_ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+F_Name varchar(50) NOT NULL,
+L_Name varchar(50) NOT NULL,
+Ticket_Type varchar(6) NOT NULL,
+Is_Member tinyint NOT NULL,
+CONSTRAINT Ticket_Type_Constraint CHECK(Ticket_Type IN ("Child","Adult","Senior")),
+Group_ID int NOT NULL,
+Date_Time datetime NOT NULL,
+Phone_Number varchar(15) NOT NULL,
+Membership_ID mediumint,
+FOREIGN KEY (Membership_ID) REFERENCES Member(Membership_ID)
+);
+
+
+
+
+CREATE TABLE Transactions(
+Transaction_ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+Visitor_ID int NOT NULL,
+Date_Time datetime NOT NULL,
+Shop_ID tinyint NOT NULL,
+FOREIGN KEY (Shop_ID) REFERENCES Shop(Shop_ID),
+FOREIGN KEY (Visitor_ID) REFERENCES Visitor(Visitor_ID)
+);
+
+CREATE TABLE Product(
+Product_ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+Name varchar(30) NOT NULL,
+Price decimal(6,2),
+Available_Qty smallint
+);
+
+CREATE TABLE Products_Of_Transaction(
+Transaction_ID int NOT NULL,
+Product_ID int NOT NULL,
+Quantity smallint NOT NULL,
+PRIMARY KEY (Transaction_ID, Product_ID),
+FOREIGN KEY (Transaction_ID) REFERENCES Transactions (Transaction_ID)
+ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (Product_ID) REFERENCES Product (Product_ID)
+ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE Stocked_By(
+Shop_ID tinyint NOT NULL,
+Product_ID int NOT NULL,
+PRIMARY KEY (Shop_ID, Product_ID),
+FOREIGN KEY (Shop_ID) REFERENCES Shop(Shop_ID),
+FOREIGN KEY (Product_ID) REFERENCES Product (Product_ID)
+);
