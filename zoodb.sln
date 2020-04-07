@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zoodb", "zoodb\zoodb.csproj", "{561E083C-6643-4CAA-915D-4634ABC7C8DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561E083C-6643-4CAA-915D-4634ABC7C8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561E083C-6643-4CAA-915D-4634ABC7C8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561E083C-6643-4CAA-915D-4634ABC7C8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561E083C-6643-4CAA-915D-4634ABC7C8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A855E610-56B3-417B-9E76-06CE2FB9E202}
+	EndGlobalSection
+EndGlobal
