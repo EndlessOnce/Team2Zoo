@@ -100,13 +100,13 @@
 
         <p>
             <strong>Name:</strong>
-            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px">
+            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px" id="name"/>
         </p>
      
 
         <p>
             <strong>Common Name:</strong>
-            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px">
+            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px" id="commonName"/>
             
            
         </p>
@@ -119,7 +119,7 @@
 
         <p>
             <strong>Species:</strong>
-            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px">
+            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px" id="species"/>
         </p>
 
         <p><span style ="margin-left: 2em;">
@@ -153,7 +153,7 @@
 
 
         <p><span style ="margin-left: 2em;">
-            <button type="submit" runat="server">Add Animal</button>
+            <button type="submit" runat="server" id="add_animal">Add Animal</button>
             </span>
         </p>
 
