@@ -119,22 +119,23 @@
 
         <p><span style ="margin-left: 2em;">
             <strong>Name:</strong>
-            <asp:TextBox ID="ShowText" runat="server" style ="width:200px"></asp:TextBox>
+            <input type="text" placeholder="Enter Show Name" name="show_name" runat ="server" style="width: 200px" id="show_name"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 2em;">
-            <strong>Location:</strong><asp:TextBox ID="LocText" runat="server"></asp:TextBox>
+            <strong>Location:</strong>
+            <input type="text" placeholder="Enter Show Location" name="show_loc" runat ="server" id="show_loc"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Button ID="ShowAdd" runat="server" Text="Add Show"/>
+            <button type="submit" runat="server" id="add_show">Add Show</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Label ID="Label" runat="server" ForeColor="#CC0000" Text="Sucessfully Added Show" Visible="False"></asp:Label>
+            <label id="Label" runat="server" style="color: red" hidden="hidden">Sucesfully Added Show</label>
             </span>
         </p>
 
