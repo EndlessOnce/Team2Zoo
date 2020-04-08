@@ -104,6 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddAnimal.aspx" />
+    <Content Include="AddProduct.aspx" />
+    <Content Include="AddShop.aspx" />
+    <Content Include="AddShow.aspx" />
     <Content Include="App_Data\ZooDB.mdf" />
     <Content Include="App_Data\ZooDB_log.ldf">
       <DependentUpon>ZooDB.mdf</DependentUpon>
@@ -164,6 +168,34 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAnimal.aspx.cs">
+      <DependentUpon>AddAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAnimal.aspx.designer.cs">
+      <DependentUpon>AddAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddShop.aspx.cs">
+      <DependentUpon>AddShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddShop.aspx.designer.cs">
+      <DependentUpon>AddShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddShow.aspx.cs">
+      <DependentUpon>AddShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddShow.aspx.designer.cs">
+      <DependentUpon>AddShow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
