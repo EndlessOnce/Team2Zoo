@@ -100,28 +100,31 @@
 
         <p>
             <span style ="margin-left: 2em;">
-            Name:<asp:TextBox ID="NameText" runat="server" style="width: 200px"></asp:TextBox>
+           <strong>Name:</strong> 
+                <input type="text" placeholder="Enter Product Name" name="pro_name" runat ="server" id="pro_name" style="width:200px"/> 
             </span>
         </p>
      
 
         <p><span style ="margin-left: 2em;">
-            Price:<asp:TextBox ID="PriceText" runat="server" style ="width:200px"></asp:TextBox>
+            <strong>Price:</strong>
+            <input type="text" placeholder="Enter Product Price" name="pro_price" runat ="server" id="pro_price" style="width:200px"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 2em;">
-            Quanitity:<asp:TextBox ID="QuanText" runat="server"></asp:TextBox>
+            <strong>Quantity</strong>
+            <input type="text" placeholder="Enter Product Quantity" name="pro_quan" runat ="server" id="pro_quan"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Button ID="AddButton" runat="server" Text="Add Product" OnClick="AddButton_Click" />
+             <button type="submit" runat="server" id="add_button">Add Product</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Label ID="AddLabel" runat="server" ForeColor="#CC0000" Text="Add" Visible="False"></asp:Label>
+            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Product</label>
             </span>
         </p>
 
@@ -135,3 +138,5 @@
     </form>
 </body>
 </html>
+
+
