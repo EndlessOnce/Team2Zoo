@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShop.aspx.cs" Inherits="zoodb.AddShop" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShop.aspx.cs" Inherits="zoodb.AddShop" %>
 
 <!DOCTYPE html>
 
@@ -100,12 +100,13 @@
 
 
         <p>
-            Shop Name:<asp:TextBox ID="ShopText" runat="server" style="width: 200px"></asp:TextBox>
+            <strong>Shop Name:</strong>
+            <input type="text" placeholder="Enter Shop Name" name="shopName" runat ="server" id="shopName" style="width:200px"/> 
         </p>
      
 
         <p>
-            Shop Type:
+            <strong>Shop Type:</strong>
             <asp:DropDownList ID="TypeofShop" runat="server">
                 <asp:ListItem>Gift Shop</asp:ListItem>
                 <asp:ListItem>Dining</asp:ListItem>
@@ -114,18 +115,18 @@
         </p>
 
         <p>
-            Shop Status:
+            <strong>Shop Status:</strong>
             <asp:CheckBox ID="CheckBoxO" runat="server" Text="Open" />
             <asp:CheckBox ID="CheckBoxC" runat="server" Text="Closed" />
           </p>
 
         <p><span style ="margin-left: 1em;">
-            <asp:Button ID="ShopAdd" runat="server" Text="Add Shop" />
+      <button type="submit" runat="server" id="add_shop">Add Shop</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Label ID="Label2" runat="server" ForeColor="#CC0000" Text="Sucessfully added Shop" Visible="False"></asp:Label>
+            <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Sucesfully Added Shop</label>
             </span>
         </p>
 
