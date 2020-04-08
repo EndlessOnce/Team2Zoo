@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
 
 <!DOCTYPE html>
 
@@ -99,12 +99,15 @@
 
 
         <p>
-            <strong>Name:</strong><asp:TextBox ID="AnimalText" runat="server" style="width: 225px"></asp:TextBox>
+            <strong>Name:</strong>
+            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px">
         </p>
      
 
         <p>
-            <strong>Common Name:</strong><asp:TextBox ID="CommonNText" runat="server" style ="width:160px"></asp:TextBox>
+            <strong>Common Name:</strong>
+            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px">
+            
            
         </p>
 
@@ -116,7 +119,7 @@
 
         <p>
             <strong>Species:</strong>
-            <asp:TextBox ID="SText" runat="server" style="width: 220px"></asp:TextBox>
+            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px">
         </p>
 
         <p><span style ="margin-left: 2em;">
@@ -133,7 +136,6 @@
                 <asp:ListItem>4</asp:ListItem>
                 <asp:ListItem>5</asp:ListItem>
             </asp:DropDownList>
-        </span></p>
 
          <p><span style ="margin-left: 1em;">
              <strong>Diet:</strong>
@@ -151,7 +153,7 @@
 
 
         <p><span style ="margin-left: 2em;">
-            <asp:Button ID="AnimalAdd" runat="server" Text="Add Animal" OnClick="AnimalAdd_Click"  />
+            <button type="submit" runat="server">Add Animal</button>
             </span>
         </p>
 
@@ -170,4 +172,3 @@
     </form>
 </body>
 </html>
-
