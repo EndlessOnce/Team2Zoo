@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
 
 <!DOCTYPE html>
 
@@ -59,6 +59,9 @@
 
       p{
           text-align:center;
+          padding-top : 10px;
+          padding-bottom : 10px;
+      
       }
   </style>
 </head>
@@ -91,22 +94,36 @@
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Add Product Inventory</h1>
-      <p>Please fill out the fields below to enter a new item or an existing item into the database</p>
+      <p>Please fill out the fields below to enter a new product into the database</p>
       <hr>
 
 
-      <h3></h3>
+        <p>
+            <span style ="margin-left: 2em;">
+            Name:<asp:TextBox ID="NameText" runat="server" style="width: 200px"></asp:TextBox>
+            </span>
+        </p>
+     
 
+        <p><span style ="margin-left: 2em;">
+            Price:<asp:TextBox ID="PriceText" runat="server" style ="width:200px"></asp:TextBox>
+            </span>
+        </p>
 
-      <p>  </p>
+        <p><span style ="margin-left: 2em;">
+            Quanitity:<asp:TextBox ID="QuanText" runat="server"></asp:TextBox>
+            </span>
+        </p>
 
-        <p></p>
+        <p><span style ="margin-left: 5em;">
+            <asp:Button ID="AddButton" runat="server" Text="Add Product" OnClick="AddButton_Click" />
+            </span>
+        </p>
 
-
-        <p></p>
-
-        <p></p>
-        <p></p>
+        <p><span style ="margin-left: 5em;">
+            <asp:Label ID="AddLabel" runat="server" ForeColor="#CC0000" Text="Add" Visible="False"></asp:Label>
+            </span>
+        </p>
 
          
     </div>
@@ -118,4 +135,3 @@
     </form>
 </body>
 </html>
-
