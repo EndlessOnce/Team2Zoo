@@ -107,11 +107,11 @@
 
         <p>
             <strong>Shop Type:</strong>
-            <asp:DropDownList ID="TypeofShop" runat="server">
-                <asp:ListItem>Gift Shop</asp:ListItem>
-                <asp:ListItem>Dining</asp:ListItem>
-                <asp:ListItem>Admissions</asp:ListItem>
-            </asp:DropDownList>
+                <select id = "shop" name="shop" runat="server">
+                    <option value="Dining">Dining</option>
+                    <option value="Gift Shop">Gift Shop</option>
+                    <option value="Admissions">Admissions</option>
+                </select>
         </p>
 
         <p>
@@ -128,6 +128,10 @@
         <p><span style ="margin-left: 5em;">
             <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Sucesfully Added Shop</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          

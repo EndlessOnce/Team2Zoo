@@ -24,7 +24,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 100%;
+      height: 100vh;
     }
     
     /* Set black background color, white text and some padding */
@@ -126,6 +126,10 @@
         <p><span style ="margin-left: 5em;">
             <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Product</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
