@@ -130,7 +130,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Registration .aspx" />
+    <Content Include="Registration.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="logg.aspx" />
     <Content Include="login.aspx" />
@@ -171,24 +171,28 @@
   <ItemGroup>
     <Compile Include="AddAnimal.aspx.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddAnimal.aspx.designer.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddShop.aspx.designer.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddShow.aspx.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
@@ -255,12 +259,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Registration .aspx.cs">
-      <DependentUpon>Registration .aspx</DependentUpon>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registration .aspx.designer.cs">
-      <DependentUpon>Registration .aspx</DependentUpon>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

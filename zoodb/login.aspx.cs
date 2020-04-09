@@ -19,7 +19,7 @@ namespace zoodb
 
         protected void LogButton_Click(object sender, EventArgs e)
         {
-            SqlConnection link = new SqlConnection(ConfigurationManager.ConnectionStrings["logRegConn"].ConnectionString);
+            SqlConnection link = new SqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
             link.Open();
             string verifyUser = "select count(*) FROM logReg WHERE userName= '" + LoginUser.Text + "'";
             SqlCommand comm = new SqlCommand(verifyUser, link);

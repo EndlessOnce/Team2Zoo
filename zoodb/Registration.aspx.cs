@@ -13,5 +13,10 @@ namespace zoodb
         {
 
         }
+
+        protected void Registration_Click(object sender, EventArgs e)
+        {
+            Response.Write("You have been Registered");
+        }
     }
 }
