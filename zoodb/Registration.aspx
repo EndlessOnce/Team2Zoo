@@ -96,6 +96,9 @@
                 </tr>
             </table>
         </div>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT * FROM [db_user]"></asp:SqlDataSource>
+        <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
+        </asp:GridView>
     </form>
-</body>
+    </body>
 </html>

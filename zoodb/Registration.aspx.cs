@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace zoodb
 {
@@ -16,7 +19,14 @@ namespace zoodb
 
         protected void Registration_Click(object sender, EventArgs e)
         {
-            Response.Write("You have been Registered");
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbq83pweu5kpypConnectionString"].ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from db_user where email = @Email and Password = @password", con);
+            //Response.Write("You have been Registered");
+            cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
+            cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
         }
+
+  
     }
 }
