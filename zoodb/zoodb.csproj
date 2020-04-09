@@ -105,9 +105,12 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddAnimal.aspx" />
+    <Content Include="AddEmployee.aspx" />
+    <Content Include="AddMember.aspx" />
     <Content Include="AddProduct.aspx" />
     <Content Include="AddShop.aspx" />
     <Content Include="AddShow.aspx" />
+    <Content Include="AddVisitor.aspx" />
     <Content Include="App_Data\ZooDB.mdf" />
     <Content Include="App_Data\ZooDB_log.ldf">
       <DependentUpon>ZooDB.mdf</DependentUpon>
@@ -176,6 +179,20 @@
     <Compile Include="AddAnimal.aspx.designer.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMember.aspx.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMember.aspx.designer.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +213,13 @@
     </Compile>
     <Compile Include="AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVisitor.aspx.cs">
+      <DependentUpon>AddVisitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVisitor.aspx.designer.cs">
+      <DependentUpon>AddVisitor.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
