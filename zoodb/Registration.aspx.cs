@@ -19,12 +19,13 @@ namespace zoodb
 
         protected void Registration_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbq83pweu5kpypConnectionString"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from db_user where email = @Email and Password = @password", con);
             //Response.Write("You have been Registered");
             cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
             cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
+            con.Close();
         }
 
   
