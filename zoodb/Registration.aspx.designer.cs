@@ -11,7 +11,7 @@ namespace zoodb
 {
 
 
-    public partial class WebForm1
+    public partial class Registration
     {
 
         /// <summary>
@@ -96,22 +96,13 @@ namespace zoodb
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
-        /// Registration control.
+        /// Signup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Registration;
-
-        /// <summary>
-        /// Zoodb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Zoodb;
+        protected global::System.Web.UI.WebControls.Button Signup;
 
         /// <summary>
         /// GridView1 control.
@@ -121,5 +112,14 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
+        /// Zoodb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Zoodb;
     }
 }

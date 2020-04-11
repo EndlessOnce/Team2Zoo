@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="zoodb.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="zoodb.Registration" %>
 
 <!DOCTYPE html>
 
@@ -75,7 +75,7 @@
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style6">
-                        <asp:Button ID="Registration" runat="server" OnClick="Registration_Click" Text="Sign-up" />
+                        <asp:Button ID="Signup" runat="server" OnClick="Registration_Click" Text="Sign-up" />
                         <input id="Reset1" type="reset" value="reset" /></td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
@@ -96,7 +96,6 @@
                 </tr>
             </table>
         </div>
-    <asp:SqlDataSource ID="Zoodb" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
         <asp:GridView ID="GridView1" runat="server" DataSourceID="Zoodb" AutoGenerateColumns="False" DataKeyNames="user_id">
             <Columns>
                 <asp:BoundField DataField="user_id" HeaderText="user_id" InsertVisible="False" ReadOnly="True" SortExpression="user_id" />
@@ -104,6 +103,7 @@
                 <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
             </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="Zoodb" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
     </form>
     </body>
 </html>
