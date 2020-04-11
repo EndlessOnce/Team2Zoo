@@ -110,6 +110,7 @@
     <Content Include="AddProduct.aspx" />
     <Content Include="AddShop.aspx" />
     <Content Include="AddShow.aspx" />
+    <Content Include="AddTransaction.aspx" />
     <Content Include="AddVisitor.aspx" />
     <Content Include="App_Data\ZooDB.mdf" />
     <Content Include="App_Data\ZooDB_log.ldf">
@@ -213,6 +214,13 @@
     <Compile Include="AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddTransaction.aspx.cs">
+      <DependentUpon>AddTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTransaction.aspx.designer.cs">
+      <DependentUpon>AddTransaction.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddVisitor.aspx.cs">
       <DependentUpon>AddVisitor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,7 +291,9 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
