@@ -24,10 +24,13 @@ namespace zoodb
             SqlCommand cmd = new SqlCommand("select * from db_user where email = @Email and Password = @password", con);
             //Response.Write("You have been Registered");
             cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
-            cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
+            cmd.Parameters.AddWithValue("@password", TextBox2PW.Text)
             con.Close();
         }
 
-  
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }

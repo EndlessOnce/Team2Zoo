@@ -96,8 +96,8 @@
                 </tr>
             </table>
         </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False" DataKeyNames="user_id">
+    <asp:SqlDataSource ID="Zoodb" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
+        <asp:GridView ID="GridView1" runat="server" DataSourceID="Zoodb" AutoGenerateColumns="False" DataKeyNames="user_id">
             <Columns>
                 <asp:BoundField DataField="user_id" HeaderText="user_id" InsertVisible="False" ReadOnly="True" SortExpression="user_id" />
                 <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
