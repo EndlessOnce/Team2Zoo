@@ -23,10 +23,10 @@ namespace zoodb
         {
             try
             {
-                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+                MySqlConnection con = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
                 con.Open();
                 string insertUser = "insert into db_user (email, password) values (@Email, @Password)";
-                SqlCommand cmd = new SqlCommand(insertUser, con);
+                MySqlCommand cmd = new MySqlCommand(insertUser, con);
                 cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
 
