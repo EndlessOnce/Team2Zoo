@@ -105,14 +105,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="AddAnimal.aspx" />
-    <Content Include="AddEmployee.aspx" />
-    <Content Include="AddMember.aspx" />
-    <Content Include="AddProduct.aspx" />
-    <Content Include="AddShop.aspx" />
-    <Content Include="AddShow.aspx" />
-    <Content Include="AddTransaction.aspx" />
-    <Content Include="AddVisitor.aspx" />
+    <Content Include="View\Animal\AddAnimal.aspx" />
+    <Content Include="View\Employee\AddEmployee.aspx" />
+    <Content Include="View\Member\AddMember.aspx" />
+    <Content Include="View\Product\AddProduct.aspx" />
+    <Content Include="View\Shop\AddShop.aspx" />
+    <Content Include="View\Show\AddShow.aspx" />
+    <Content Include="View\Transaction\AddTransaction.aspx" />
+    <Content Include="View\Visitor\AddVisitor.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -131,8 +131,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="LoginPage.aspx" />
-    <Content Include="Registration.aspx" />
+    <Content Include="View\Login\LoginPage.aspx" />
+    <Content Include="View\Registration\Registration.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="logg.aspx" />
     <Content Include="login.aspx" />
@@ -165,66 +165,72 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="View\Animal\updateAnimal.aspx" />
+    <Content Include="View\Employee\updateEmployee.aspx" />
+    <Content Include="View\Member\updateMember.aspx" />
+    <Content Include="View\Product\updateProduct.aspx" />
+    <Content Include="View\Shop\updateShop.aspx" />
+    <Content Include="View\Show\updateShow.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAnimal.aspx.cs">
+    <Compile Include="View\Animal\AddAnimal.aspx.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddAnimal.aspx.designer.cs">
+    <Compile Include="View\Animal\AddAnimal.aspx.designer.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddEmployee.aspx.cs">
+    <Compile Include="View\Employee\AddEmployee.aspx.cs">
       <DependentUpon>AddEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddEmployee.aspx.designer.cs">
+    <Compile Include="View\Employee\AddEmployee.aspx.designer.cs">
       <DependentUpon>AddEmployee.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddMember.aspx.cs">
+    <Compile Include="View\Member\AddMember.aspx.cs">
       <DependentUpon>AddMember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddMember.aspx.designer.cs">
+    <Compile Include="View\Member\AddMember.aspx.designer.cs">
       <DependentUpon>AddMember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddProduct.aspx.cs">
+    <Compile Include="View\Product\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddProduct.aspx.designer.cs">
+    <Compile Include="View\Product\AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddShop.aspx.cs">
+    <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddShop.aspx.designer.cs">
+    <Compile Include="View\Shop\AddShop.aspx.designer.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddShow.aspx.cs">
+    <Compile Include="View\Show\AddShow.aspx.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddShow.aspx.designer.cs">
+    <Compile Include="View\Show\AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddTransaction.aspx.cs">
+    <Compile Include="View\Transaction\AddTransaction.aspx.cs">
       <DependentUpon>AddTransaction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddTransaction.aspx.designer.cs">
+    <Compile Include="View\Transaction\AddTransaction.aspx.designer.cs">
       <DependentUpon>AddTransaction.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddVisitor.aspx.cs">
+    <Compile Include="View\Visitor\AddVisitor.aspx.cs">
       <DependentUpon>AddVisitor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddVisitor.aspx.designer.cs">
+    <Compile Include="View\Visitor\AddVisitor.aspx.designer.cs">
       <DependentUpon>AddVisitor.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -267,11 +273,11 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.aspx.cs">
+    <Compile Include="View\Login\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginPage.aspx.designer.cs">
+    <Compile Include="View\Login\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -289,6 +295,48 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="View\Animal\updateAnimal.aspx.cs">
+      <DependentUpon>updateAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Animal\updateAnimal.aspx.designer.cs">
+      <DependentUpon>updateAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\updateEmployee.aspx.cs">
+      <DependentUpon>updateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Employee\updateEmployee.aspx.designer.cs">
+      <DependentUpon>updateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Member\updateMember.aspx.cs">
+      <DependentUpon>updateMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\updateMember.aspx.designer.cs">
+      <DependentUpon>updateMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\updateProduct.aspx.cs">
+      <DependentUpon>updateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Product\updateProduct.aspx.designer.cs">
+      <DependentUpon>updateProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Shop\updateShop.aspx.cs">
+      <DependentUpon>updateShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Shop\updateShop.aspx.designer.cs">
+      <DependentUpon>updateShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Show\updateShow.aspx.cs">
+      <DependentUpon>updateShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Show\updateShow.aspx.designer.cs">
+      <DependentUpon>updateShow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,17 +344,15 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Registration.aspx.cs">
+    <Compile Include="View\Registration\Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registration.aspx.designer.cs">
+    <Compile Include="View\Registration\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
