@@ -113,10 +113,6 @@
     <Content Include="AddShow.aspx" />
     <Content Include="AddTransaction.aspx" />
     <Content Include="AddVisitor.aspx" />
-    <Content Include="App_Data\ZooDB.mdf" />
-    <Content Include="App_Data\ZooDB_log.ldf">
-      <DependentUpon>ZooDB.mdf</DependentUpon>
-    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
