@@ -14,10 +14,10 @@
         }
         .auto-style3 {
             text-align: right;
-            width: 572px;
+            width: 851px;
         }
         .auto-style4 {
-            width: 572px;
+            width: 851px;
         }
         .auto-style5 {
             width: 191px;
@@ -41,7 +41,7 @@
             <tr>
                 <td class="auto-style3">Email:</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="TextBoxEmail" runat="server" OnTextChanged="TextBox1_TextChanged" Width="180px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Please enter Email" ForeColor="Red"></asp:RequiredFieldValidator>
