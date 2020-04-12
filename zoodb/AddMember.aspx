@@ -82,6 +82,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="#">Search Member</a></li>
+        <li class ="active"><a href="#">Add Member</a></li>
+        <li><a href="#">Delete Member</a></li>
+        <li><a href="#">Update Member</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
