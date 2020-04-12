@@ -82,6 +82,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="#">Search Visitor</a></li>
+        <li class ="active"><a href="#">Add Visitor</a></li>
+        <li><a href="#">Delete Visitor</a></li>
+        <li><a href="#">Update Visitor</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
