@@ -29,11 +29,13 @@ namespace zoodb
                 connection.Open();
                 string checkPassword = "select password from db_user where email='" + TextBoxEmail.Text + "'";
                 MySqlCommand passwordCheck = new MySqlCommand(checkPassword, connection);
-                string password = passwordCheck.ExecuteScalar().ToString();
+                string password = passwordCheck.ExecuteScalar().ToString(); 
+                /*Just in case there might be .Replace(" " , "");*/
                 if (password == TextBoxPassword.Text)
                 {
                     Session["New"] = TextBoxEmail.Text;
                     Response.Write("Password is correct.");
+                    Response.Redirect("Default.aspx");
                 }
                 else
                 {
