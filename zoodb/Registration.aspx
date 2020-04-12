@@ -10,11 +10,11 @@
             width: 100%;
         }
         .auto-style6 {
-            width: 149px;
+            width: 150px;
             text-align: right;
         }
         .auto-style7 {
-            width: 557px;
+            width: 849px;
             text-align: right;
         }
         .auto-style8 {
@@ -96,13 +96,6 @@
                 </tr>
             </table>
         </div>
-        <asp:GridView ID="GridView1" runat="server" DataSourceID="Zoodb" AutoGenerateColumns="False" DataKeyNames="user_id">
-            <Columns>
-                <asp:BoundField DataField="user_id" HeaderText="user_id" InsertVisible="False" ReadOnly="True" SortExpression="user_id" />
-                <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
-                <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
-            </Columns>
-        </asp:GridView>
         <asp:SqlDataSource ID="Zoodb" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
     </form>
     </body>
