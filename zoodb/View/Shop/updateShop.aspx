@@ -125,7 +125,7 @@
           </p>
 
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="updateSp">Update Shop</button>   <!-- edit this -->
+      <button type="submit" runat="server" id="update_Shop">Update Shop</button>   <!-- edit this -->
             </span>
         </p>
 
