@@ -63,6 +63,41 @@
           padding-bottom : 10px;
       
       }
+      .auto-style1 {
+          width: 93px;
+          text-align: right;
+      }
+      .auto-style2 {
+          width: 93px;
+          text-align: right;
+          height: 25px;
+      }
+      .auto-style3 {
+          height: 25px;
+      }
+      .auto-style4 {
+          width: 202px;
+      }
+      .auto-style5 {
+          height: 25px;
+          width: 202px;
+      }
+      .auto-style6 {
+          width: 100%;
+          height: 167px;
+      }
+      .auto-style7 {
+          width: 93px;
+          text-align: right;
+          height: 20px;
+      }
+      .auto-style8 {
+          width: 202px;
+          height: 20px;
+      }
+      .auto-style9 {
+          height: 20px;
+      }
   </style>
 </head>
 <body>
@@ -102,41 +137,86 @@
       <hr>
 
 
-        <p>
-            <span style ="margin-left: 2em;">
-           <strong>First Name:</strong> 
-                <input type="text" placeholder="Employee First Name" name="f_name" runat ="server" id="f_name" style="width:200px"/> 
-            </span>
-        </p>
-     
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Last Name:</strong>
-            <input type="text" placeholder="Employee Last Name" name="l_name" runat ="server" id="l_name" style="width:200px"/> 
-            </span>
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Exhibit ID:</strong>
-                <select id = "ExhibitID" name="exhibitID" runat="server">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </span>
-        </p>
-
-        <p><span style ="margin-left: 5em;">
-             <button type="submit" runat="server" id="add_Emp">Add Employee</button>
-            </span>
-        </p>
-
-        <p><span style ="margin-left: 5em;">
-            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Employee</label>
-            </span>
-        </p>
+        <table class="auto-style6">
+            <tr>
+                <td class="auto-style1">First Name:</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TBFName" runat="server" Width="191px"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TBFName" ErrorMessage="First Name is required!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">Last Name:</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TBLName" runat="server" Width="191px"></asp:TextBox>
+                </td>
+                <td class="auto-style3">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TBLName" ErrorMessage="Last Name is required!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Job Title:</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DDLJob" runat="server">
+                        <asp:ListItem>Select Job Title</asp:ListItem>
+                        <asp:ListItem>Cashier</asp:ListItem>
+                        <asp:ListItem>Cleaner</asp:ListItem>
+                        <asp:ListItem>Cook</asp:ListItem>
+                        <asp:ListItem>Feeder</asp:ListItem>
+                        <asp:ListItem>Presenter</asp:ListItem>
+                        <asp:ListItem>Server</asp:ListItem>
+                        <asp:ListItem>Stocker</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DDLJob" ErrorMessage="Job Title is Requried!" ForeColor="Red" InitialValue="Select Job Title"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Exhibit ID</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DDLExID" runat="server" DataSourceID="SqlDataSource1" DataTextField="exhibit_Id" DataValueField="exhibit_Id">
+                        <asp:ListItem>Select Exhibit ID</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DbConnectionString %>" ProviderName="<%$ ConnectionStrings:DbConnectionString.ProviderName %>" SelectCommand="select exhibit_Id from exhibit;"></asp:SqlDataSource>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DDLExID" ErrorMessage="Exhbit ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Shop ID</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DDLShopID" runat="server">
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DDLShopID" ErrorMessage="Shop ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">Show ID</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DDLShowID" runat="server">
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="DDLShowID" ErrorMessage="Show ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style9"></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
 
         <p class="text-left">
             <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
