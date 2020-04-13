@@ -113,8 +113,8 @@
  <p><span style ="margin-left: 2em;">
             <strong>Health:</strong>
         <select id = "SelectH" name="Health" runat="server">
-                    <option value="0">0-Healthy</option>
-                    <option value="1">1-Unhealthy</option>
+                    <option value="0">0-Unhealthy</option>
+                    <option value="1">1-Healthy</option>
                     
         </select>
 
