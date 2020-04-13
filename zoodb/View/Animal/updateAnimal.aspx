@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="updateAnimal.aspx.cs" Inherits="zoodb.updateAnimal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updateAnimal.aspx.cs" Inherits="zoodb.updateAnimal" %>
 
 
 
@@ -110,11 +110,13 @@
             <input type="text"  name="Name" value="@Name will go here" runat ="server" id="Name" style="width:200px"/> 
         </p>
      
-    <p><span style ="margin-left: 2em;">
+ <p><span style ="margin-left: 2em;">
             <strong>Health:</strong>
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="0" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="1" />
-        </span>
+        <select id = "SelectH" name="Health" runat="server">
+                    <option value="0">0-Healthy</option>
+                    <option value="1">1-Unhealthy</option>
+                    
+        </select>
 
     </p>
 
