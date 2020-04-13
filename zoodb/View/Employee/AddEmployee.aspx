@@ -177,33 +177,53 @@
             <tr>
                 <td class="auto-style1">Exhibit ID</td>
                 <td class="auto-style4">
-                    <asp:DropDownList ID="DDLExID" runat="server" DataSourceID="SqlDataSource1" DataTextField="exhibit_Id" DataValueField="exhibit_Id">
+                    <asp:DropDownList ID="DDLExID" runat="server">
                         <asp:ListItem>Select Exhibit ID</asp:ListItem>
+                        <asp:ListItem>Not working at an Exhibit</asp:ListItem>
+                        <asp:ListItem>Exhibit 1</asp:ListItem>
+                        <asp:ListItem>Exhibit 2</asp:ListItem>
+                        <asp:ListItem>Exhibit 3</asp:ListItem>
+                        <asp:ListItem>Exhibit 4</asp:ListItem>
+                        <asp:ListItem>Exhibit 5</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DbConnectionString %>" ProviderName="<%$ ConnectionStrings:DbConnectionString.ProviderName %>" SelectCommand="select exhibit_Id from exhibit;"></asp:SqlDataSource>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DDLExID" ErrorMessage="Exhbit ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DDLExID" ErrorMessage="Exhbit ID is Requried!" ForeColor="Red" InitialValue="Select Exhibit ID"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Shop ID</td>
                 <td class="auto-style4">
                     <asp:DropDownList ID="DDLShopID" runat="server">
+                        <asp:ListItem>Select Shop ID</asp:ListItem>
+                        <asp:ListItem>Not working at a shop</asp:ListItem>
+                        <asp:ListItem>Shop 1 (Sabertooth Grill)</asp:ListItem>
+                        <asp:ListItem>Shop 2 (Jungle Java)</asp:ListItem>
+                        <asp:ListItem>Shop 3 (Panda Shop)</asp:ListItem>
+                        <asp:ListItem>Shop 4 (Parrot Palace)</asp:ListItem>
+                        <asp:ListItem>Shop 5 (Ticket Booth A)</asp:ListItem>
+                        <asp:ListItem>Shop 6 (Ticket Booth B)</asp:ListItem>
+                        <asp:ListItem>Shop 6 (Ticket Booth C)</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DDLShopID" ErrorMessage="Shop ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DDLShopID" ErrorMessage="Shop ID is Requried!" ForeColor="Red" InitialValue="Select Shop ID"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Show ID</td>
                 <td class="auto-style4">
                     <asp:DropDownList ID="DDLShowID" runat="server">
+                        <asp:ListItem>Select Show ID</asp:ListItem>
+                        <asp:ListItem>Show 1</asp:ListItem>
+                        <asp:ListItem>Show 2</asp:ListItem>
+                        <asp:ListItem>Show 3</asp:ListItem>
+                        <asp:ListItem>Show 4</asp:ListItem>
+                        <asp:ListItem>Show 5</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="DDLShowID" ErrorMessage="Show ID is Requried!" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="DDLShowID" ErrorMessage="Show ID is Requried!" ForeColor="Red" InitialValue="Select Show ID"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
