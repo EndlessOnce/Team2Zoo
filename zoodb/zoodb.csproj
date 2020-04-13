@@ -112,6 +112,7 @@
     <Content Include="View\Member\AddMember.aspx" />
     <Content Include="View\Member\SearchMem.aspx" />
     <Content Include="View\Product\AddProduct.aspx" />
+    <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
     <Content Include="View\Show\AddShow.aspx" />
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="View\Product\AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\SearchProduct.aspx.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Product\SearchProduct.aspx.designer.cs">
+      <DependentUpon>SearchProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
