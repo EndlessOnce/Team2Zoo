@@ -69,40 +69,31 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText species;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// aHealth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect aHealth;
 
         /// <summary>
-        /// CheckBox2 control.
+        /// Exhibit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Exhibit;
 
         /// <summary>
-        /// DropDownListEX control.
+        /// diet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListEX;
-
-        /// <summary>
-        /// DietDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DietDownList;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect diet;
 
         /// <summary>
         /// add_animal control.
@@ -114,12 +105,12 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlButton add_animal;
 
         /// <summary>
-        /// Label1 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label2;
     }
 }

@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
 
 <!DOCTYPE html>
 
@@ -81,10 +81,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Search Animal</a></li>
-        <li class ="active"><a href="#">Add Animal</a></li>
+        <li><a href="SearchAnimal.aspx">Search Animal</a></li>
+        <li class="active"><a href="#">Add Animal</a></li>
         <li><a href="#">Delete Animal</a></li>
-        <li><a href="#">Update Animal</a></li>
+        <li><a href="updateAnimal.aspx">Update Animal</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -128,26 +128,30 @@
 
         <p><span style ="margin-left: 2em;">
             <strong>Health:</strong>
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="0" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="1" />
+            <select id ="aHealth" runat="server">
+                <option value="0">unhealthy</option>
+                <option value="1">healthy</option>
+
+            </select>
         </span></p>
 
         <p><span style ="margin-left: 2em;">
-            <strong>Exhibit:</strong><asp:DropDownList ID="DropDownListEX" runat="server">
-                <asp:ListItem>1</asp:ListItem>
-                <asp:ListItem>2</asp:ListItem>
-                <asp:ListItem>3</asp:ListItem>
-                <asp:ListItem>4</asp:ListItem>
-                <asp:ListItem>5</asp:ListItem>
-            </asp:DropDownList>
+            <strong>Exhibit:</strong>
+                <select id = "Exhibit" name="exhibit" runat="server">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
          <p><span style ="margin-left: 1em;">
              <strong>Diet:</strong>
-             <asp:DropDownList ID="DietDownList" runat="server">
-                 <asp:ListItem>Herbivore</asp:ListItem>
-                 <asp:ListItem>Omnivore</asp:ListItem>
-                 <asp:ListItem>Carnivore</asp:ListItem>
-             </asp:DropDownList>
+             <select id = "diet" name="diet" runat="server">
+                    <option value="Ominvore">Ominvore</option>
+                    <option value="Carnivore">Carnivore</option>
+                    <option value="Herbivore">Herbivore</option>
+                </select>
              </span>
         </p>
 
@@ -162,8 +166,12 @@
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Label ID="Label1" runat="server" ForeColor="#CC0000" Text="Animal Sucessfully Added" Visible="False"></asp:Label>
+             <label id="Label2" runat="server" style="color: red" hidden="hidden">Sucesfully Added Animal</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
@@ -176,3 +184,4 @@
     </form>
 </body>
 </html>
+
