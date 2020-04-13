@@ -106,12 +106,18 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="View\Animal\AddAnimal.aspx" />
+    <Content Include="View\Animal\SearchAnimal.aspx" />
     <Content Include="View\Employee\AddEmployee.aspx" />
+    <Content Include="View\Employee\SearchEmployee.aspx" />
     <Content Include="View\Member\AddMember.aspx" />
+    <Content Include="View\Member\SearchMem.aspx" />
     <Content Include="View\Product\AddProduct.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
+    <Content Include="View\Shop\SearchShop.aspx" />
     <Content Include="View\Show\AddShow.aspx" />
+    <Content Include="View\Show\ShowSearch.aspx" />
     <Content Include="View\Transaction\AddTransaction.aspx" />
+    <Content Include="View\Transaction\SearchTransaction.aspx" />
     <Content Include="View\Visitor\AddVisitor.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -172,6 +178,7 @@
     <Content Include="View\Shop\updateShop.aspx" />
     <Content Include="View\Show\updateShow.aspx" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="View\Visitor\SearchVisitor.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -184,6 +191,13 @@
     <Compile Include="View\Animal\AddAnimal.aspx.designer.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Animal\SearchAnimal.aspx.cs">
+      <DependentUpon>SearchAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Animal\SearchAnimal.aspx.designer.cs">
+      <DependentUpon>SearchAnimal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Employee\AddEmployee.aspx.cs">
       <DependentUpon>AddEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,12 +205,26 @@
     <Compile Include="View\Employee\AddEmployee.aspx.designer.cs">
       <DependentUpon>AddEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Employee\SearchEmployee.aspx.cs">
+      <DependentUpon>SearchEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Employee\SearchEmployee.aspx.designer.cs">
+      <DependentUpon>SearchEmployee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Member\AddMember.aspx.cs">
       <DependentUpon>AddMember.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Member\AddMember.aspx.designer.cs">
       <DependentUpon>AddMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Member\SearchMem.aspx.cs">
+      <DependentUpon>SearchMem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\SearchMem.aspx.designer.cs">
+      <DependentUpon>SearchMem.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Product\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
@@ -212,6 +240,13 @@
     <Compile Include="View\Shop\AddShop.aspx.designer.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Shop\SearchShop.aspx.cs">
+      <DependentUpon>SearchShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Shop\SearchShop.aspx.designer.cs">
+      <DependentUpon>SearchShop.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Show\AddShow.aspx.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,12 +254,26 @@
     <Compile Include="View\Show\AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Show\ShowSearch.aspx.cs">
+      <DependentUpon>ShowSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Show\ShowSearch.aspx.designer.cs">
+      <DependentUpon>ShowSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Transaction\AddTransaction.aspx.cs">
       <DependentUpon>AddTransaction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Transaction\AddTransaction.aspx.designer.cs">
       <DependentUpon>AddTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Transaction\SearchTransaction.aspx.cs">
+      <DependentUpon>SearchTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Transaction\SearchTransaction.aspx.designer.cs">
+      <DependentUpon>SearchTransaction.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Visitor\AddVisitor.aspx.cs">
       <DependentUpon>AddVisitor.aspx</DependentUpon>
@@ -350,6 +399,13 @@
     </Compile>
     <Compile Include="View\Registration\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Visitor\SearchVisitor.aspx.cs">
+      <DependentUpon>SearchVisitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Visitor\SearchVisitor.aspx.designer.cs">
+      <DependentUpon>SearchVisitor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
