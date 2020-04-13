@@ -1,11 +1,10 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShop.aspx.cs" Inherits="zoodb.AddShop" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
 
-  <title>Add Shop</title>
+<title>Add Product</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -60,8 +59,8 @@
 
       p{
           text-align:center;
-          padding-top : 10px;
-          padding-bottom : 10px;
+          padding-top : 5px;
+          padding-bottom : 5px;
       
       }
   </style>
@@ -82,6 +81,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="#">Search Animal</a></li>
+        <li class ="active"><a href="#">Add Animal</a></li>
+        <li><a href="#">Delete Animal</a></li>
+        <li><a href="#">Update Animal</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -94,39 +97,72 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add a New Shop</h1>
-      <p>Please fill out the fields below to enter a new shop into the database</p>
+      <h1>Add a New Animal</h1>
+      <p>Please fill out the fields below to enter a new animal into the database</p>
       <hr>
 
 
         <p>
-            <strong>Shop Name:</strong>
-            <input type="text" placeholder="Enter Shop Name" name="shopName" runat ="server" id="shopName" style="width:200px"/> 
+            <strong>Name:</strong>
+            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px" id="name"/>
         </p>
      
 
         <p>
-            <strong>Shop Type:</strong>
-            <asp:DropDownList ID="TypeofShop" runat="server">
-                <asp:ListItem>Gift Shop</asp:ListItem>
-                <asp:ListItem>Dining</asp:ListItem>
-                <asp:ListItem>Admissions</asp:ListItem>
-            </asp:DropDownList>
+            <strong>Common Name:</strong>
+            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px" id="commonName"/>
+            
+           
         </p>
 
-        <p>
-            <strong>Shop Status:</strong>
-            <asp:CheckBox ID="CheckBoxO" runat="server" Text="Open" />
-            <asp:CheckBox ID="CheckBoxC" runat="server" Text="Closed" />
-          </p>
+        <p><span style ="margin-left: 2em;">
+            <strong>Gender:</strong>
+            <asp:CheckBox ID="CheckBoxM" runat="server" Text="Male"  padding-right=" 10px"/>
+            <asp:CheckBox ID="CheckBoxF" runat="server" Text="Female" />
+        </span></p>
 
-        <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="add_shop">Add Shop</button>
+        <p>
+            <strong>Species:</strong>
+            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px" id="species"/>
+        </p>
+
+        <p><span style ="margin-left: 2em;">
+            <strong>Health:</strong>
+            <asp:CheckBox ID="CheckBox1" runat="server" Text="0" />
+            <asp:CheckBox ID="CheckBox2" runat="server" Text="1" />
+        </span></p>
+
+        <p><span style ="margin-left: 2em;">
+            <strong>Exhibit:</strong><asp:DropDownList ID="DropDownListEX" runat="server">
+                <asp:ListItem>1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
+                <asp:ListItem>5</asp:ListItem>
+            </asp:DropDownList>
+
+         <p><span style ="margin-left: 1em;">
+             <strong>Diet:</strong>
+             <asp:DropDownList ID="DietDownList" runat="server">
+                 <asp:ListItem>Herbivore</asp:ListItem>
+                 <asp:ListItem>Omnivore</asp:ListItem>
+                 <asp:ListItem>Carnivore</asp:ListItem>
+             </asp:DropDownList>
+             </span>
+        </p>
+
+
+
+        <br />
+
+
+        <p><span style ="margin-left: 2em;">
+            <button type="submit" runat="server" id="add_animal">Add Animal</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Sucesfully Added Shop</label>
+            <asp:Label ID="Label1" runat="server" ForeColor="#CC0000" Text="Animal Sucessfully Added" Visible="False"></asp:Label>
             </span>
         </p>
 

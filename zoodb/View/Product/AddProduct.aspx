@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddEmployee.aspx.cs" Inherits="zoodb.AddEmployee" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-    <title>Add Employee</title>
+<title>Add Product</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 100vh;
+      height: 100%;
     }
     
     /* Set black background color, white text and some padding */
@@ -81,6 +81,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="#">Search Product</a></li>
+        <li class ="active"><a href="#">Add Prodcut</a></li>
+        <li><a href="#">Delete Prodcut</a></li>
+        <li><a href="#">Update Product</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -93,49 +97,39 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add a New Employee</h1>
-      <p>Please fill out the fields below to enter a new employee into the database</p>
+      <h1>Add Product Inventory</h1>
+      <p>Please fill out the fields below to enter a new product into the database</p>
       <hr>
 
 
         <p>
             <span style ="margin-left: 2em;">
-           <strong>First Name:</strong> 
-                <input type="text" placeholder="Employee First Name" name="f_name" runat ="server" id="f_name" style="width:200px"/> 
+           <strong>Name:</strong> 
+                <input type="text" placeholder="Enter Product Name" name="pro_name" runat ="server" id="pro_name" style="width:200px"/> 
             </span>
         </p>
      
 
         <p><span style ="margin-left: 2em;">
-            <strong>Last Name:</strong>
-            <input type="text" placeholder="Employee Last Name" name="l_name" runat ="server" id="l_name" style="width:200px"/> 
+            <strong>Price:</strong>
+            <input type="text" placeholder="Enter Product Price" name="pro_price" runat ="server" id="pro_price" style="width:200px"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 2em;">
-            <strong>Exhibit ID:</strong>
-                <select id = "ExhibitID" name="exhibitID" runat="server">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+            <strong>Quantity</strong>
+            <input type="text" placeholder="Enter Product Quantity" name="pro_quan" runat ="server" id="pro_quan"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-             <button type="submit" runat="server" id="add_Emp">Add Employee</button>
+             <button type="submit" runat="server" id="add_button">Add Product</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Employee</label>
+            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Product</label>
             </span>
-        </p>
-
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
@@ -148,3 +142,5 @@
     </form>
 </body>
 </html>
+
+

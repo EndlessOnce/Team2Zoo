@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddVisitor.aspx.cs" Inherits="zoodb.AddVisitor" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updateEmployee.aspx.cs" Inherits="zoodb.updateEmployee" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-<title>Add a Zoo Member</title>
+  <title>Update Employee</title>   <!-- edit this -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 140vh;
+      height: 100vh;
     }
     
     /* Set black background color, white text and some padding */
@@ -34,7 +34,6 @@
       color: white;
       padding: 15px;
     }
-
       p{
           text-align:center;
       }
@@ -47,20 +46,17 @@
       }
       .row.content {height:auto;} 
     }
-
       h1
       {
           text-align:center;
           font-style : italic;
       }h1.inset {border-style: inset;}
-
       h3{
           text-align:center;
       }
-
       p{
           text-align:center;
-          padding-top : 15px;
+          padding-top : 10px;
           padding-bottom : 10px;
       
       }
@@ -82,6 +78,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          <li class ="active"><a href ="#">Update Entity</a></li>
+          <li><a href="#">Add Entity</a></li>
+          <li><a href="#">Delete Entity</a></li>
+          <li><a href="#">Search Entity</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -94,69 +94,46 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add a New Zoo Visitor</h1>
-      <p>Please fill out the fields below to enter a new zoo visitor into the database</p>
+      <h1>Update Employee Information</h1>              <!-- edit this -->
+      <p>Please fill out the fields below to update employee information in the database</p>    <!-- edit this -->
       <hr>
 
-        <p>
-            <strong>Visit Date:</strong>
+       <p class="text-right">
+            <a href=""><span class="glyphicon-pencil">Delete Employee</span></a>
         </p>
-
-        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
-            <asp:Calendar ID="Calendar3" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="700px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </div>
-
-
-        <p>
-            <strong>First Name:</strong>
-            <input type="text" placeholder="Enter First Name" name="fName" runat ="server" id="fName" style="width:200px"/> 
+ <p>
+            <span style ="margin-left: 2em;">
+           <strong>First Name:</strong> 
+                <input type="text" value="@fname" name="f_name" runat ="server" id="f_name" style="width:200px"/> 
+            </span>
         </p>
      
 
-        <p>
+        <p><span style ="margin-left: 2em;">
             <strong>Last Name:</strong>
-            <input type="text" placeholder="Enter Last Name" name="lname" runat ="server" id="lname" style="width:200px"/> 
+            <input type="text" value="@lname" name="l_name" runat ="server" id="l_name" style="width:200px"/> 
+            </span>
         </p>
 
-        <p>
-            <strong>Ticket Type:</strong>
-            <select id = "ttype" name="ttype" runat="server">
-                    <option value="Adult">Adult</option>
-                    <option value="Child">Child</option>
-                    <option value="Senior">Senior</option>
+        <p><span style ="margin-left: 2em;">
+            <strong>Exhibit ID:</strong>
+                <select id = "ExhibitID" name="exhibitID" runat="server">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
-          </p>
-
-        <p>
-            <strong>Member?:</strong>
-            <asp:CheckBox ID="CheckBoxY" runat="server" Text="YES" />
-            <asp:CheckBox ID="CheckBoxN" runat="server" Text="NO" />
-          </p>
-
-        <p>
-            <strong>If Member, Enter ID:</strong>
-            <input type="text" placeholder="Enter Member ID" name="memID" runat ="server" id="memID" style="width:200px"/> 
-        </p>
-
-        <p>
-            <strong>Phone Number:</strong>
-            <input type="text" placeholder="Enter Phone Number" name="phone" runat ="server" id="phoneID" style="width:200px"/> 
-        </p>
-
-
-        <p>
-      <button type="submit" runat="server" id="add_vis">Add Visitor</button>
+            </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <label id="LabelVis" runat="server" style="color: red" hidden="hidden">Sucesfully Added Visitor</label>
+             <button type="submit" runat="server" id="up_Emp">Update Employee</button>
+            </span>
+        </p>
+
+        <p><span style ="margin-left: 5em;">
+            <label id="Label1" runat="server" style="color: red" hidden="hidden">Successfully Updated Employee</label>
             </span>
         </p>
 
@@ -164,7 +141,6 @@
             <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
-         
     </div>
     <div class="col-sm-2 sidenav">
       </div>

@@ -88,6 +88,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+       <li><a href="#">Search Transaction</a></li>
+        <li class ="active"><a href="#">Add transaction</a></li>
+        <li><a href="#">Delete Transaction</a></li>
+        <li><a href="#">Update Transaction</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>

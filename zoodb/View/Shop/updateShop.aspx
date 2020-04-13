@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShow.aspx.cs" Inherits="zoodb.AddShow" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updateShop.aspx.cs" Inherits="zoodb.updateShop" %>
+
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>Add Show</title>
+  <title>Update Shop</title>   <!-- edit this -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -34,7 +35,6 @@
       color: white;
       padding: 15px;
     }
-
       p{
           text-align:center;
       }
@@ -47,17 +47,14 @@
       }
       .row.content {height:auto;} 
     }
-
       h1
       {
           text-align:center;
           font-style : italic;
       }h1.inset {border-style: inset;}
-
       h3{
           text-align:center;
       }
-
       p{
           text-align:center;
           padding-top : 10px;
@@ -82,6 +79,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          <li class ="active"><a href ="#">Update Entity</a></li>
+          <li><a href="#">Add Entity</a></li>
+          <li><a href="#">Delete Entity</a></li>
+          <li><a href="#">Search Entity</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -94,49 +95,47 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add a New Show</h1>
-      <p>Please fill out the fields below to enter a new show into the database</p>
+      <h1>Update Shop Information</h1>              <!-- edit this -->
+      <p>Please fill out the fields below to update shop information in the database</p>    <!-- edit this -->
       <hr>
 
-
-        <p>
-            <span style ="margin-left: 2em;">
-            <strong>Date of Show:</strong>
-            </span>
+       <p class="text-right">
+            <a href=""><span class="glyphicon-pencil"> Delete Shop</span></a>
         </p>
 
-        <p style="width:200px; margin: 0 auto">
-            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
+        <p>
+            <strong>Shop Name:</strong>
+            <input type="text" value="@ShopName" name="shopName" runat ="server" id="shopName" style="width:200px"/> 
         </p>
      
 
-        <p><span style ="margin-left: 2em;">
-            <strong>Name:</strong>
-            <input type="text" placeholder="Enter Show Name" name="show_name" runat ="server" style="width: 200px" id="show_name"/> 
-            </span>
+        <p>
+            <strong>Shop Type:</strong>
+                <select id = "shop" name="shop" runat="server">
+                    <option value="Dining">Dining</option>
+                    <option value="Gift Shop">Gift Shop</option>
+                    <option value="Admissions">Admissions</option>
+                </select>
         </p>
 
-        <p><span style ="margin-left: 2em;">
-            <strong>Location:</strong>
-            <input type="text" placeholder="Enter Show Location" name="show_loc" runat ="server" id="show_loc"/> 
+        <p>
+            <strong>Shop Status:</strong>
+            <asp:CheckBox ID="CheckBoxO" runat="server" Text="Open" />
+            <asp:CheckBox ID="CheckBoxC" runat="server" Text="Closed" />
+          </p>
+
+        <p><span style ="margin-left: 1em;">
+      <button type="submit" runat="server" id="update_Shop">Update Shop</button>   <!-- edit this -->
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <button type="submit" runat="server" id="add_show">Add Show</button>
-            </span>
+            <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Successfully Updated Shop</label>
+            </span>                                                               <!-- edit this -->
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="Label" runat="server" style="color: red" hidden="hidden">Sucesfully Added Show</label>
-            </span>
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
@@ -149,3 +148,4 @@
     </form>
 </body>
 </html>
+

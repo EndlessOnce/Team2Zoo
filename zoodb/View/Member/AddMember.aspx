@@ -1,10 +1,11 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddMember.aspx.cs" Inherits="zoodb.AddMember" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
 
-<title>Add Product</title>
+<title>Add a Zoo Member</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,7 +25,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 100%;
+      height: 120vh;
     }
     
     /* Set black background color, white text and some padding */
@@ -59,7 +60,7 @@
 
       p{
           text-align:center;
-          padding-top : 10px;
+          padding-top : 15px;
           padding-bottom : 10px;
       
       }
@@ -81,6 +82,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="#">Search Member</a></li>
+        <li class ="active"><a href="#">Add Member</a></li>
+        <li><a href="#">Delete Member</a></li>
+        <li><a href="#">Update Member</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -93,39 +98,59 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add Product Inventory</h1>
-      <p>Please fill out the fields below to enter a new product into the database</p>
+      <h1>Add a New Zoo Member</h1>
+      <p>Please fill out the fields below to enter a new zoo member into the database</p>
       <hr>
+
+        <p>
+            <strong>Join Date:</strong>
+        </p>
+
+        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
+            <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="700px">
+                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                <TodayDayStyle BackColor="#CCCCCC" />
+            </asp:Calendar>
+        </div>
 
 
         <p>
-            <span style ="margin-left: 2em;">
-           <strong>Name:</strong> 
-                <input type="text" placeholder="Enter Product Name" name="pro_name" runat ="server" id="pro_name" style="width:200px"/> 
-            </span>
+            <strong>First Name:</strong>
+            <input type="text" placeholder="Enter First Name" name="fName" runat ="server" id="fName" style="width:200px"/> 
         </p>
      
 
-        <p><span style ="margin-left: 2em;">
-            <strong>Price:</strong>
-            <input type="text" placeholder="Enter Product Price" name="pro_price" runat ="server" id="pro_price" style="width:200px"/> 
-            </span>
+        <p>
+            <strong>Last Name:</strong>
+            <input type="text" placeholder="Enter Last Name" name="lname" runat ="server" id="lname" style="width:200px"/> 
         </p>
 
-        <p><span style ="margin-left: 2em;">
-            <strong>Quantity</strong>
-            <input type="text" placeholder="Enter Product Quantity" name="pro_quan" runat ="server" id="pro_quan"/> 
-            </span>
+        <p>
+            <strong>Phone Number:</strong>
+            <input type="text" placeholder="Enter Phone Number" name="pNum" runat ="server" id="pNum" style="width:200px"/> 
+          </p>
+
+        <p>
+            <strong>Address:</strong>
+            <input type="text" placeholder="Enter Address" name="addy" runat ="server" id="addy" style="width:200px"/> 
+          </p>
+
+
+        <p>
+      <button type="submit" runat="server" id="add_mem">Add Member</button>
         </p>
 
         <p><span style ="margin-left: 5em;">
-             <button type="submit" runat="server" id="add_button">Add Product</button>
+            <label id="LabelMem" runat="server" style="color: red" hidden="hidden">Sucesfully Added Member</label>
             </span>
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Product</label>
-            </span>
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
@@ -138,5 +163,3 @@
     </form>
 </body>
 </html>
-
-

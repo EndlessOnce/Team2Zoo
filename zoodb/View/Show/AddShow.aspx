@@ -1,10 +1,11 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddAnimal.aspx.cs" Inherits="zoodb.AddAnimal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShow.aspx.cs" Inherits="zoodb.AddShow" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
 
-<title>Add Product</title>
+    <title>Add Show</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -59,8 +60,8 @@
 
       p{
           text-align:center;
-          padding-top : 5px;
-          padding-bottom : 5px;
+          padding-top : 10px;
+          padding-bottom : 10px;
       
       }
   </style>
@@ -81,6 +82,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          <li><a href="#">Search Show</a></li>
+        <li class ="active"><a href="#">Add Show</a></li>
+        <li><a href="#">Delete Show</a></li>
+        <li><a href="#">Update Show</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -93,72 +98,48 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Add a New Animal</h1>
-      <p>Please fill out the fields below to enter a new animal into the database</p>
+      <h1>Add a New Show</h1>
+      <p>Please fill out the fields below to enter a new show into the database</p>
       <hr>
 
 
         <p>
-            <strong>Name:</strong>
-            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px" id="name"/>
+            <span style ="margin-left: 2em;">
+            <strong>Date of Show:</strong>
+            </span>
+        </p>
+
+        <p style="width:200px; margin: 0 auto">
+            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                <TodayDayStyle BackColor="#CCCCCC" />
+            </asp:Calendar>
         </p>
      
 
-        <p>
-            <strong>Common Name:</strong>
-            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px" id="commonName"/>
-            
-           
+        <p><span style ="margin-left: 2em;">
+            <strong>Name:</strong>
+            <input type="text" placeholder="Enter Show Name" name="show_name" runat ="server" style="width: 200px" id="show_name"/> 
+            </span>
         </p>
 
         <p><span style ="margin-left: 2em;">
-            <strong>Gender:</strong>
-            <asp:CheckBox ID="CheckBoxM" runat="server" Text="Male"  padding-right=" 10px"/>
-            <asp:CheckBox ID="CheckBoxF" runat="server" Text="Female" />
-        </span></p>
-
-        <p>
-            <strong>Species:</strong>
-            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px" id="species"/>
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Health:</strong>
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="0" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="1" />
-        </span></p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Exhibit:</strong><asp:DropDownList ID="DropDownListEX" runat="server">
-                <asp:ListItem>1</asp:ListItem>
-                <asp:ListItem>2</asp:ListItem>
-                <asp:ListItem>3</asp:ListItem>
-                <asp:ListItem>4</asp:ListItem>
-                <asp:ListItem>5</asp:ListItem>
-            </asp:DropDownList>
-
-         <p><span style ="margin-left: 1em;">
-             <strong>Diet:</strong>
-             <asp:DropDownList ID="DietDownList" runat="server">
-                 <asp:ListItem>Herbivore</asp:ListItem>
-                 <asp:ListItem>Omnivore</asp:ListItem>
-                 <asp:ListItem>Carnivore</asp:ListItem>
-             </asp:DropDownList>
-             </span>
-        </p>
-
-
-
-        <br />
-
-
-        <p><span style ="margin-left: 2em;">
-            <button type="submit" runat="server" id="add_animal">Add Animal</button>
+            <strong>Location:</strong>
+            <input type="text" placeholder="Enter Show Location" name="show_loc" runat ="server" id="show_loc"/> 
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <asp:Label ID="Label1" runat="server" ForeColor="#CC0000" Text="Animal Sucessfully Added" Visible="False"></asp:Label>
+            <button type="submit" runat="server" id="add_show">Add Show</button>
+            </span>
+        </p>
+
+        <p><span style ="margin-left: 5em;">
+            <label id="Label" runat="server" style="color: red" hidden="hidden">Sucesfully Added Show</label>
             </span>
         </p>
 
