@@ -66,7 +66,7 @@ namespace zoodb
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton updateShop;
+        protected global::System.Web.UI.HtmlControls.HtmlButton update_Shop;
 
         /// <summary>
         /// LabeShop control.

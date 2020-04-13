@@ -69,13 +69,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlSelect diet;
 
         /// <summary>
-        /// updateAnimal control.
+        /// update_Animal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton updateAnimal;
+        protected global::System.Web.UI.HtmlControls.HtmlButton update_Animal;
 
         /// <summary>
         /// labelAnimUp control.
