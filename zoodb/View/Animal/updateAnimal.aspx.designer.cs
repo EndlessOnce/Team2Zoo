@@ -75,7 +75,7 @@ namespace zoodb
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton updateAnimals;
+        protected global::System.Web.UI.HtmlControls.HtmlButton update_Animal;
 
         /// <summary>
         /// labelAnimUp control.

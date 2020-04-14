@@ -142,7 +142,7 @@
 
 
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="updateAnimal">Update</button>
+      <button type="submit" runat="server" id="update_Animal">Update</button>
             </span>
         </p>
 

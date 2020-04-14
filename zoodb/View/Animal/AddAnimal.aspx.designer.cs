@@ -24,6 +24,9 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+<<<<<<< HEAD
+        /// Label2 control.
+=======
         /// TBName control.
         /// </summary>
         /// <remarks>
@@ -106,6 +109,7 @@ namespace zoodb
 
         /// <summary>
         /// RequiredFieldValidator5 control.
+>>>>>>> master
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
