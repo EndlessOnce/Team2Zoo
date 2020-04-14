@@ -63,9 +63,6 @@
           padding-bottom : 5px;
       
       }
-<<<<<<< HEAD
-      </style>
-=======
       .auto-style1 {
           text-align: right;
           width: 732px;
@@ -98,7 +95,6 @@
           height: 22px;
       }
   </style>
->>>>>>> master
 </head>
 <body>
 
@@ -132,41 +128,9 @@
     <div class="col-sm-8 text-left"> 
       <h1>Add a New Animal</h1>
       <p>Please fill out the fields below to enter a new animal into the database</p>
-<<<<<<< HEAD
-      <hr>
-
-
-        <p><span style ="margin-left: 2em;">
-            &nbsp;</span></p>
-        <span style ="margin-left: 2em;">
-            
-         <p><span style ="margin-left: 1em;">
-             &nbsp;</span></p>
-
-
-
-        <br />
-
-
-        <p>&nbsp;</p>
-
-        <p><span style ="margin-left: 5em;">
-             <label id="Label2" runat="server" style="color: red" hidden="hidden">Sucesfully Added Animal</label>
-            </span>
-        </p>
-
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
-        </p>
-
-         
-=======
         <hr />
 
-<<<<<<< HEAD
-=======
     </div>
->>>>>>> master
       <table class="nav-justified">
           <tr>
               <td class="auto-style1"><strong>Animal Name:</strong></td>
@@ -287,25 +251,10 @@
               <td>&nbsp;</td>
           </tr>
       </table>
-<<<<<<< HEAD
-      
-      <p class="text-left">
-          <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
-      </p>
->>>>>>> master
-    </div>
-    <div class="col-sm-2 sidenav">
-      </div>
-=======
->>>>>>> master
     </div>
   </div>
 </div>
     </form>
-<<<<<<< HEAD
-</body>
-</html>
-=======
 
 
         <p class="text-left">
@@ -316,4 +265,3 @@
     </body>
 </html>
 
->>>>>>> master
