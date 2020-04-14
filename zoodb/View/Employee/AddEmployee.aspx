@@ -64,11 +64,11 @@
       
       }
       .auto-style1 {
-          width: 326px;
+          width: 702px;
           text-align: right;
       }
       .auto-style2 {
-          width: 326px;
+          width: 702px;
           text-align: right;
           height: 25px;
       }
@@ -77,19 +77,19 @@
       }
       .auto-style5 {
           height: 25px;
-          width: 176px;
+          width: 178px;
       }
       .auto-style6 {
           width: 100%;
           height: 167px;
       }
       .auto-style7 {
-          width: 326px;
+          width: 702px;
           text-align: right;
           height: 20px;
       }
       .auto-style8 {
-          width: 176px;
+          width: 178px;
           height: 20px;
       }
       .auto-style9 {
@@ -99,7 +99,7 @@
           margin-left: 19;
       }
       .auto-style11 {
-          width: 176px
+          width: 178px
       }
       .auto-style12 {
           margin-left: 0px;
@@ -145,7 +145,7 @@
 
         <table class="auto-style6">
             <tr>
-                <td class="auto-style1">First Name:</td>
+                <td class="auto-style1"><strong>First Name:</strong></td>
                 <td class="auto-style11">
                     <asp:TextBox ID="TBFName" runat="server" Width="191px"></asp:TextBox>
                 </td>
@@ -154,7 +154,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Last Name:</td>
+                <td class="auto-style2"><strong>Last Name:</strong></td>
                 <td class="auto-style5">
                     <asp:TextBox ID="TBLName" runat="server" Width="191px"></asp:TextBox>
                 </td>
@@ -163,9 +163,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Job Title:</td>
+                <td class="auto-style1"><strong>Job Title:</strong></td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="DDLJob" runat="server" Width="191px">
+                    <asp:DropDownList ID="DDLJob" runat="server" Width="121px">
                         <asp:ListItem>Select Job Title</asp:ListItem>
                         <asp:ListItem Value="4">Cashier</asp:ListItem>
                         <asp:ListItem Value="2">Cleaner</asp:ListItem>
@@ -181,9 +181,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Exhibit ID: </td>
+                <td class="auto-style1"><strong>Exhibit ID: </strong> </td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="DDLExID" runat="server" Width="191px">
+                    <asp:DropDownList ID="DDLExID" runat="server" Width="184px" Height="23px">
                         <asp:ListItem>Select Exhibit ID</asp:ListItem>
                         <asp:ListItem Value="NULL">Not working at an Exhibit</asp:ListItem>
                         <asp:ListItem Value="1">Exhibit 1</asp:ListItem>
@@ -198,9 +198,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Shop ID: </td>
+                <td class="auto-style1"><strong>Shop ID: </strong> </td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="DDLShopID" runat="server" Width="191px">
+                    <asp:DropDownList ID="DDLShopID" runat="server" Width="184px" Height="22px">
                         <asp:ListItem>Select Shop ID</asp:ListItem>
                         <asp:ListItem Value=NULL>Not working at a Shop</asp:ListItem>
                         <asp:ListItem Value="1">Shop 1 (Sabertooth Grill)</asp:ListItem>
@@ -217,9 +217,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Show ID:</td>
+                <td class="auto-style1"><strong>Show ID:</strong></td>
                 <td class="auto-style11">
-                    <asp:DropDownList ID="DDLShowID" runat="server" Width="191px" CssClass="auto-style12">
+                    <asp:DropDownList ID="DDLShowID" runat="server" Width="120px" CssClass="auto-style12">
                         <asp:ListItem>Select Show ID</asp:ListItem>
                         <asp:ListItem Value=NULL>Not working a Show</asp:ListItem>
                         <asp:ListItem Value="1">Show 1</asp:ListItem>
