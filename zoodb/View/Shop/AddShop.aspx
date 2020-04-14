@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShop.aspx.cs" Inherits="zoodb.AddShop" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddShop.aspx.cs" Inherits="zoodb.AddShop" %>
 
 <!DOCTYPE html>
 
@@ -82,10 +82,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Search Shop</a></li>
-        <li class ="active"><a href="#">Add Shop</a></li>
-        <li><a href="#">Delete Shop</a></li>
-        <li><a href="#">Update Shop</a></li>
+         <li><a href="SearchShop.aspx">Search Shop</a></li>
+        <li class="active"><a href="AddShop.aspx">Add Shop</a></li>
+        <li><a href="delshop.aspx">Delete Shop</a></li>
+        <li><a href="updateShop.aspx">Update Shop</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -111,27 +111,34 @@
 
         <p>
             <strong>Shop Type:</strong>
-            <asp:DropDownList ID="TypeofShop" runat="server">
-                <asp:ListItem>Gift Shop</asp:ListItem>
-                <asp:ListItem>Dining</asp:ListItem>
-                <asp:ListItem>Admissions</asp:ListItem>
-            </asp:DropDownList>
+                <select id = "shopT" name="shop" runat="server">
+                    <option value="Dining">Dining</option>
+                    <option value="Gift Shop">Gift Shop</option>
+                    <option value="Admissions">Admissions</option>
+                </select>
         </p>
 
         <p>
             <strong>Shop Status:</strong>
-            <asp:CheckBox ID="CheckBoxO" runat="server" Text="Open" />
-            <asp:CheckBox ID="CheckBoxC" runat="server" Text="Closed" />
+            <select id = "ss" name="shop" runat="server">
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                </select>
+           
           </p>
 
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="add_shop">Add Shop</button>
+            <asp:Button ID="sButton" runat="server" Text="Add Shop" OnClick="addShop_Click" />
             </span>
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Sucesfully Added Shop</label>
+        <p><span style ="margin-left: 2em;">
+            <label id="LabelShop" runat="server" style="color: red" visible="false">Sucesfully Added Shop</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
