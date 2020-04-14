@@ -65,7 +65,7 @@
       }
       .auto-style1 {
           text-align: right;
-          width: 732px;
+          width: 405px;
       }
       .auto-style2 {
           width: 129px;
@@ -79,7 +79,7 @@
       }
       .auto-style5 {
           text-align: right;
-          width: 732px;
+          width: 405px;
           height: 22px;
       }
       .auto-style6 {
@@ -125,12 +125,12 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
     <div class="col-sm-8 text-left"> 
       <h1>Add a New Animal</h1>
       <p>Please fill out the fields below to enter a new animal into the database</p>
-        <hr />
 
-    </div>
       <table class="nav-justified">
           <tr>
               <td class="auto-style1"><strong>Animal Name:</strong></td>

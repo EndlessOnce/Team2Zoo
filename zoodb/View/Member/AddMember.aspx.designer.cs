@@ -24,15 +24,6 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Calendar2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar2;
-
-        /// <summary>
         /// fName control.
         /// </summary>
         /// <remarks>
@@ -69,15 +60,6 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText addy;
 
         /// <summary>
-        /// add_mem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton add_mem;
-
-        /// <summary>
         /// LabelMem control.
         /// </summary>
         /// <remarks>
@@ -85,5 +67,14 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelMem;
+
+        /// <summary>
+        /// add_mem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton add_mem;
     }
 }

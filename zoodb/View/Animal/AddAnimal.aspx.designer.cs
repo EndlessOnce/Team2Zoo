@@ -24,7 +24,6 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label2 control.
         /// TBName control.
         /// </summary>
         /// <remarks>

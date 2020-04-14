@@ -64,11 +64,11 @@
       
       }
       .auto-style1 {
-          width: 702px;
+          width: 353px;
           text-align: right;
       }
       .auto-style2 {
-          width: 702px;
+          width: 353px;
           text-align: right;
           height: 25px;
       }
@@ -84,7 +84,7 @@
           height: 167px;
       }
       .auto-style7 {
-          width: 702px;
+          width: 353px;
           text-align: right;
           height: 20px;
       }
@@ -142,7 +142,7 @@
       <p>Please fill out the fields below to enter a new employee into the database</p>
       <hr>
 
-
+    
         <table class="auto-style6">
             <tr>
                 <td class="auto-style1"><strong>First Name:</strong></td>
