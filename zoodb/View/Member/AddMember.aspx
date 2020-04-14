@@ -64,6 +64,9 @@
           padding-bottom : 10px;
       
       }
+      .auto-style1 {
+          width: 76px;
+      }
   </style>
 </head>
 <body>
@@ -102,10 +105,6 @@
       <p>Please fill out the fields below to enter a new zoo member into the database</p>
       <hr>
 
-        <p>
-            <strong>Join Date:</strong>
-        </p>
-
 
         <p>
             <strong>First Name:</strong>
@@ -130,12 +129,20 @@
 
 
         <p>
-            &nbsp;</p>
+            <strong>Join Date:</strong><asp:TextBox ID="JDate" placeholder="YYYY-MM-DD hh:mm:ss" runat="server" Width="173px"></asp:TextBox>
+        </p>
+        <p>
+            <strong>Expiration Date:</strong><asp:TextBox ID="ExDate" placeholder="YYYY-MM-DD hh:mm:ss" runat="server" Width="164px"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Label ID="LSubmit" runat="server" ForeColor="Red" Text="Member Successfully Added." Visible="False"></asp:Label>
+        </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="LabelMem" runat="server" style="color: red" hidden="hidden">Sucesfully Added Member</label>
+        <p>
+            <asp:Button ID="BAddMember" runat="server" Height="27px"  onclick="BAddMember_Click" Text="Submit" Width="77px" />
+            <span style ="margin-left: 5em;">
+            <label id="LabelMem" runat="server" style="color: red" hidden="hidden">Sucesfully Added Member</label><input id="Reset1" class="auto-style1" type="reset" value="Reset" />
             </span>
-      <button type="submit" runat="server" id="add_mem">Add Member</button>
         </p>
 
         <p class="text-left">
