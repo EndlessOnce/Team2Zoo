@@ -84,8 +84,8 @@
       <ul class="nav navbar-nav">
              <li class="active"><a href="#">Search Shop</a></li>
             <li><a href="AddShop.aspx">Add Shop</a></li>
-            <li><a href="#">Delete Shop</a></li>
-            <li><a href="#">Update Shop</a></li>
+            <li><a href="delShop.aspx">Delete Shop</a></li>
+            <li><a href="updateShop.aspx">Update Shop</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>

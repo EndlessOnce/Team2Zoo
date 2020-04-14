@@ -33,48 +33,39 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText shopName;
 
         /// <summary>
-        /// TypeofShop control.
+        /// shopT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TypeofShop;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect shopT;
 
         /// <summary>
-        /// CheckBoxO control.
+        /// ss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxO;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect ss;
 
         /// <summary>
-        /// CheckBoxC control.
+        /// sButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxC;
+        protected global::System.Web.UI.WebControls.Button sButton;
 
         /// <summary>
-        /// add_shop control.
+        /// LabelShop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton add_shop;
-
-        /// <summary>
-        /// LabeShop control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabeShop;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelShop;
     }
 }

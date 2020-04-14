@@ -82,10 +82,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Search Visitor</a></li>
-        <li class ="active"><a href="#">Add Visitor</a></li>
-        <li><a href="#">Delete Visitor</a></li>
-        <li><a href="#">Update Visitor</a></li>
+        <li><a href="SearchVisitor.aspx">Search Visitor</a></li>
+        <li class="active"><a href="#">Add Visitor</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -101,22 +99,6 @@
       <h1>Add a New Zoo Visitor</h1>
       <p>Please fill out the fields below to enter a new zoo visitor into the database</p>
       <hr>
-
-        <p>
-            <strong>Visit Date:</strong>
-        </p>
-
-        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
-            <asp:Calendar ID="Calendar3" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="700px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </div>
-
 
         <p>
             <strong>First Name:</strong>
@@ -140,13 +122,21 @@
 
         <p>
             <strong>Member?:</strong>
-            <asp:CheckBox ID="CheckBoxY" runat="server" Text="YES" />
-            <asp:CheckBox ID="CheckBoxN" runat="server" Text="NO" />
+            <select id ="aMem" runat="server">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+
+            </select>
           </p>
 
         <p>
-            <strong>If Member, Enter ID:</strong>
-            <input type="text" placeholder="Enter Member ID" name="memID" runat ="server" id="memID" style="width:200px"/> 
+            <strong>Group ID:</strong>
+            <input type="text" placeholder="Enter Group ID" name="gID" runat ="server" id="gID" style="width:200px"/> 
+        </p>
+
+        <p>
+            <strong>Date of Visith:</strong>
+            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width:200px" id="showTime" />
         </p>
 
         <p>
@@ -156,11 +146,11 @@
 
 
         <p>
-      <button type="submit" runat="server" id="add_vis">Add Visitor</button>
+            <asp:Button ID="visButton" runat="server" Text="Add Visitor" OnClick="addVis_Click" />
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="LabelVis" runat="server" style="color: red" hidden="hidden">Sucesfully Added Visitor</label>
+        <p><span style ="margin-left: 2em;">
+            <label id="LabelVis" runat="server" style="color: red" visible="false">Sucesfully Added Visitor</label>
             </span>
         </p>
 

@@ -4,10 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<title>Add Product</title>
+<title>Add Animal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css?parameter=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -63,6 +63,37 @@
           padding-bottom : 5px;
       
       }
+      .auto-style1 {
+          text-align: right;
+          width: 732px;
+      }
+      .auto-style2 {
+          width: 129px;
+      }
+      .auto-style3 {
+          width: 129px;
+          text-align: left;
+      }
+      .auto-style4 {
+          width: 61px;
+      }
+      .auto-style5 {
+          text-align: right;
+          width: 732px;
+          height: 22px;
+      }
+      .auto-style6 {
+          width: 129px;
+          text-align: left;
+          height: 22px;
+      }
+      .auto-style7 {
+          text-align: left;
+          height: 22px;
+      }
+      .auto-style8 {
+          height: 22px;
+      }
   </style>
 </head>
 <body>
@@ -94,94 +125,143 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-    </div>
     <div class="col-sm-8 text-left"> 
       <h1>Add a New Animal</h1>
       <p>Please fill out the fields below to enter a new animal into the database</p>
-      <hr>
+        <hr />
 
+    </div>
+      <table class="nav-justified">
+          <tr>
+              <td class="auto-style1"><strong>Animal Name:</strong></td>
+              <td class="auto-style3">
+                  <asp:TextBox ID="TBName" runat="server" Width="188px"></asp:TextBox>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFildValidator8" runat="server" ErrorMessage="Name is required!" ForeColor="Red" ControlToValidate="TBName"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1"><strong>Species:</strong></td>
+              <td class="auto-style3">
+                  <asp:TextBox ID="TBSpecies" runat="server" Width="189px"></asp:TextBox>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Species name is Required!" ForeColor="Red" ControlToValidate="TBSpecies"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1"><strong>Common Name:</strong></td>
+              <td class="auto-style3">
+                  <asp:TextBox ID="TBComN" runat="server" Width="190px"></asp:TextBox>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Common Name is required!" ForeColor="Red" ControlToValidate="TBComN"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style5"><strong>Sex:</strong></td>
+              <td class="auto-style6">
+                  <asp:DropDownList ID="DDLSex" runat="server">
+                      <asp:ListItem>Select Sex</asp:ListItem>
+                      <asp:ListItem>Male</asp:ListItem>
+                      <asp:ListItem>Female</asp:ListItem>
+                  </asp:DropDownList>
+              </td>
+              <td class="auto-style7">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Gender is required!" ForeColor="Red" InitialValue="Select Sex" ControlToValidate="DDLSex"></asp:RequiredFieldValidator>
+              </td>
+              <td class="auto-style8"></td>
+          </tr>
+          <tr>
+              <td class="auto-style1"><strong>Health Status:</strong></td>
+              <td class="auto-style3">
+                  <asp:DropDownList ID="DDLHealth" runat="server">
+                      <asp:ListItem>Select Health Status</asp:ListItem>
+                      <asp:ListItem Value="1">Healthy</asp:ListItem>
+                      <asp:ListItem Value="0">Unhealthy</asp:ListItem>
+                  </asp:DropDownList>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Health Status is Required!" ForeColor="Red" InitialValue="Select Health Status" ControlToValidate="DDLHealth"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1"><strong>Diet:</strong></td>
+              <td class="auto-style3">
+                  <asp:DropDownList ID="DDLDiet" runat="server">
+                      <asp:ListItem>Select Diet</asp:ListItem>
+                      <asp:ListItem>Carnivore</asp:ListItem>
+                      <asp:ListItem>Herbivore</asp:ListItem>
+                      <asp:ListItem>Omnivore</asp:ListItem>
+                  </asp:DropDownList>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Diet is required!" ForeColor="Red" InitialValue="Select Diet" ControlToValidate="DDLDiet"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1"><strong>Exhibit ID:</strong></td>
+              <td class="auto-style3">
+                  <asp:DropDownList ID="DDLEx" runat="server" CssClass="col-xs-offset-0">
+                      <asp:ListItem>Select Exhibit ID</asp:ListItem>
+                      <asp:ListItem>1</asp:ListItem>
+                      <asp:ListItem>2</asp:ListItem>
+                      <asp:ListItem>3</asp:ListItem>
+                      <asp:ListItem>4</asp:ListItem>
+                      <asp:ListItem>5</asp:ListItem>
+                  </asp:DropDownList>
+              </td>
+              <td class="text-left">
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Exhibit ID is required!" ForeColor="Red" InitialValue="Select Exhibit ID" ControlToValidate="DDLEx"></asp:RequiredFieldValidator>
+              </td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1">&nbsp;</td>
+              <td class="auto-style2">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1">&nbsp;</td>
+              <td class="auto-style3">
+                  <asp:Button ID="BSubmit" runat="server" OnClick="AnimalAdd_Click" Text="Submit" />
+                  <input id="Reset1" class="auto-style4" type="reset" value="reset" /></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1">&nbsp;</td>
+              <td class="auto-style3">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+          </tr>
+          <tr>
+              <td class="auto-style1">&nbsp;</td>
+              <td class="auto-style3">
+                  <asp:Label ID="LSuccess" runat="server" ForeColor="Red" Text="Animal Sucessfully Added" Visible="False"></asp:Label>
+              </td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>
+    </form>
 
-        <p>
-            <strong>Name:</strong>
-            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px" id="name"/>
-        </p>
-     
-
-        <p>
-            <strong>Common Name:</strong>
-            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px" id="commonName"/>
-            
-           
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Gender:</strong>
-            <asp:CheckBox ID="CheckBoxM" runat="server" Text="Male"  padding-right=" 10px"/>
-            <asp:CheckBox ID="CheckBoxF" runat="server" Text="Female" />
-        </span></p>
-
-        <p>
-            <strong>Species:</strong>
-            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px" id="species"/>
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Health:</strong>
-            <select id ="aHealth" runat="server">
-                <option value="0">unhealthy</option>
-                <option value="1">healthy</option>
-
-            </select>
-        </span></p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Exhibit:</strong>
-                <select id = "Exhibit" name="exhibit" runat="server">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-
-         <p><span style ="margin-left: 1em;">
-             <strong>Diet:</strong>
-             <select id = "diet" name="diet" runat="server">
-                    <option value="Ominvore">Ominvore</option>
-                    <option value="Carnivore">Carnivore</option>
-                    <option value="Herbivore">Herbivore</option>
-                </select>
-             </span>
-        </p>
-
-
-
-        <br />
-
-
-        <p><span style ="margin-left: 2em;">
-            <button type="submit" runat="server" id="add_animal">Add Animal</button>
-            </span>
-        </p>
-
-        <p><span style ="margin-left: 5em;">
-             <label id="Label2" runat="server" style="color: red" hidden="hidden">Sucesfully Added Animal</label>
-            </span>
-        </p>
 
         <p class="text-left">
             <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
-    </div>
-    <div class="col-sm-2 sidenav">
-      </div>
-    </div>
-  </div>
-</div>
-    </form>
-</body>
+    </body>
 </html>
 
