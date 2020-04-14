@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>Add Show</title>
+   <title>Add Show</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -17,6 +17,12 @@
       margin-bottom: 0;
       border-radius: 0;
     }
+
+     .myCenter
+     {  margin-left:auto;
+        margin-right:auto;
+
+     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
@@ -60,8 +66,8 @@
 
       p{
           text-align:center;
-          padding-top : 10px;
-          padding-bottom : 10px;
+          padding-top : 15px;
+          padding-bottom : 15px;
       
       }
   </style>
@@ -82,10 +88,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li><a href="#">Search Show</a></li>
-        <li class ="active"><a href="#">Add Show</a></li>
-        <li><a href="#">Delete Show</a></li>
-        <li><a href="#">Update Show</a></li>
+        <li><a href="ShowSearch.aspx">Search Show</a></li>
+        <li class="active"><a href="#">Add Show</a></li>
+        <li><a href="delShow.aspx">Delete Show</a></li>
+        <li><a href="updateShow.aspx">Update Show</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -104,22 +110,9 @@
 
 
         <p>
-            <span style ="margin-left: 2em;">
             <strong>Date of Show:</strong>
-            </span>
+            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width:200px" id="showTime" />
         </p>
-
-        <p style="width:200px; margin: 0 auto">
-            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </p>
-     
 
         <p><span style ="margin-left: 2em;">
             <strong>Name:</strong>
@@ -133,14 +126,18 @@
             </span>
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <button type="submit" runat="server" id="add_show">Add Show</button>
+        <p><span style="margin-left: 2em;">
+            <asp:Button ID="showAdd" runat="server" Text="Add Show" OnClick="showAdd_Click" />
             </span>
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="Label" runat="server" style="color: red" hidden="hidden">Sucesfully Added Show</label>
+        <p><span style ="margin-left: 2em;">
+            <label id="Label" runat="server" style="color: red" visible="false" >Sucesfully Added Show</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
