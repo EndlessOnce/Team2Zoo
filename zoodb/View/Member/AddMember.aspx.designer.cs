@@ -60,6 +60,42 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText addy;
 
         /// <summary>
+        /// JDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox JDate;
+
+        /// <summary>
+        /// ExDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ExDate;
+
+        /// <summary>
+        /// LSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LSubmit;
+
+        /// <summary>
+        /// BAddMember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BAddMember;
+
+        /// <summary>
         /// LabelMem control.
         /// </summary>
         /// <remarks>
@@ -67,14 +103,5 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelMem;
-
-        /// <summary>
-        /// add_mem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton add_mem;
     }
 }
