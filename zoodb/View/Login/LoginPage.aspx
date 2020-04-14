@@ -9,22 +9,28 @@
         .auto-style1 {
             text-align: center;
         }
+
         .auto-style2 {
             margin: auto;
         }
+
         .auto-style3 {
             text-align: right;
             width: 35%;
         }
+
         .auto-style4 {
             margin: auto;
         }
+
         .auto-style5 {
             margin: auto;
         }
+
         .auto-style6 {
             margin: auto;
         }
+
         .auto-style7 {
             text-align: center;
         }
@@ -34,6 +40,8 @@
     <form id="form1" runat="server">
         <div>
             <h1 class="auto-style1"><strong>Login Page</strong></h1>
+            <p class="auto-style1">Hello! To access the Zoo Database, please log on with your username and password. If you do not have a valid username or password, please register and make an account with us to acces the database.</p>
+            <hr />
         </div>
         <table class="auto-style2">
             <tr>

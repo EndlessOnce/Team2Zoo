@@ -36,6 +36,8 @@
                     <td class="auto-style10">
                         <div>
                             <h1><strong>Regirstration Page</strong></h1>
+                            <p> Please enter a Email and Password to register.</p>
+                            <hr />
                         </div>
                     </td>
                 </tr>
