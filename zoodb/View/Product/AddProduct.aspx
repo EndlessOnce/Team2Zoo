@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="zoodb.AddProduct" %>
 
 <!DOCTYPE html>
 
@@ -24,7 +24,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 100%;
+      height: 100vh;
     }
     
     /* Set black background color, white text and some padding */
@@ -81,10 +81,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Search Product</a></li>
-        <li class ="active"><a href="#">Add Prodcut</a></li>
-        <li><a href="#">Delete Prodcut</a></li>
-        <li><a href="#">Update Product</a></li>
+         <li><a href="SearchProduct.aspx">Search Product</a></li>
+        <li class="active"><a href="#">Add Product</a></li>
+        <li><a href="delProduct.aspx">Delete Product</a></li>
+        <li><a href="updateProduct.aspx">Update product</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -123,13 +123,17 @@
         </p>
 
         <p><span style ="margin-left: 5em;">
-             <button type="submit" runat="server" id="add_button">Add Product</button>
+             <asp:Button ID="proAdd" runat="server" Text="Button" OnClick="addPro_Click" />
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Added Product</label>
+            <label id="Label1" runat="server" style="color: red" visible="false">Sucesfully Added Product</label>
             </span>
+        </p>
+
+        <p class="text-left">
+            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
          
@@ -142,5 +146,4 @@
     </form>
 </body>
 </html>
-
 
