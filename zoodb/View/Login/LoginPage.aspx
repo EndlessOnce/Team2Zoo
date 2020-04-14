@@ -9,25 +9,29 @@
         .auto-style1 {
             text-align: center;
         }
+
         .auto-style2 {
-            width: 100%;
+            margin: auto;
         }
+
         .auto-style3 {
             text-align: right;
-            width: 851px;
+            width: 35%;
         }
+
         .auto-style4 {
-            width: 851px;
+            margin: auto;
         }
+
         .auto-style5 {
-            width: 191px;
-            margin-left: 40px;
+            margin: auto;
         }
+
         .auto-style6 {
-            width: 191px;
+            margin: auto;
         }
+
         .auto-style7 {
-            width: 191px;
             text-align: center;
         }
     </style>
@@ -36,6 +40,8 @@
     <form id="form1" runat="server">
         <div>
             <h1 class="auto-style1"><strong>Login Page</strong></h1>
+            <p class="auto-style1">Hello! To access the Zoo Database, please log on with your username and password. If you do not have a valid username or password, please register and make an account with us to acces the database.</p>
+            <hr />
         </div>
         <table class="auto-style2">
             <tr>
@@ -61,7 +67,9 @@
                 <td class="auto-style7">
                     <asp:Button ID="Login" runat="server" OnClick="Login_Click" Text="Login" />
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/View/Registration/Registration.aspx">New User Register Here</asp:HyperLink>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>

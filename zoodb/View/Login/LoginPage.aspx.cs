@@ -35,7 +35,7 @@ namespace zoodb
                 {
                     Session["New"] = TextBoxEmail.Text;
                     Response.Write("Password is correct.");
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("~/View/Users/User.aspx");
                 }
                 else
                 {
