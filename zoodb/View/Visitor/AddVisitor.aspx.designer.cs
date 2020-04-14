@@ -24,15 +24,6 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Calendar3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar3;
-
-        /// <summary>
         /// fName control.
         /// </summary>
         /// <remarks>
@@ -60,31 +51,31 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlSelect ttype;
 
         /// <summary>
-        /// CheckBoxY control.
+        /// aMem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxY;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect aMem;
 
         /// <summary>
-        /// CheckBoxN control.
+        /// gID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxN;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText gID;
 
         /// <summary>
-        /// memID control.
+        /// showTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText memID;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText showTime;
 
         /// <summary>
         /// phoneID control.
@@ -96,13 +87,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText phoneID;
 
         /// <summary>
-        /// add_vis control.
+        /// visButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton add_vis;
+        protected global::System.Web.UI.WebControls.Button visButton;
 
         /// <summary>
         /// LabelVis control.

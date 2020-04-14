@@ -24,13 +24,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// CalendarVis control.
+        /// showTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar CalendarVis;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText showTime;
 
         /// <summary>
         /// visName control.
@@ -51,22 +51,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText lname;
 
         /// <summary>
-        /// CheckBoxY control.
+        /// aMem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxY;
-
-        /// <summary>
-        /// CheckBoxN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxN;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect aMem;
 
         /// <summary>
         /// memID control.
