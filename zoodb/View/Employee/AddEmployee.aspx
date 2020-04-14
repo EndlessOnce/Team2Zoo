@@ -202,7 +202,7 @@
                 <td class="auto-style11">
                     <asp:DropDownList ID="DDLShopID" runat="server" Width="191px">
                         <asp:ListItem>Select Shop ID</asp:ListItem>
-                        <asp:ListItem Value="NULL">Not working at a shop</asp:ListItem>
+                        <asp:ListItem Value=NULL>Not working at a Shop</asp:ListItem>
                         <asp:ListItem Value="1">Shop 1 (Sabertooth Grill)</asp:ListItem>
                         <asp:ListItem Value="2">Shop 2 (Jungle Java)</asp:ListItem>
                         <asp:ListItem Value="3">Shop 3 (Panda Shop)</asp:ListItem>
@@ -221,7 +221,7 @@
                 <td class="auto-style11">
                     <asp:DropDownList ID="DDLShowID" runat="server" Width="191px" CssClass="auto-style12">
                         <asp:ListItem>Select Show ID</asp:ListItem>
-                        <asp:ListItem Value="NULL">Not working a Show</asp:ListItem>
+                        <asp:ListItem Value=NULL>Not working a Show</asp:ListItem>
                         <asp:ListItem Value="1">Show 1</asp:ListItem>
                         <asp:ListItem Value="2">Show 2</asp:ListItem>
                         <asp:ListItem Value="3">Show 3</asp:ListItem>
@@ -243,7 +243,9 @@
                 <td class="auto-style11">
                     <asp:Button ID="AddEmpButton" runat="server" onclick="AddEmpButton_Click" Text="Submit" CssClass="auto-style10" />
                     <input id="Reset1" type="reset" value="Reset" /></td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="SuccessLabel" runat="server" ForeColor="Red" Text="Insertion Successful" Visible="False"></asp:Label>
+                </td>
             </tr>
         </table>
 

@@ -21,7 +21,6 @@ namespace zoodb
         {
             try
             {
-                Response.Write("You clicked submit");
                 MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
                 link.Open();
 
@@ -29,16 +28,40 @@ namespace zoodb
                 MySqlCommand com = new MySqlCommand(addEmp, link);
                 com.Parameters.AddWithValue("Fname", TBFName.Text);
                 com.Parameters.AddWithValue("Lname", TBLName.Text);
-                com.Parameters.AddWithValue("JobID", DDLJob.SelectedItem.ToString());
-                com.Parameters.AddWithValue("ExID", DDLExID.SelectedItem.ToString());
-                com.Parameters.AddWithValue("ShowID", DDLShowID.SelectedItem.ToString());
-                com.Parameters.AddWithValue("ShopID", DDLShopID.SelectedItem.ToString());
-                //                int temp = Convert.ToInt32(comm.ExecuteScalar().ToString());
+                com.Parameters.AddWithValue("JobID", DDLJob.SelectedValue);
 
+                if(DDLExID.Text == "NULL")
+                {
+                    com.Parameters.AddWithValue("ExID", DBNull.Value);
 
+                }
+                else
+                {
+                    com.Parameters.AddWithValue("ExID", DDLExID.SelectedValue);
+                }
+
+                if(DDLShowID.Text == "NULL")
+                {
+                    com.Parameters.AddWithValue("ShowID", DBNull.Value);
+                }
+                else
+                {
+                    com.Parameters.AddWithValue("ShowID", DDLShowID.SelectedValue);
+                }
+
+                if(DDLShopID.Text == "NULL")
+                {
+                    com.Parameters.AddWithValue("ShopID", DBNull.Value);
+                }
+                else
+                {
+                    com.Parameters.AddWithValue("ShopID", DDLShopID.SelectedValue);
+                }
                 com.ExecuteNonQuery();
 
-                Response.Write("Insertion Sucessful!");
+                SuccessLabel.Visible = true;
+                link.Close();
+
             }
 
             catch (Exception er)
