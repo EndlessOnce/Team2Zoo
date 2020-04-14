@@ -24,13 +24,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Calendar1 control.
+        /// showTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText showTime;
 
         /// <summary>
         /// show_name control.
@@ -51,13 +51,13 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText show_loc;
 
         /// <summary>
-        /// add_show control.
+        /// showAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton add_show;
+        protected global::System.Web.UI.WebControls.Button showAdd;
 
         /// <summary>
         /// Label control.

@@ -123,7 +123,7 @@
         </p>
 
         <p><span style ="margin-left: 5em;">
-             <asp:Button ID="proAdd" runat="server" Text="Button" OnClick="addPro_Click" />
+             <asp:Button ID="proAdd" runat="server" Text="Add Product" OnClick="addPro_Click" />
             </span>
         </p>
 
