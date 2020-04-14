@@ -31,7 +31,7 @@
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 130vh;
+      height: 100vh;
     }
     
     /* Set black background color, white text and some padding */
@@ -88,10 +88,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-       <li><a href="#">Search Transaction</a></li>
-        <li class ="active"><a href="#">Add transaction</a></li>
-        <li><a href="#">Delete Transaction</a></li>
-        <li><a href="#">Update Transaction</a></li>
+          <li><a href="SearchTransaction.aspx">Search Transaction</a></li>
+          <li class="active"><a href="AddTransaction.aspx">Add Transaction</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -111,19 +109,9 @@
 
         <p>
             <strong>Transaction Date:</strong>
+            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width:200px" id="showTime" />
         </p>
 
-        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
-            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="700px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </div>
-     
 
         <p><span style ="margin-left: 2em;">
             <strong>Shop ID:</strong>
@@ -179,11 +167,11 @@
 
 
         <p>
-            <button type="submit" runat="server" id="add_trans">Add Transaction</button>
+            <asp:Button ID="tButton" runat="server" Text="Add Transaction" OnClick="addTrans_Click" />
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="LabelT" runat="server" style="color: red" hidden="hidden">Sucesfully Added Transaction</label>
+        <p><span style ="margin-left: 2em;">
+            <label id="LabelT" runat="server" style="color: red" visible="false">Sucesfully Added Transaction</label>
             </span>
         </p>
 
