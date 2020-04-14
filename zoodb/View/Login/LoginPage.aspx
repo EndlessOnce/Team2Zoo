@@ -10,25 +10,22 @@
             text-align: center;
         }
         .auto-style2 {
-            width: 100%;
+            margin: auto;
         }
         .auto-style3 {
-            text-align: right;
-            width: 851px;
+            margin: 1rem auto;
         }
         .auto-style4 {
-            width: 851px;
+            margin: auto;
         }
         .auto-style5 {
-            width: 191px;
-            margin-left: 40px;
+            margin: auto;
         }
         .auto-style6 {
-            width: 191px;
+            margin: auto;
         }
         .auto-style7 {
-            width: 191px;
-            text-align: center;
+            margin: 1rem auto;
         }
     </style>
 </head>

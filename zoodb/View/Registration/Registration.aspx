@@ -10,12 +10,12 @@
             width: 100%;
         }
         .auto-style6 {
-            width: 150px;
-            text-align: right;
+            width: 0%;
         }
         .auto-style7 {
-            width: 849px;
             text-align: right;
+            width: auto;
+            margin: 1rem auto;
         }
         .auto-style8 {
             text-align: right;
@@ -77,21 +77,6 @@
                     <td class="auto-style6">
                         <asp:Button ID="Signup" runat="server" OnClick="Registration_Click" Text="Sign-up" />
                         <input id="Reset1" type="reset" value="reset" /></td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
             </table>
