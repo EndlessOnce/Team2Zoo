@@ -16,14 +16,14 @@ namespace zoodb.View.Users
                 Welcome.Text += Session["New"].ToString();
             }
             else
-                Response.Redirect("~/View/Login/LoginPage.aspx");
+                Response.Redirect("~/View/Login/LoginPage");
 
         }
 
         protected void Logout_Click(object sender, EventArgs e)
         {
             Session["New"] = null;
-            Response.Redirect("~/View/Login/LoginPage.aspx");
+            Response.Redirect("~/View/Login/LoginPage");
 
         }
     }
