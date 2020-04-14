@@ -1,13 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updateAnimal.aspx.cs" Inherits="zoodb.updateAnimal" %>
-
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="delEmp.aspx.cs" Inherits="zoodb.View.Employee.delEmp" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-  <title>Update Animal</title>
+  <title>Delete Employee</title>  <!--edit here-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -80,10 +78,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li class ="active"><a href ="#">Update Entity</a></li>
+          <li class ="active"><a href ="#">Delete Entity</a></li>
           <li><a href="#">Add Entity</a></li>
-          <li><a href="#">Delete Entity</a></li>
           <li><a href="#">Search Entity</a></li>
+          <li><a href="#">Update Entity</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -96,58 +94,36 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Update Animal Information</h1>
-      <p>Please fill out the fields below to update animal information in the database</p>
+      <h1>Delete Employee Information</h1>    <!--edit here also below this-->
+      <p>Please confirm if you wish to delete this employee information from the database</p>
       <hr>
 
        <p class="text-right">
-            <a href=""><span class="glyphicon-pencil"> Delete animal</span></a>
-        </p>
-
-
-        <p>
-            <strong>Animal Name:</strong>
-            <input type="text"  name="Name" value="@Name will go here" runat ="server" id="Name" style="width:200px"/> 
+            <a href=""><span class="glyphicon-pencil"> Return to update page</span></a>
         </p>
      
- <p><span style ="margin-left: 2em;">
-            <strong>Health:</strong>
-        <select id = "SelectH" name="Health" runat="server">
-                    <option value="0">0-Unhealthy</option>
-                    <option value="1">1-Healthy</option>
-                    
-        </select>
+        <h3 style="text-align:center"><strong><u>Employee Information</u></strong></h3>
+       
+    <p>
+            <strong>Employee ID: </strong> @empID
 
-                </p>
+       </p>
+        <p>
+            <strong>First Name: </strong> @fname
 
- <p><span style ="margin-left: 2em;">
-            <strong>Exhibit:</strong>
-                <select id = "Exhibit" name="exhibit" runat="server">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-
-         <p><span style ="margin-left: 1em;">
-             <strong>Diet:</strong>
-             <select id = "diet" name="diet" runat="server">
-                    <option value="Ominvore">Ominvore</option>
-                    <option value="Carnivore">Carnivore</option>
-                    <option value="Herbivore">Herbivore</option>
-                </select>
-             </span>
         </p>
+         <p>
+            <strong>Last Name: </strong> @lname
 
-
+        </p>
+     
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="updateAnimal">Update</button>
+      <button type="submit" runat="server" id="delEmployee">Delete</button>
             </span>
         </p>
 
         <p><span style ="margin-left: 5em;">
-            <label id="labelAnimUp" runat="server" style="color: red" hidden="hidden">Successfully Updated Animal</label>
+            <label id="labelAnimUp" runat="server" style="color: red" hidden="hidden">Successfully Deleted Employee</label>
             </span>
         </p>
 
