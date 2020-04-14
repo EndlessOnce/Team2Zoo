@@ -64,39 +64,45 @@
       
       }
       .auto-style1 {
-          width: 93px;
+          width: 326px;
           text-align: right;
       }
       .auto-style2 {
-          width: 93px;
+          width: 326px;
           text-align: right;
           height: 25px;
       }
       .auto-style3 {
           height: 25px;
       }
-      .auto-style4 {
-          width: 202px;
-      }
       .auto-style5 {
           height: 25px;
-          width: 202px;
+          width: 176px;
       }
       .auto-style6 {
           width: 100%;
           height: 167px;
       }
       .auto-style7 {
-          width: 93px;
+          width: 326px;
           text-align: right;
           height: 20px;
       }
       .auto-style8 {
-          width: 202px;
+          width: 176px;
           height: 20px;
       }
       .auto-style9 {
           height: 20px;
+      }
+      .auto-style10 {
+          margin-left: 19;
+      }
+      .auto-style11 {
+          width: 176px
+      }
+      .auto-style12 {
+          margin-left: 0px;
       }
   </style>
 </head>
@@ -140,7 +146,7 @@
         <table class="auto-style6">
             <tr>
                 <td class="auto-style1">First Name:</td>
-                <td class="auto-style4">
+                <td class="auto-style11">
                     <asp:TextBox ID="TBFName" runat="server" Width="191px"></asp:TextBox>
                 </td>
                 <td>
@@ -158,33 +164,33 @@
             </tr>
             <tr>
                 <td class="auto-style1">Job Title:</td>
-                <td class="auto-style4">
-                    <asp:DropDownList ID="DDLJob" runat="server">
+                <td class="auto-style11">
+                    <asp:DropDownList ID="DDLJob" runat="server" Width="191px">
                         <asp:ListItem>Select Job Title</asp:ListItem>
-                        <asp:ListItem>Cashier</asp:ListItem>
-                        <asp:ListItem>Cleaner</asp:ListItem>
-                        <asp:ListItem>Cook</asp:ListItem>
-                        <asp:ListItem>Feeder</asp:ListItem>
-                        <asp:ListItem>Presenter</asp:ListItem>
-                        <asp:ListItem>Server</asp:ListItem>
-                        <asp:ListItem>Stocker</asp:ListItem>
+                        <asp:ListItem Value="4">Cashier</asp:ListItem>
+                        <asp:ListItem Value="2">Cleaner</asp:ListItem>
+                        <asp:ListItem Value="6">Cook</asp:ListItem>
+                        <asp:ListItem Value="1">Feeder</asp:ListItem>
+                        <asp:ListItem Value="3">Presenter</asp:ListItem>
+                        <asp:ListItem Value="5">Server</asp:ListItem>
+                        <asp:ListItem Value="7">Stocker</asp:ListItem>
                     </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DDLJob" ErrorMessage="Job Title is Requried!" ForeColor="Red" InitialValue="Select Job Title"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Exhibit ID</td>
-                <td class="auto-style4">
-                    <asp:DropDownList ID="DDLExID" runat="server">
+                <td class="auto-style1">Exhibit ID: </td>
+                <td class="auto-style11">
+                    <asp:DropDownList ID="DDLExID" runat="server" Width="191px">
                         <asp:ListItem>Select Exhibit ID</asp:ListItem>
-                        <asp:ListItem>Not working at an Exhibit</asp:ListItem>
-                        <asp:ListItem>Exhibit 1</asp:ListItem>
-                        <asp:ListItem>Exhibit 2</asp:ListItem>
-                        <asp:ListItem>Exhibit 3</asp:ListItem>
-                        <asp:ListItem>Exhibit 4</asp:ListItem>
-                        <asp:ListItem>Exhibit 5</asp:ListItem>
+                        <asp:ListItem Value="NULL">Not working at an Exhibit</asp:ListItem>
+                        <asp:ListItem Value="1">Exhibit 1</asp:ListItem>
+                        <asp:ListItem Value="2">Exhibit 2</asp:ListItem>
+                        <asp:ListItem Value="3">Exhibit 3</asp:ListItem>
+                        <asp:ListItem Value="4">Exhibit 4</asp:ListItem>
+                        <asp:ListItem Value="5">Exhibit 5</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
@@ -192,18 +198,18 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Shop ID</td>
-                <td class="auto-style4">
-                    <asp:DropDownList ID="DDLShopID" runat="server">
+                <td class="auto-style1">Shop ID: </td>
+                <td class="auto-style11">
+                    <asp:DropDownList ID="DDLShopID" runat="server" Width="191px">
                         <asp:ListItem>Select Shop ID</asp:ListItem>
-                        <asp:ListItem>Not working at a shop</asp:ListItem>
-                        <asp:ListItem>Shop 1 (Sabertooth Grill)</asp:ListItem>
-                        <asp:ListItem>Shop 2 (Jungle Java)</asp:ListItem>
-                        <asp:ListItem>Shop 3 (Panda Shop)</asp:ListItem>
-                        <asp:ListItem>Shop 4 (Parrot Palace)</asp:ListItem>
-                        <asp:ListItem>Shop 5 (Ticket Booth A)</asp:ListItem>
-                        <asp:ListItem>Shop 6 (Ticket Booth B)</asp:ListItem>
-                        <asp:ListItem>Shop 6 (Ticket Booth C)</asp:ListItem>
+                        <asp:ListItem Value="NULL">Not working at a shop</asp:ListItem>
+                        <asp:ListItem Value="1">Shop 1 (Sabertooth Grill)</asp:ListItem>
+                        <asp:ListItem Value="2">Shop 2 (Jungle Java)</asp:ListItem>
+                        <asp:ListItem Value="3">Shop 3 (Panda Shop)</asp:ListItem>
+                        <asp:ListItem Value="4">Shop 4 (Parrot Palace)</asp:ListItem>
+                        <asp:ListItem Value="5">Shop 5 (Ticket Booth A)</asp:ListItem>
+                        <asp:ListItem Value="6">Shop 6 (Ticket Booth B)</asp:ListItem>
+                        <asp:ListItem Value="7">Shop 7 (Ticket Booth C)</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
@@ -211,15 +217,16 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Show ID</td>
-                <td class="auto-style4">
-                    <asp:DropDownList ID="DDLShowID" runat="server">
+                <td class="auto-style1">Show ID:</td>
+                <td class="auto-style11">
+                    <asp:DropDownList ID="DDLShowID" runat="server" Width="191px" CssClass="auto-style12">
                         <asp:ListItem>Select Show ID</asp:ListItem>
-                        <asp:ListItem>Show 1</asp:ListItem>
-                        <asp:ListItem>Show 2</asp:ListItem>
-                        <asp:ListItem>Show 3</asp:ListItem>
-                        <asp:ListItem>Show 4</asp:ListItem>
-                        <asp:ListItem>Show 5</asp:ListItem>
+                        <asp:ListItem Value="NULL">Not working a Show</asp:ListItem>
+                        <asp:ListItem Value="1">Show 1</asp:ListItem>
+                        <asp:ListItem Value="2">Show 2</asp:ListItem>
+                        <asp:ListItem Value="3">Show 3</asp:ListItem>
+                        <asp:ListItem Value="4">Show 4</asp:ListItem>
+                        <asp:ListItem Value="5">Show 5</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>
@@ -233,7 +240,9 @@
             </tr>
             <tr>
                 <td class="auto-style1">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style11">
+                    <asp:Button ID="AddEmpButton" runat="server" Text="Submit" CssClass="auto-style10" />
+                    <input id="Reset1" type="reset" value="Reset" /></td>
                 <td>&nbsp;</td>
             </tr>
         </table>
