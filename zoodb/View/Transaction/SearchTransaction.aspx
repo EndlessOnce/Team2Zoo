@@ -88,10 +88,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-             <li class="active"><a href="#">Search Transaction</a></li>
+             <li class="active"><a href="SearchTransaction.aspx">Search Transaction</a></li>
             <li><a href="AddTransaction.aspx">Add Transaction</a></li>
-            <li><a href="#">Delete Transaction</a></li>
-            <li><a href="#">Update Transaction</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -111,18 +109,9 @@
 
         <p>
             <strong>Transaction Date:</strong>
+            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width:200px" id="showTime" />
         </p>
 
-        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
-            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="900px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </div>
      
 
         <p><span style ="margin-left: 2em;">
