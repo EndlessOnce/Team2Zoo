@@ -14,8 +14,8 @@
         }
         .auto-style7 {
             text-align: right;
-            width: auto;
-            margin: 1rem auto;
+            width: 45%;
+            margin: auto;
         }
         .auto-style8 {
             text-align: right;

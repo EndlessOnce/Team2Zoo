@@ -13,7 +13,8 @@
             margin: auto;
         }
         .auto-style3 {
-            margin: 1rem auto;
+            text-align: right;
+            width: 35%;
         }
         .auto-style4 {
             margin: auto;
@@ -25,7 +26,7 @@
             margin: auto;
         }
         .auto-style7 {
-            margin: 1rem auto;
+            text-align: center;
         }
     </style>
 </head>
