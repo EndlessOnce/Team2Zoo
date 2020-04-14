@@ -63,7 +63,7 @@
           padding-bottom : 5px;
       
       }
-  </style>
+      </style>
 </head>
 <body>
 
@@ -102,68 +102,19 @@
       <hr>
 
 
-        <p>
-            <strong>Name:</strong>
-            <input type="text" placeholder="Enter Animal Name" name="animal_name" runat ="server" style="width: 225px" id="name"/>
-        </p>
-     
-
-        <p>
-            <strong>Common Name:</strong>
-            <input type="text" placeholder="Enter Common Name" name="common_name" runat ="server" style="width: 160px" id="commonName"/>
+        <p><span style ="margin-left: 2em;">
+            &nbsp;</span></p>
+        <span style ="margin-left: 2em;">
             
-           
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Gender:</strong>
-            <asp:CheckBox ID="CheckBoxM" runat="server" Text="Male"  padding-right=" 10px"/>
-            <asp:CheckBox ID="CheckBoxF" runat="server" Text="Female" />
-        </span></p>
-
-        <p>
-            <strong>Species:</strong>
-            <input type="text" placeholder="Enter Animal Species" name="animal_species" runat ="server" style="width: 220px" id="species"/>
-        </p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Health:</strong>
-            <select id ="aHealth" runat="server">
-                <option value="0">unhealthy</option>
-                <option value="1">healthy</option>
-
-            </select>
-        </span></p>
-
-        <p><span style ="margin-left: 2em;">
-            <strong>Exhibit:</strong>
-                <select id = "Exhibit" name="exhibit" runat="server">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-
          <p><span style ="margin-left: 1em;">
-             <strong>Diet:</strong>
-             <select id = "diet" name="diet" runat="server">
-                    <option value="Ominvore">Ominvore</option>
-                    <option value="Carnivore">Carnivore</option>
-                    <option value="Herbivore">Herbivore</option>
-                </select>
-             </span>
-        </p>
+             &nbsp;</span></p>
 
 
 
         <br />
 
 
-        <p><span style ="margin-left: 2em;">
-            <button type="submit" runat="server" id="add_animal">Add Animal</button>
-            </span>
-        </p>
+        <p>&nbsp;</p>
 
         <p><span style ="margin-left: 5em;">
              <label id="Label2" runat="server" style="color: red" hidden="hidden">Sucesfully Added Animal</label>
