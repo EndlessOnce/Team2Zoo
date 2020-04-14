@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Welcome" runat="server" Text="Welcome to the Zoo!"></asp:Label>
-        </div>
+        &nbsp;</div>
         <asp:Button ID="Logout" runat="server" Text="Logout" />
     </form>
 </body>
