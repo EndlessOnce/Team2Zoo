@@ -11,6 +11,15 @@ namespace zoodb.View.Users
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["New"] != null)
+            {
+                Welcome.Text = Session["New"].ToString();
+            }
+
+        }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
 
         }
     }
