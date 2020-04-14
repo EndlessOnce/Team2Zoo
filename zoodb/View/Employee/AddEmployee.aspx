@@ -241,7 +241,7 @@
             <tr>
                 <td class="auto-style1">&nbsp;</td>
                 <td class="auto-style11">
-                    <asp:Button ID="AddEmpButton" runat="server" Text="Submit" CssClass="auto-style10" />
+                    <asp:Button ID="AddEmpButton" runat="server" onclick="AddEmpButton_Click" Text="Submit" CssClass="auto-style10" />
                     <input id="Reset1" type="reset" value="Reset" /></td>
                 <td>&nbsp;</td>
             </tr>

@@ -12,10 +12,16 @@ namespace zoodb
 {
     public partial class AddEmployee : System.Web.UI.Page
     {
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
         protected void AddEmpButton_Click(object sender, EventArgs e)
         {
             try
             {
+                Response.Write("You clicked submit");
                 MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
                 link.Open();
 
@@ -27,6 +33,8 @@ namespace zoodb
                 com.Parameters.AddWithValue("ExID", DDLExID.SelectedItem.ToString());
                 com.Parameters.AddWithValue("ShowID", DDLShowID.SelectedItem.ToString());
                 com.Parameters.AddWithValue("ShopID", DDLShopID.SelectedItem.ToString());
+                //                int temp = Convert.ToInt32(comm.ExecuteScalar().ToString());
+
 
                 com.ExecuteNonQuery();
 
@@ -39,9 +47,6 @@ namespace zoodb
             }
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
