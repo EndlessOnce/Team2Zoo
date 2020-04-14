@@ -106,16 +106,22 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="View\Animal\AddAnimal.aspx" />
+    <Content Include="View\Animal\delAnimal.aspx" />
     <Content Include="View\Animal\SearchAnimal.aspx" />
     <Content Include="View\Employee\AddEmployee.aspx" />
+    <Content Include="View\Employee\delEmp.aspx" />
     <Content Include="View\Employee\SearchEmployee.aspx" />
     <Content Include="View\Member\AddMember.aspx" />
+    <Content Include="View\Member\delMember.aspx" />
     <Content Include="View\Member\SearchMem.aspx" />
     <Content Include="View\Product\AddProduct.aspx" />
+    <Content Include="View\Product\delProduct.aspx" />
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
+    <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
     <Content Include="View\Show\AddShow.aspx" />
+    <Content Include="View\Show\delShow.aspx" />
     <Content Include="View\Show\ShowSearch.aspx" />
     <Content Include="View\Transaction\AddTransaction.aspx" />
     <Content Include="View\Transaction\SearchTransaction.aspx" />
@@ -192,6 +198,13 @@
     <Compile Include="View\Animal\AddAnimal.aspx.designer.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Animal\delAnimal.aspx.cs">
+      <DependentUpon>delAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Animal\delAnimal.aspx.designer.cs">
+      <DependentUpon>delAnimal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Animal\SearchAnimal.aspx.cs">
       <DependentUpon>SearchAnimal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,6 +218,13 @@
     </Compile>
     <Compile Include="View\Employee\AddEmployee.aspx.designer.cs">
       <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee\delEmp.aspx.cs">
+      <DependentUpon>delEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Employee\delEmp.aspx.designer.cs">
+      <DependentUpon>delEmp.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Employee\SearchEmployee.aspx.cs">
       <DependentUpon>SearchEmployee.aspx</DependentUpon>
@@ -220,6 +240,13 @@
     <Compile Include="View\Member\AddMember.aspx.designer.cs">
       <DependentUpon>AddMember.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Member\delMember.aspx.cs">
+      <DependentUpon>delMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\delMember.aspx.designer.cs">
+      <DependentUpon>delMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Member\SearchMem.aspx.cs">
       <DependentUpon>SearchMem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -233,6 +260,13 @@
     </Compile>
     <Compile Include="View\Product\AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Product\delProduct.aspx.cs">
+      <DependentUpon>delProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Product\delProduct.aspx.designer.cs">
+      <DependentUpon>delProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Product\SearchProduct.aspx.cs">
       <DependentUpon>SearchProduct.aspx</DependentUpon>
@@ -248,6 +282,13 @@
     <Compile Include="View\Shop\AddShop.aspx.designer.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Shop\delShop.aspx.cs">
+      <DependentUpon>delShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Shop\delShop.aspx.designer.cs">
+      <DependentUpon>delShop.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Shop\SearchShop.aspx.cs">
       <DependentUpon>SearchShop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +302,13 @@
     </Compile>
     <Compile Include="View\Show\AddShow.aspx.designer.cs">
       <DependentUpon>AddShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Show\delShow.aspx.cs">
+      <DependentUpon>delShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Show\delShow.aspx.designer.cs">
+      <DependentUpon>delShow.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Show\ShowSearch.aspx.cs">
       <DependentUpon>ShowSearch.aspx</DependentUpon>
