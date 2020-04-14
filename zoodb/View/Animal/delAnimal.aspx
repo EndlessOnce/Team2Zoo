@@ -114,7 +114,7 @@
         </p>
      
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="delAnimal">Delete</button>
+      <button type="submit" runat="server" id="delAnim">Delete</button>
             </span>
         </p>
 
