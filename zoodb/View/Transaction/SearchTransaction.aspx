@@ -182,9 +182,6 @@
                         </span>
                     </p>
 
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Directory</span></a>
-                    </p>
 
 
                 </div>

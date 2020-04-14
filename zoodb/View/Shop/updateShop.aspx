@@ -100,9 +100,6 @@
       <p>Please fill out the fields below to update shop information in the database</p>    <!-- edit this -->
       <hr>
 
-       <p class="text-right">
-            <a href=""><span class="glyphicon-pencil"> Delete Shop</span></a>
-        </p>
 
         <p>
             <strong>Shop Name:</strong>
@@ -135,9 +132,6 @@
             </span>                                                               <!-- edit this -->
         </p>
 
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
-        </p>
 
          
     </div>

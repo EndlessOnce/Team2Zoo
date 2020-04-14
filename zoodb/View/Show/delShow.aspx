@@ -112,9 +112,6 @@
                     <p>Please confirm if you wish to delete this show information from the database</p>
                     <hr>
 
-                    <p class="text-right">
-                        <a href=""><span class="glyphicon-pencil">Return to update page</span></a>
-                    </p>
 
                     <h3 style="text-align: center"><strong><u>Show Information</u></strong></h3>
                     <!--edit here also below this-->
@@ -141,10 +138,6 @@
                             <label id="labelShowUp" runat="server" style="color: red" hidden="hidden">Successfully Deleted Show</label>
                         </span>
                         <!--edit here also below this-->
-                    </p>
-
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
                     </p>
 
 

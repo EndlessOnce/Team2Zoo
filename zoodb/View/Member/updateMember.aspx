@@ -110,9 +110,6 @@
       <p>Please fill out the fields below to update member information in the database</p>    <!-- edit this -->
       <hr>
 
-       <p class="text-right">
-            <a href=""><span class="glyphicon-pencil">Delete Member</span></a>  <!-- edit this -->
-        </p>
 
         <p>
             <strong>Join Date:</strong>
@@ -159,10 +156,6 @@
         <p><span style ="margin-left: 5em;">
             <label id="LabelMem" runat="server" style="color: red" hidden="hidden">Sucesfully Updated Member</label>
             </span>
-        </p>
-
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
     </div>

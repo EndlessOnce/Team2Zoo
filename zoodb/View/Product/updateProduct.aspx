@@ -113,11 +113,6 @@
                     <!-- edit this -->
                     <hr>
 
-                    <p class="text-right">
-                        <a href=""><span class="glyphicon-pencil">Delete Product</span></a>
-                        <!-- edit this -->
-                    </p>
-
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
@@ -150,10 +145,6 @@
                         <span style="margin-left: 5em;">
                             <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Updated Product</label>
                         </span>
-                    </p>
-
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
                     </p>
 
                 </div>

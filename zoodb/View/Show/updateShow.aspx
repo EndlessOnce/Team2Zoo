@@ -110,9 +110,6 @@
       <p>Please fill out the fields below to update show information in the database</p>    <!-- edit this -->
       <hr>
 
-       <p class="text-right">
-            <a href=""><span class="glyphicon-pencil">Delete Show</span></a>
-        </p>
 
         <p>
             <span style ="margin-left: 2em;">
@@ -152,10 +149,6 @@
         <p><span style ="margin-left: 5em;">
             <label id="Label" runat="server" style="color: red" hidden="hidden">Successfully Updated Show</label>
             </span>
-        </p>
-         
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
         </p>
 
     </div>

@@ -268,10 +268,6 @@
                         </tr>
                     </table>
 
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
-                    </p>
-
 
                 </div>
                 <div class="col-sm-2 sidenav">

@@ -112,10 +112,6 @@
                     <p>Please confirm if you wish to delete this product information from the database</p>
                     <hr>
 
-                    <p class="text-right">
-                        <a href=""><span class="glyphicon-pencil">Return to update page</span></a>
-                    </p>
-
                     <h3 style="text-align: center"><strong><u>Product Information</u></strong></h3>
                     <!--edit here also below this-->
 
@@ -143,9 +139,6 @@
                         <!--edit here also below this-->
                     </p>
 
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
-                    </p>
 
 
                 </div>

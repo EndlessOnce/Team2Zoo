@@ -112,9 +112,6 @@
                     <p>Please fill out the fields below to update animal information in the database</p>
                     <hr>
 
-                    <p class="text-right">
-                        <a href=""><span class="glyphicon-pencil">Delete animal</span></a>
-                    </p>
 
 
                     <p>
@@ -167,9 +164,6 @@
                                 </span>
                             </p>
 
-                            <p class="text-left">
-                                <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
-                            </p>
                 </div>
                 <div class="col-sm-2 sidenav">
                 </div>

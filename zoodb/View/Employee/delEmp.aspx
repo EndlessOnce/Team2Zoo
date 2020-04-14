@@ -112,9 +112,6 @@
                     <p>Please confirm if you wish to delete this employee information from the database</p>
                     <hr>
 
-                    <p class="text-right">
-                        <a href=""><span class="glyphicon-pencil">Return to update page</span></a>
-                    </p>
 
                     <h3 style="text-align: center"><strong><u>Employee Information</u></strong></h3>
 
@@ -143,9 +140,6 @@
                         </span>
                     </p>
 
-                    <p class="text-left">
-                        <a href=""><span class="glyphicon-pencil">Return to Home Page</span></a>
-                    </p>
 
 
                 </div>
