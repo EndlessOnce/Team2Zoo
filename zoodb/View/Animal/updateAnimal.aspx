@@ -116,7 +116,7 @@
 
                     <p>
                         <strong>Animal Name:</strong>
-                        <input type="text" name="Name" value="@Name will go here" runat="server" id="Name" style="width: 200px" />
+                        <input type="text" name="Name" value="@Name will go here" runat="server" id="anName" style="width: 200px" />
                     </p>
 
                     <p>
@@ -143,7 +143,7 @@
                             <p>
                                 <span style="margin-left: 1em;">
                                     <strong>Diet:</strong>
-                                    <select id="diet" name="diet" runat="server">
+                                    <select id="diet1" name="diet" runat="server">
                                         <option value="Ominvore">Ominvore</option>
                                         <option value="Carnivore">Carnivore</option>
                                         <option value="Herbivore">Herbivore</option>
@@ -154,7 +154,8 @@
 
                             <p>
                                 <span style="margin-left: 1em;">
-                                    <button type="submit" runat="server" id="update_Animal">Update</button>
+       
+                                  <asp:Button ID="proUpdate" runat="server" Text="Update" OnClick="updatePro_Click" />
                                 </span>
                             </p>
 
