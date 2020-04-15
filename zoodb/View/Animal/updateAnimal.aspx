@@ -102,42 +102,43 @@
                     <p>Please fill out the fields below to update animal information in the database</p>
                     <hr>
 
-
+                
 
                     <p>
-                        <strong>Animal Name:</strong>
-                        <input type="text" name="Name" placeholder="@Name will go here" runat="server" id="anName" style="width: 200px" />
+                        <strong>Animal Name:</strong>                
+                     <asp:TextBox ID="amName" runat="server" Width="188px"></asp:TextBox>
+                       
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Health:</strong>
-                            <select id="SelectH" name="Health" runat="server">
-                                <option value="0">0-Unhealthy</option>
-                                <option value="1">1-Healthy</option>
+                            <asp:DropDownList ID="SelectH" runat="server">
+                                    <asp:ListItem Value="1">Healthy</asp:ListItem>
+                                    <asp:ListItem Value="0">Unhealthy</asp:ListItem>
+                                </asp:DropDownList>
 
-                            </select>
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Exhibit:</strong>
-                            <select id="Exhibit" name="exhibit" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <asp:DropDownList ID="ddExh" runat="server" CssClass="col-xs-offset-0">
+                                    <asp:ListItem>1</asp:ListItem>
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
+                                    <asp:ListItem>5</asp:ListItem>
+                                </asp:DropDownList>
 
                             <p>
                                 <span style="margin-left: 1em;">
                                     <strong>Diet:</strong>
-                                    <select id="diet1" name="diet" runat="server">
-                                        <option value="Ominvore">Ominvore</option>
-                                        <option value="Carnivore">Carnivore</option>
-                                        <option value="Herbivore">Herbivore</option>
-                                    </select>
+                                     <asp:DropDownList ID="ddDiet" runat="server">
+                                    <asp:ListItem>Carnivore</asp:ListItem>
+                                    <asp:ListItem>Herbivore</asp:ListItem>
+                                    <asp:ListItem>Omnivore</asp:ListItem>
+                                 </asp:DropDownList>
                                 </span>
                             </p>
 
