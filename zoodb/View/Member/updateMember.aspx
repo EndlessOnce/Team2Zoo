@@ -17,55 +17,45 @@
           margin-bottom: 0;
           border-radius: 0;
       }
-
       /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
       .row.content {
           height: 450px
       }
-
       /* Set gray background color and 100% height */
       .sidenav {
           padding-top: 20px;
           background-color: #f1f1f1;
           height: 100vh;
       }
-
       /* Set black background color, white text and some padding */
       footer {
           background-color: #555;
           color: white;
           padding: 15px;
       }
-
       p {
           text-align: center;
       }
-
       /* On small screens, set height to 'auto' for sidenav and grid */
       @media screen and (max-width: 767px) {
           .sidenav {
               height: auto;
               padding: 15px;
           }
-
           .row.content {
               height: auto;
           }
       }
-
       h1 {
           text-align: center;
           font-style: italic;
       }
-
           h1.inset {
               border-style: inset;
           }
-
       h3 {
           text-align: center;
       }
-
       p {
           text-align: center;
           padding-top: 10px;
@@ -90,7 +80,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li class ="active"><a href ="#">Update Entity</a></li>
+          <li class ="active"><a href ="updateMember.aspx">Update Entity</a></li>
           <li><a href="AddMember.aspx">Add Entity</a></li>
           <li><a href="delMember.aspx">Delete Entity</a></li>
           <li><a href="SearchMem.aspx">Search Entity</a></li>
@@ -113,47 +103,37 @@
 
         <p>
             <strong>Join Date:</strong>
+            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width:200px" id="showTime" />
         </p>
 
-        <div style="width:250px" margin: 0 auto CssClass="Label myCenter">
-            <asp:Calendar ID="joinDate" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="900px">
-                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
-                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
-                <OtherMonthDayStyle ForeColor="#999999" />
-                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
-                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
-                <TodayDayStyle BackColor="#CCCCCC" />
-            </asp:Calendar>
-        </div>
-
-
+    
         <p>
             <strong>First Name:</strong>
-            <input type="text" value="@fname" name="fName" runat ="server" id="fName" style="width:200px"/> 
+            <input type="text" placeholder="Enter First Name" name="fName" runat ="server" id="fName" style="width:200px"/> 
         </p>
      
 
         <p>
             <strong>Last Name:</strong>
-            <input type="text" value="@lname" name="lname" runat ="server" id="lname" style="width:200px"/> 
+            <input type="text" placeholder="Enter Last Name" name="lname" runat ="server" id="lname" style="width:200px"/> 
         </p>
 
         <p>
             <strong>Phone Number:</strong>
-            <input type="text" value="@pNum" name="pNum" runat ="server" id="pNum" style="width:200px"/> 
+            <input type="text" placeholder="Phone Num" name="pNum" runat ="server" id="pNum" style="width:200px"/> 
           </p>
 
         <p>
             <strong>Address:</strong>
-            <input type="text" value="@addy" name="addy" runat ="server" id="addy" style="width:200px"/> 
+            <input type="text" placeholder="Enter Address" name="addy" runat ="server" id="addy" style="width:200px"/> 
           </p>
 
 
         <p>
-      <button type="submit" runat="server" id="update_mem">Update Member</button> <!-- edit this -->
+            <asp:Button ID="Button1" runat="server" Text="Update Member" OnClick="upMem_Click" />
         </p>
 
-        <p><span style ="margin-left: 5em;">
+        <p><span style ="margin-left: 2em;">
             <label id="LabelMem" runat="server" style="color: red" hidden="hidden">Sucesfully Updated Member</label>
             </span>
         </p>

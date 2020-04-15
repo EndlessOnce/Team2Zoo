@@ -19,55 +19,45 @@
             margin-bottom: 0;
             border-radius: 0;
         }
-
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
             height: 450px
         }
-
         /* Set gray background color and 100% height */
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100vh;
         }
-
         /* Set black background color, white text and some padding */
         footer {
             background-color: #555;
             color: white;
             padding: 15px;
         }
-
         p {
             text-align: center;
         }
-
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
                 padding: 15px;
             }
-
             .row.content {
                 height: auto;
             }
         }
-
         h1 {
             text-align: center;
             font-style: italic;
         }
-
             h1.inset {
                 border-style: inset;
             }
-
         h3 {
             text-align: center;
         }
-
         p {
             text-align: center;
             padding-top: 10px;
@@ -112,42 +102,43 @@
                     <p>Please fill out the fields below to update animal information in the database</p>
                     <hr>
 
-
+                
 
                     <p>
-                        <strong>Animal Name:</strong>
-                        <input type="text" name="Name" value="@Name will go here" runat="server" id="anName" style="width: 200px" />
+                        <strong>Animal Name:</strong>                
+                     <asp:TextBox ID="amName" runat="server" Width="188px"></asp:TextBox>
+                       
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Health:</strong>
-                            <select id="SelectH" name="Health" runat="server">
-                                <option value="0">0-Unhealthy</option>
-                                <option value="1">1-Healthy</option>
+                            <asp:DropDownList ID="SelectH" runat="server">
+                                    <asp:ListItem Value="1">Healthy</asp:ListItem>
+                                    <asp:ListItem Value="0">Unhealthy</asp:ListItem>
+                                </asp:DropDownList>
 
-                            </select>
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Exhibit:</strong>
-                            <select id="Exhibit" name="exhibit" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <asp:DropDownList ID="ddExh" runat="server" CssClass="col-xs-offset-0">
+                                    <asp:ListItem>1</asp:ListItem>
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
+                                    <asp:ListItem>5</asp:ListItem>
+                                </asp:DropDownList>
 
                             <p>
                                 <span style="margin-left: 1em;">
                                     <strong>Diet:</strong>
-                                    <select id="diet1" name="diet" runat="server">
-                                        <option value="Ominvore">Ominvore</option>
-                                        <option value="Carnivore">Carnivore</option>
-                                        <option value="Herbivore">Herbivore</option>
-                                    </select>
+                                     <asp:DropDownList ID="ddDiet" runat="server">
+                                    <asp:ListItem>Carnivore</asp:ListItem>
+                                    <asp:ListItem>Herbivore</asp:ListItem>
+                                    <asp:ListItem>Omnivore</asp:ListItem>
+                                 </asp:DropDownList>
                                 </span>
                             </p>
 

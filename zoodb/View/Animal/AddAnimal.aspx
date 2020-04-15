@@ -268,6 +268,9 @@
                             <td>&nbsp;</td>
                         </tr>
                     </table>
+                     </div>
+                <div class="col-sm-2 sidenav">
+                </div>
                 </div>
             </div>
         </div>

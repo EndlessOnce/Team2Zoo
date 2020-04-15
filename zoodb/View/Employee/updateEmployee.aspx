@@ -116,7 +116,8 @@
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>First Name:</strong>
-                            <input type="text" value="@fname" name="f_name" runat="server" id="f_name" style="width: 200px" />
+                            <asp:TextBox ID="emFnam" runat="server" Width="191px"></asp:TextBox>
+                            
                         </span>
                     </p>
 
@@ -124,26 +125,44 @@
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Last Name:</strong>
-                            <input type="text" value="@lname" name="l_name" runat="server" id="l_name" style="width: 200px" />
+                            <asp:TextBox ID="emLnam" runat="server" Width="191px"></asp:TextBox>
                         </span>
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Exhibit ID:</strong>
-                            <select id="ExhibitID" name="exhibitID" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <asp:DropDownList ID="emExdd" runat="server" Width="184px" Height="23px">
+                                    <asp:ListItem Value="NULL">Not working at an Exhibit</asp:ListItem>
+                                    <asp:ListItem Value="1">Exhibit 1</asp:ListItem>
+                                    <asp:ListItem Value="2">Exhibit 2</asp:ListItem>
+                                    <asp:ListItem Value="3">Exhibit 3</asp:ListItem>
+                                    <asp:ListItem Value="4">Exhibit 4</asp:ListItem>
+                                    <asp:ListItem Value="5">Exhibit 5</asp:ListItem>
+                                </asp:DropDownList>
+                            
+                        </span>
+                    </p>
+                    
+                    <p>
+                        <span style="margin-left: 2em;">
+                            <strong>Job title:</strong>
+                            <asp:DropDownList ID="jbUpdd" runat="server" Width="184px" Height="23px">
+                                    <asp:ListItem Value="4">Cashier</asp:ListItem>
+                                    <asp:ListItem Value="2">Cleaner</asp:ListItem>
+                                    <asp:ListItem Value="6">Cook</asp:ListItem>
+                                    <asp:ListItem Value="1">Feeder</asp:ListItem>
+                                    <asp:ListItem Value="3">Presenter</asp:ListItem>
+                                    <asp:ListItem Value="5">Server</asp:ListItem>
+                                    <asp:ListItem Value="7">Stocker</asp:ListItem>
+                                </asp:DropDownList>
+                            
                         </span>
                     </p>
 
                     <p>
                         <span style="margin-left: 5em;">
-                            <button type="submit" runat="server" id="up_Emp">Update Employee</button>
+                   <asp:Button ID="emUpdate" runat="server" Text="Update" OnClick="updateEmp_Click" />
                         </span>
                     </p>
 

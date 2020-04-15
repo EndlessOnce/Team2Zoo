@@ -19,6 +19,15 @@ namespace zoodb
 
         protected void AnimalAdd_Click(object sender, EventArgs e)
         {
+
+           // string txt = TBName.Text;
+           // good Session["aniName"] = txt;  /*
+            Session["aniName"] = TBName.Text; //string
+            Session["aniHealth"] = DDLHealth.SelectedItem.Value.ToString();
+            Session["aniEx"] = DDLEx.SelectedItem.Value.ToString();
+            Session["aniDiet"] = DDLDiet.SelectedItem.Value.ToString();
+           // Response.Redirect("updateAnimal.aspx");    */
+
             try
             {
                 MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
@@ -33,6 +42,19 @@ namespace zoodb
                 com.Parameters.AddWithValue("Health", DDLHealth.SelectedValue);
                 com.Parameters.AddWithValue("Diet", DDLDiet.SelectedValue);
                 com.Parameters.AddWithValue("Sex", DDLSex.SelectedValue);
+               
+                //////test session vars
+              //  string aAnim = TBName.Text;
+              //  Session["aniName"] = aAnim;
+                /*
+                Session["aniName"] = TBName.Text; //string
+                Session["aniHealth"] = DDLHealth.SelectedValue;
+                Session["aniEx"] = DDLEx.SelectedValue;
+                Session["aniDiet"] = DDLDiet.SelectedValue;
+                Response.Redirect("updateAnimal.aspx");
+              
+                // Server.Transfer("updateAnimal.aspx");   */
+                //~/
 
                 com.ExecuteNonQuery();
                 LSuccess.Visible = true;

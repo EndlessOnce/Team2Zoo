@@ -97,6 +97,8 @@
 
         <div class="container-fluid text-center">
             <div class="row content">
+                <div class="col-sm-2 sidenav">
+                </div>
                 <div class="col-sm-8 text-left">
                     <h1>Search for an Animal</h1>
                     <p>Please fill out the fields below to enter search for an animal in the database</p>
@@ -162,7 +164,13 @@
 
 
                 </div>
+                <div class="col-sm-2 sidenav">
+                </div>
+
             </div>
+
+        </div>
+
         </div>
         </div>
 </div>
