@@ -19,55 +19,45 @@
             margin-bottom: 0;
             border-radius: 0;
         }
-
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
             height: 450px
         }
-
         /* Set gray background color and 100% height */
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100vh;
         }
-
         /* Set black background color, white text and some padding */
         footer {
             background-color: #555;
             color: white;
             padding: 15px;
         }
-
         p {
             text-align: center;
         }
-
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
                 padding: 15px;
             }
-
             .row.content {
                 height: auto;
             }
         }
-
         h1 {
             text-align: center;
             font-style: italic;
         }
-
             h1.inset {
                 border-style: inset;
             }
-
         h3 {
             text-align: center;
         }
-
         p {
             text-align: center;
             padding-top: 10px;
@@ -116,7 +106,7 @@
 
                     <p>
                         <strong>Animal Name:</strong>
-                        <input type="text" name="Name" value="@Name will go here" runat="server" id="Name" style="width: 200px" />
+                        <input type="text" name="Name" placeholder="@Name will go here" runat="server" id="anName" style="width: 200px" />
                     </p>
 
                     <p>
@@ -143,7 +133,7 @@
                             <p>
                                 <span style="margin-left: 1em;">
                                     <strong>Diet:</strong>
-                                    <select id="diet" name="diet" runat="server">
+                                    <select id="diet1" name="diet" runat="server">
                                         <option value="Ominvore">Ominvore</option>
                                         <option value="Carnivore">Carnivore</option>
                                         <option value="Herbivore">Herbivore</option>
@@ -154,7 +144,8 @@
 
                             <p>
                                 <span style="margin-left: 1em;">
-                                    <button type="submit" runat="server" id="update_Animal">Update</button>
+       
+                                  <asp:Button ID="proUpdate" runat="server" Text="Update" OnClick="updatePro_Click" />
                                 </span>
                             </p>
 

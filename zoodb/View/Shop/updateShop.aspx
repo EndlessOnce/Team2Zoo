@@ -103,7 +103,7 @@
 
         <p>
             <strong>Shop Name:</strong>
-            <input type="text" value="@ShopName" name="shopName" runat ="server" id="shopName" style="width:200px"/> 
+            <input type="text" placeholder="Shop Name" name="shopName" runat ="server" id="shopName" style="width:200px"/> 
         </p>
      
 
@@ -118,18 +118,21 @@
 
         <p>
             <strong>Shop Status:</strong>
-            <asp:CheckBox ID="CheckBoxO" runat="server" Text="Open" />
-            <asp:CheckBox ID="CheckBoxC" runat="server" Text="Closed" />
+            <select id = "ss" name="shop" runat="server">
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                </select>
+            
           </p>
 
         <p><span style ="margin-left: 1em;">
-      <button type="submit" runat="server" id="update_Shop">Update Shop</button>   <!-- edit this -->
+            <asp:Button ID="shopUp" runat="server" Text="Update Shop" OnClick="shopUp_Click" />
             </span>
         </p>
 
-        <p><span style ="margin-left: 5em;">
-            <label id="LabeShop" runat="server" style="color: red" hidden="hidden">Successfully Updated Shop</label>
-            </span>                                                               <!-- edit this -->
+        <p><span style ="margin-left: 2em;">
+            <label id="ssLab" runat="server" style="color: red" visible="false">Sucesfully Updated Shop</label>
+            </span>                                                             
         </p>
 
 
@@ -143,4 +146,3 @@
     </form>
 </body>
 </html>
-
