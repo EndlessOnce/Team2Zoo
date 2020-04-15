@@ -12,7 +12,25 @@ namespace zoodb
 {
     public partial class updateAnimal : System.Web.UI.Page
     {
-     
+        
+
+        // your logic here
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                
+                amName.Text = Session["aniName"].ToString();
+                SelectH.SelectedValue = Session["aniHealth"].ToString();
+                ddExh.SelectedValue = Session["aniEx"].ToString();
+                ddDiet.SelectedValue = Session["aniDiet"].ToString();
+                //string passedAnNm = 
+
+                //  amName.Text = passedAnNm;
+            }
+        }
+    
         protected void updatePro_Click(object sender, EventArgs e)
         {
             string animalName = String.Format("{0}", Request.Form["anName"]);
@@ -30,8 +48,10 @@ namespace zoodb
             comm.Parameters.AddWithValue("@exID", exhibit);
             comm.Parameters.AddWithValue("@Diet", diet);
 
+
+
             comm.ExecuteNonQuery();
-            labelAnimUp.Visible = true;
+         //   labelAnimUp.Visible = true;
             link.Close();
         }
 
