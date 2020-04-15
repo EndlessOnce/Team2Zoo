@@ -18,55 +18,45 @@
             margin-bottom: 0;
             border-radius: 0;
         }
-
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
             height: 450px
         }
-
         /* Set gray background color and 100% height */
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100vh;
         }
-
         /* Set black background color, white text and some padding */
         footer {
             background-color: #555;
             color: white;
             padding: 15px;
         }
-
         p {
             text-align: center;
         }
-
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
                 padding: 15px;
             }
-
             .row.content {
                 height: auto;
             }
         }
-
         h1 {
             text-align: center;
             font-style: italic;
         }
-
             h1.inset {
                 border-style: inset;
             }
-
         h3 {
             text-align: center;
         }
-
         p {
             text-align: center;
             padding-top: 10px;
@@ -91,7 +81,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Update Entity</a></li>
+                        <li class="active"><a href="updateProduct.aspx">Update Entity</a></li>
                         <li><a href="AddProduct.aspx">Add Entity</a></li>
                         <li><a href="delProduct.aspx">Delete Entity</a></li>
                         <li><a href="SearchProduct.aspx">Search Entity</a></li>
@@ -116,7 +106,7 @@
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
-                            <input type="text" value="@prodName" name="pro_name" runat="server" id="pro_name" style="width: 200px" />
+                            <input type="text" placeholder="Enter Product Name" name="pro_name" runat="server" id="pro_name" style="width: 200px" />
                         </span>
                     </p>
 
@@ -124,26 +114,27 @@
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Price:</strong>
-                            <input type="text" value="@price" name="pro_price" runat="server" id="pro_price" style="width: 200px" />
+                            <input type="text" placeholder="Enter Price" name="pro_price" runat="server" id="pro_price" style="width: 200px" />
                         </span>
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Quantity:</strong>
-                            <input type="text" value="@quantity" name="pro_quan" runat="server" id="pro_quan" />
+                            <input type="text" placeholder=" Enter quantity" name="pro_quan" runat="server" id="pro_quan" />
                         </span>
                     </p>
 
                     <p>
                         <span style="margin-left: 5em;">
-                            <button type="submit" runat="server" id="update_button">Update</button>
+                            <asp:Button ID="upPro" runat="server" Text="Update Product" OnClick="upPro_Click" />
+                        
                         </span>
                     </p>
 
                     <p>
-                        <span style="margin-left: 5em;">
-                            <label id="Label1" runat="server" style="color: red" hidden="hidden">Sucesfully Updated Product</label>
+                        <span style="margin-left: 2em;">
+                            <label id="Label1" runat="server" style="color: red" visible="false">Sucesfully Updated Product</label>
                         </span>
                     </p>
 
