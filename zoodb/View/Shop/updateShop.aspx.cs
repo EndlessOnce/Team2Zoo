@@ -28,7 +28,7 @@ namespace zoodb
             comm.Parameters.AddWithValue("@stat", status);
 
             comm.ExecuteNonQuery();
-            ssLab.Visible = true;
+            //ssLab.Visible = true;
             link.Close();
         }
     }
