@@ -20,15 +20,15 @@
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {
-        height: 450px
+        height: auto;
     }
 
     /* Set gray background color and 100% height */
-    .sidenav {
-        padding-top: 20px;
+    /*.sidenav {
+        padding-top: 10px;
         background-color: #f1f1f1;
         height: 100vh;
-    }
+    }*/
 
     /* Set black background color, white text and some padding */
     footer {
