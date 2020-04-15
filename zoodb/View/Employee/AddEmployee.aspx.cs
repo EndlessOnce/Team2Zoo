@@ -19,6 +19,12 @@ namespace zoodb
         }
         protected void AddEmpButton_Click(object sender, EventArgs e)
         {
+
+            /////sessions
+            Session["empFname"] = TBFName.Text; //string
+            Session["empLname"] = TBLName.Text;
+            Session["empJob"] = DDLJob.SelectedItem.Value.ToString();
+            Session["empExh"] = DDLExID.SelectedItem.Value.ToString();
             try
             {
                 MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
