@@ -24,13 +24,13 @@ namespace zoodb.View.Animal
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// delAnim control.
+        /// del_Animal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton delAnim;
+        protected global::System.Web.UI.HtmlControls.HtmlButton del_Animal;
 
         /// <summary>
         /// labelAnimUp control.

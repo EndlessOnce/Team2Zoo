@@ -46,7 +46,7 @@ namespace zoodb
                 cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
 
                 cmd.ExecuteNonQuery();
-                Response.Redirect("Login.aspx");
+                Response.Redirect("~/View/Login/LoginPage.aspx");
                 Response.Write("You have been Registered");
 
                 con.Close();

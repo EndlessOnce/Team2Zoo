@@ -75,14 +75,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">DB</a>
+                        <a class="navbar-brand" runat="server" href="~/View/Users/User">Home</a>
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
           <li class ="active"><a href ="#">Update Entity</a></li>
-          <li><a href="#">Add Entity</a></li>
-          <li><a href="#">Delete Entity</a></li>
-          <li><a href="#">Search Entity</a></li>
+          <li><a href="AddShop.aspx">Add Entity</a></li>
+          <li><a href="delShop.aspx">Delete Entity</a></li>
+          <li><a href="SearchShop.aspx">Search Entity</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       </ul>
@@ -99,9 +100,6 @@
       <p>Please fill out the fields below to update shop information in the database</p>    <!-- edit this -->
       <hr>
 
-       <p class="text-right">
-            <a href=""><span class="glyphicon-pencil"> Delete Shop</span></a>
-        </p>
 
         <p>
             <strong>Shop Name:</strong>
@@ -134,9 +132,6 @@
             </span>                                                               <!-- edit this -->
         </p>
 
-        <p class="text-left">
-            <a href=""><span class="glyphicon-pencil"> Return to Home Page</span></a>
-        </p>
 
          
     </div>

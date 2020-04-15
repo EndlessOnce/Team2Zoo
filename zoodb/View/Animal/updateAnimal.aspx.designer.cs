@@ -69,7 +69,7 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlSelect diet;
 
         /// <summary>
-        /// update_Animal control.
+        /// updateAnimal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
