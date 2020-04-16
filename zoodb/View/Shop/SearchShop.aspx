@@ -120,16 +120,18 @@
 
                     <p>
                         <strong>Shop Type:</strong>
-                        <select id="shopT" name="shop" runat="server">
-                            <option value="Dining">Dining</option>
-                            <option value="Gift Shop">Gift Shop</option>
-                            <option value="Admissions">Admissions</option>
-                        </select>
-                        <asp:Button ID="BSType" runat="server" OnClick="BSType_Click" Text="Search" />
-                    </p>
+                        <asp:DropDownList ID="DDLType" runat="server" DataSourceID="SqlDataSource1" DataTextField="Shop_Type" DataValueField="Shop_Type" OnSelectedIndexChanged="DDLType_SelectedIndexChanged" AutoPostBack="true">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT DISTINCT Shop_Type FROM shop"></asp:SqlDataSource>
+&nbsp;</p>
 
                     <p>
-                        &nbsp;</p>
+                        <strong>Shop Status:</strong><asp:DropDownList ID="DDLStatus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLStatus_SelectedIndexChanged">
+                            <asp:ListItem>Select Shop Status</asp:ListItem>
+                            <asp:ListItem>Open</asp:ListItem>
+                            <asp:ListItem>Closed</asp:ListItem>
+                        </asp:DropDownList>
+                    </p>
 
                     <p>
                         <table id="shopTable" border="1" width="100%" hidden="hidden">

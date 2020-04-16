@@ -42,22 +42,31 @@ namespace zoodb
         protected global::System.Web.UI.WebControls.Button BSName;
 
         /// <summary>
-        /// shopT control.
+        /// DDLType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect shopT;
+        protected global::System.Web.UI.WebControls.DropDownList DDLType;
 
         /// <summary>
-        /// BSType control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BSType;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+        /// <summary>
+        /// DDLStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDLStatus;
 
         /// <summary>
         /// GridView1 control.
