@@ -118,9 +118,10 @@
 
 
                     <p>
-                        <strong>Date of Show:</strong>
-                        <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width: 200px" id="showTime" />
-                        <button type="submit" runat="server" id="date_show">Search</button>
+                        <span style="margin-left: 2em;">
+                            <strong>Date of Show:</strong>
+                            <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width: 200px" id="datetime" />
+                            <asp:Button ID="DateofShow" runat="server" Text="Search" OnClick="DateofShow_Click" />
                     </p>
 
 
@@ -129,11 +130,25 @@
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
                             <input type="text" placeholder="Enter Show Name" name="ss_name" runat="server" style="width: 200px" id="ss_name" />
-                        <button type="submit" runat="server" id="search_show">Search</button>
+                            <asp:Button ID="ShowName" runat="server" Text="Search" OnClick="ShowName_Click" />
+                        </span>
+                    </p>
+                    <p>
+                        <span style="margin-left: 2em;">
+                            <strong>Location:</strong>
+                            <input type="text" placeholder="Enter Location" name="location" runat="server" style="width: 200px" id="location" />
+                            <asp:Button ID="LocationButton" runat="server" Text="Search" OnClick="LocationButton_Click" />
                         </span>
                     </p>
 
                     <p>
+                    </p>
+
+                      <p>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                        </center>
                     </p>
 
                     <table id="showTable" border="1" width="100%" hidden="hidden">
