@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbq83pweu5kpypDataSet" targetNamespace="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns:mstns="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="zoodb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="zoodb (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.zoodb.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Employee_and_jobTableAdapter" GeneratorDataComponentClassName="Employee_and_jobTableAdapter" Name="Employee_and_job" UserDataComponentName="Employee_and_jobTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectName="dbq83pweu5kpyp.Employee_and_job" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Employee_ID`, `First Name`, `Last Name`, `Job_Name` FROM `dbq83pweu5kpyp`.`Employee_and_job`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Employee_ID" DataSetColumn="Employee_ID" />
+              <Mapping SourceColumn="First Name" DataSetColumn="First Name" />
+              <Mapping SourceColumn="Last Name" DataSetColumn="Last Name" />
+              <Mapping SourceColumn="Job_Name" DataSetColumn="Job_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Employee_by_exhibitTableAdapter" GeneratorDataComponentClassName="Employee_by_exhibitTableAdapter" Name="Employee_by_exhibit" UserDataComponentName="Employee_by_exhibitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectName="dbq83pweu5kpyp.Employee_by_exhibit" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `No of employees`, `Exhibit_ID` FROM `dbq83pweu5kpyp`.`Employee_by_exhibit`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="No of employees" DataSetColumn="No of employees" />
+              <Mapping SourceColumn="Exhibit_ID" DataSetColumn="Exhibit_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Employee_by_shopTableAdapter" GeneratorDataComponentClassName="Employee_by_shopTableAdapter" Name="Employee_by_shop" UserDataComponentName="Employee_by_shopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectName="dbq83pweu5kpyp.Employee_by_shop" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `No of employees`, `Shop_ID` FROM `dbq83pweu5kpyp`.`Employee_by_shop`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="No of employees" DataSetColumn="No of employees" />
+              <Mapping SourceColumn="Shop_ID" DataSetColumn="Shop_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbq83pweu5kpypDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbq83pweu5kpypDataSet" msprop:Generator_UserDSName="dbq83pweu5kpypDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Employee_and_job" msprop:Generator_TableClassName="Employee_and_jobDataTable" msprop:Generator_TableVarName="tableEmployee_and_job" msprop:Generator_TablePropName="Employee_and_job" msprop:Generator_RowDeletingName="Employee_and_jobRowDeleting" msprop:Generator_RowChangingName="Employee_and_jobRowChanging" msprop:Generator_RowEvHandlerName="Employee_and_jobRowChangeEventHandler" msprop:Generator_RowDeletedName="Employee_and_jobRowDeleted" msprop:Generator_UserTableName="Employee_and_job" msprop:Generator_RowChangedName="Employee_and_jobRowChanged" msprop:Generator_RowEvArgName="Employee_and_jobRowChangeEvent" msprop:Generator_RowClassName="Employee_and_jobRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Employee_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" msprop:Generator_UserColumnName="Employee_ID" type="xs:short" />
+              <xs:element name="First_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnFirst_Name" msprop:Generator_ColumnPropNameInRow="First_Name" msprop:Generator_ColumnPropNameInTable="First_NameColumn" msprop:Generator_UserColumnName="First Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Last_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnLast_Name" msprop:Generator_ColumnPropNameInRow="Last_Name" msprop:Generator_ColumnPropNameInTable="Last_NameColumn" msprop:Generator_UserColumnName="Last Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Job_Name" msprop:Generator_ColumnVarNameInTable="columnJob_Name" msprop:Generator_ColumnPropNameInRow="Job_Name" msprop:Generator_ColumnPropNameInTable="Job_NameColumn" msprop:Generator_UserColumnName="Job_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Employee_by_exhibit" msprop:Generator_TableClassName="Employee_by_exhibitDataTable" msprop:Generator_TableVarName="tableEmployee_by_exhibit" msprop:Generator_TablePropName="Employee_by_exhibit" msprop:Generator_RowDeletingName="Employee_by_exhibitRowDeleting" msprop:Generator_RowChangingName="Employee_by_exhibitRowChanging" msprop:Generator_RowEvHandlerName="Employee_by_exhibitRowChangeEventHandler" msprop:Generator_RowDeletedName="Employee_by_exhibitRowDeleted" msprop:Generator_UserTableName="Employee_by_exhibit" msprop:Generator_RowChangedName="Employee_by_exhibitRowChanged" msprop:Generator_RowEvArgName="Employee_by_exhibitRowChangeEvent" msprop:Generator_RowClassName="Employee_by_exhibitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No_x0020_of_x0020_employees" msprop:Generator_ColumnVarNameInTable="columnNo_of_employees" msprop:Generator_ColumnPropNameInRow="No_of_employees" msprop:Generator_ColumnPropNameInTable="No_of_employeesColumn" msprop:Generator_UserColumnName="No of employees" type="xs:long" />
+              <xs:element name="Exhibit_ID" msprop:Generator_ColumnVarNameInTable="columnExhibit_ID" msprop:Generator_ColumnPropNameInRow="Exhibit_ID" msprop:Generator_ColumnPropNameInTable="Exhibit_IDColumn" msprop:Generator_UserColumnName="Exhibit_ID" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Employee_by_shop" msprop:Generator_TableClassName="Employee_by_shopDataTable" msprop:Generator_TableVarName="tableEmployee_by_shop" msprop:Generator_TablePropName="Employee_by_shop" msprop:Generator_RowDeletingName="Employee_by_shopRowDeleting" msprop:Generator_RowChangingName="Employee_by_shopRowChanging" msprop:Generator_RowEvHandlerName="Employee_by_shopRowChangeEventHandler" msprop:Generator_RowDeletedName="Employee_by_shopRowDeleted" msprop:Generator_UserTableName="Employee_by_shop" msprop:Generator_RowChangedName="Employee_by_shopRowChanged" msprop:Generator_RowEvArgName="Employee_by_shopRowChangeEvent" msprop:Generator_RowClassName="Employee_by_shopRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No_x0020_of_x0020_employees" msprop:Generator_ColumnVarNameInTable="columnNo_of_employees" msprop:Generator_ColumnPropNameInRow="No_of_employees" msprop:Generator_ColumnPropNameInTable="No_of_employeesColumn" msprop:Generator_UserColumnName="No of employees" type="xs:long" />
+              <xs:element name="Shop_ID" msprop:Generator_ColumnVarNameInTable="columnShop_ID" msprop:Generator_ColumnPropNameInRow="Shop_ID" msprop:Generator_ColumnPropNameInTable="Shop_IDColumn" msprop:Generator_UserColumnName="Shop_ID" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Employee_and_job" />
+      <xs:field xpath="mstns:Employee_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
