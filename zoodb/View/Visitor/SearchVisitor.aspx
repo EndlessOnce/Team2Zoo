@@ -130,13 +130,12 @@
 
 
                     <p>
-                        <strong>Member:</strong>
-                        <select id="aMem" runat="server">
-                            <option value="0">Yes</option>
-                            <option value="1">No</option>
-
-                        </select>
-                        <asp:Button ID="MemberButton" runat="server" Text="Search" OnClick="MemberButton_Click" />
+                        <strong>Member:</strong>&nbsp;
+                        <asp:DropDownList ID="DDLMem" runat="server" OnSelectedIndexChanged="DDLMem_SelectedIndexChanged" AutoPostBack="true">
+                            <asp:ListItem>Select if Member</asp:ListItem>
+                            <asp:ListItem Value="0">No</asp:ListItem>
+                            <asp:ListItem Value="1">Yes</asp:ListItem>
+                        </asp:DropDownList>
 
                     </p>
 
