@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RevenueDataSet" targetNamespace="http://tempuri.org/RevenueDataSet.xsd" xmlns:mstns="http://tempuri.org/RevenueDataSet.xsd" xmlns="http://tempuri.org/RevenueDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="zoodb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="zoodb (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.zoodb.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Revenue_by_shopTableAdapter" GeneratorDataComponentClassName="Revenue_by_shopTableAdapter" Name="Revenue_by_shop" UserDataComponentName="Revenue_by_shopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Revenue`, `Shop_ID` FROM `dbq83pweu5kpyp`.`Revenue_by_shop`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Revenue" DataSetColumn="Revenue" />
+              <Mapping SourceColumn="Shop_ID" DataSetColumn="Shop_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RevenueDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RevenueDataSet" msprop:Generator_UserDSName="RevenueDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Revenue_by_shop" msprop:Generator_TableClassName="Revenue_by_shopDataTable" msprop:Generator_TableVarName="tableRevenue_by_shop" msprop:Generator_TablePropName="Revenue_by_shop" msprop:Generator_RowDeletingName="Revenue_by_shopRowDeleting" msprop:Generator_RowChangingName="Revenue_by_shopRowChanging" msprop:Generator_RowEvHandlerName="Revenue_by_shopRowChangeEventHandler" msprop:Generator_RowDeletedName="Revenue_by_shopRowDeleted" msprop:Generator_UserTableName="Revenue_by_shop" msprop:Generator_RowChangedName="Revenue_by_shopRowChanged" msprop:Generator_RowEvArgName="Revenue_by_shopRowChangeEvent" msprop:Generator_RowClassName="Revenue_by_shopRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Revenue" msprop:Generator_ColumnVarNameInTable="columnRevenue" msprop:Generator_ColumnPropNameInRow="Revenue" msprop:Generator_ColumnPropNameInTable="RevenueColumn" msprop:Generator_UserColumnName="Revenue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Shop_ID" msprop:Generator_ColumnVarNameInTable="columnShop_ID" msprop:Generator_ColumnPropNameInRow="Shop_ID" msprop:Generator_ColumnPropNameInTable="Shop_IDColumn" msprop:Generator_UserColumnName="Shop_ID" type="xs:byte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
