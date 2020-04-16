@@ -95,5 +95,21 @@ namespace zoodb
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
+
+        protected void DDLMem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+            string is_member = String.Format("{0}", Request.Form["DDLMem"]);
+
+            string searchQuery = "select * from visitor where is_member like @is_member";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@is_member", $"%{is_member}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
     }
 }
