@@ -142,9 +142,9 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="SearchEmployee.aspx">Search Employee</a></li>
-                        <li class="active"><a href="#">Add Emp</a></li>
-                        <li><a href="delEmp.aspx">Delete Emp</a></li>
-                        <li><a href="updateEmployee.aspx">Update Emp</a></li>
+                        <li class="active"><a href="#">Add Employee</a></li>
+                        <li><a href="delEmp.aspx">Delete Employee</a></li>
+                        <li><a href="updateEmployee.aspx">Update Employee</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>
