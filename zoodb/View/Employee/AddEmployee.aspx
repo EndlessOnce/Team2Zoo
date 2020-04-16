@@ -141,7 +141,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="SearchEmployee.aspx">Search Emp</a></li>
+                        <li><a href="SearchEmployee.aspx">Search Employee</a></li>
                         <li class="active"><a href="#">Add Emp</a></li>
                         <li><a href="delEmp.aspx">Delete Emp</a></li>
                         <li><a href="updateEmployee.aspx">Update Emp</a></li>

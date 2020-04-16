@@ -120,6 +120,7 @@
                     <p>
                         <strong>Date of Show:</strong>
                         <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width: 200px" id="showTime" />
+                        <button type="submit" runat="server" id="date_show">Search</button>
                     </p>
 
 
@@ -128,11 +129,11 @@
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
                             <input type="text" placeholder="Enter Show Name" name="ss_name" runat="server" style="width: 200px" id="ss_name" />
+                        <button type="submit" runat="server" id="search_show">Search</button>
                         </span>
                     </p>
 
                     <p>
-                        <button type="submit" runat="server" id="search_show">Search</button>
                     </p>
 
                     <table id="showTable" border="1" width="100%" hidden="hidden">
