@@ -144,6 +144,7 @@
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
+    <Content Include="View\Reports\RevenueReport.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -182,6 +183,17 @@
     </None>
     <Content Include="AnimalExhibitDataSet.xss">
       <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="RevenueDataSet.xsc">
+      <DependentUpon>RevenueDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="RevenueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RevenueDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="RevenueDataSet.xss">
+      <DependentUpon>RevenueDataSet.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -230,6 +242,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RevenueDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevenueDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Animal\AddAnimal.aspx.cs">
@@ -329,6 +346,13 @@
     </Compile>
     <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
       <DependentUpon>DefaultReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\RevenueReport.aspx.cs">
+      <DependentUpon>RevenueReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\RevenueReport.aspx.designer.cs">
+      <DependentUpon>RevenueReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
@@ -507,6 +531,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Reports\AnimalExhibitReport.rdlc" />
+    <EmbeddedResource Include="View\Reports\RevenueReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
