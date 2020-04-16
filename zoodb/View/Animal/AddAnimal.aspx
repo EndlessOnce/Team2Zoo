@@ -152,7 +152,7 @@
                         <tr>
                             <td class="auto-style1"><strong>Animal Name:</strong></td>
                             <td class="auto-style3">
-                                <asp:TextBox ID="TBName" runat="server" Width="188px"></asp:TextBox>
+                                <asp:TextBox ID="TBName" runat="server" placeholder="Animal Name" Width="188px"></asp:TextBox>
                             </td>
                             <td class="text-left">
                                 <asp:RequiredFieldValidator ID="RequiredFildValidator8" runat="server" ErrorMessage="Name is required!" ForeColor="Red" ControlToValidate="TBName"></asp:RequiredFieldValidator>
@@ -162,7 +162,7 @@
                         <tr>
                             <td class="auto-style1"><strong>Species:</strong></td>
                             <td class="auto-style3">
-                                <asp:TextBox ID="TBSpecies" runat="server" Width="189px"></asp:TextBox>
+                                <asp:TextBox ID="TBSpecies" runat="server" placeholder="Species Name" Width="189px"></asp:TextBox>
                             </td>
                             <td class="text-left">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Species name is Required!" ForeColor="Red" ControlToValidate="TBSpecies"></asp:RequiredFieldValidator>
@@ -172,7 +172,7 @@
                         <tr>
                             <td class="auto-style1"><strong>Common Name:</strong></td>
                             <td class="auto-style3">
-                                <asp:TextBox ID="TBComN" runat="server" Width="190px"></asp:TextBox>
+                                <asp:TextBox ID="TBComN" runat="server" placeholder="Common Name" Width="190px"></asp:TextBox>
                             </td>
                             <td class="text-left">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Common Name is required!" ForeColor="Red" ControlToValidate="TBComN"></asp:RequiredFieldValidator>
