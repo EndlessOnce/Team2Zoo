@@ -90,7 +90,7 @@
                     <a class="navbar-brand" runat="server" href="~/View/Employee/AddEmployee.aspx">Employee</a>
                     <a class="navbar-brand" runat="server" href="~/View/Shop/AddShop.aspx">Shop</a>
                     <a class="navbar-brand" runat="server" href="~/View/Product/AddProduct.aspx">Product</a>
-                    <a class="navbar-brand" runat="server" href="~/View/Animal/AddAnimal.aspx">Member</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Member/AddMember.aspx">Member</a>
                     <a class="navbar-brand" runat="server" href="~/View/Show/AddShow.aspx">Show</a>
                     <a class="navbar-brand" runat="server" href="~/View/Transaction/AddTransaction.aspx">Transaction</a>
                     <a class="navbar-brand" runat="server" href="~/View/Visitor/AddVisitor.aspx">Visitor</a>
