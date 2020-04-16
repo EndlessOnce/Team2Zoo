@@ -45,7 +45,7 @@ namespace zoodb
             comm.Parameters.AddWithValue("@diet", diet);
 
             comm.ExecuteNonQuery();
-            //labelAnimUp.Visible = true;
+            labelAnimUp.Visible = true;
             link.Close();
         }
 
