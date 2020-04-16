@@ -2,6 +2,9 @@
 
 <!DOCTYPE html>
 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css?parameter=1">
@@ -14,90 +17,80 @@
             margin-bottom: 0;
             border-radius: 0;
         }
-
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
             height: 450px
         }
-
         /* Set gray background color and 100% height */
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
             height: 100vh;
         }
-
         /* Set black background color, white text and some padding */
         footer {
             background-color: #555;
             color: white;
             padding: 15px;
         }
-
         p {
             text-align: center;
         }
-
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
                 padding: 15px;
             }
-
             .row.content {
                 height: auto;
             }
         }
-
         h1 {
             text-align: center;
             font-style: italic;
-        }
 
+        }
             h1.inset {
                 border-style: inset;
             }
-
         h3 {
             text-align: center;
         }
-
         p {
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
         }
-
+        .center{
+          display:block;
+          margin-left: auto;
+          margin-right:auto;
+ 
+        }
+   
         .auto-style1 {
             text-align: center;
         }
-
         .auto-style2 {
             margin: auto;
         }
-
         .auto-style3 {
             text-align: right;
             width: 35%;
         }
-
         .auto-style4 {
             margin: auto;
         }
-
         .auto-style5 {
             margin: auto;
         }
-
         .auto-style6 {
             margin: auto;
         }
-
         .auto-style7 {
             text-align: center;
         }
-
         .auto-style8 {
             text-align: center;
             font-size: 40pt;
@@ -166,5 +159,11 @@
             </tr>
         </table>
     </form>
+   <h4>
+       <img src="fox.png" alt="animal" class="center" >
+
+   </h4>
+  
 </body>
 </html>
+    
