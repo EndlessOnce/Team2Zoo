@@ -94,6 +94,7 @@
                     <a class="navbar-brand" runat="server" href="~/View/Show/AddShow.aspx">Show</a>
                     <a class="navbar-brand" runat="server" href="~/View/Transaction/AddTransaction.aspx">Transaction</a>
                     <a class="navbar-brand" runat="server" href="~/View/Visitor/AddVisitor.aspx">Visitor</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Reports/AnimalExhibitReport.aspx">Reports</a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
