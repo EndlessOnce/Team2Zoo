@@ -462,7 +462,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Animal Number</Value>
+                                  <Value>Number of Animals</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
