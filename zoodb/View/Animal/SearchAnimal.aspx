@@ -108,9 +108,27 @@
                     <br />
 
 
-                    <center>
+                   <p>
+                    <strong>Animal Name:</strong>
                     &nbsp;<asp:TextBox ID="TxtSearch" runat="server" placeholder="Name of Animal"></asp:TextBox>
                     <asp:Button ID="BSearch" runat="server" Text="Search" OnClick="BSearch_Click" />
+                   </p> 
+
+                    <p>
+
+                    <strong>Common Name:</strong>
+                    &nbsp;<asp:TextBox ID="TextCommon" runat="server" placeholder="Common Name"></asp:TextBox>
+                        <asp:Button ID="CommonName" runat="server" OnClick="CommonName_Click" Text="Search" />
+                    </p>
+                    <p>
+                    <strong>Species Name:</strong>
+                    &nbsp;<asp:TextBox ID="TextSpecies" runat="server" placeholder="Species Name"></asp:TextBox>
+
+                        <asp:Button ID="SpeciesName" runat="server" OnClick="SpeciesName_Click" Text="Search" />
+
+                    </p>
+
+                    <center>
                     <hr />
                     <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
 

@@ -116,6 +116,7 @@
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
                             <input type="text" placeholder="Enter Product Name" name="pros_name" runat="server" id="pros_name" style="width: 200px" />
+                        <asp:Button ID="NameButton" runat="server" Text="Search" OnClick="NameButton_Click" />
                         </span>
                     </p>
 
@@ -124,14 +125,16 @@
                         <span style="margin-left: 2em;">
                             <strong>Price:</strong>
                             <input type="text" placeholder="Enter Product Price" name="pros_price" runat="server" id="pros_price" style="width: 200px" />
+                        <asp:Button ID="PriceButton" runat="server" Text="Search" OnClick="PriceButton_Click" />
                         </span>
                     </p>
 
 
                     <p>
-                        <span style="margin-left: 5em;">
-                            <button type="submit" runat="server" id="search_pro">Search</button>
-                        </span>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                        </center>
                     </p>
 
                     <table id="proTable" border="1" width="100%" hidden="hidden">
