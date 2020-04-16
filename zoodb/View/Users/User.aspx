@@ -111,11 +111,11 @@
                 </div>--%>
                 <div>
                     <h1>Welcome to the Zoo</h1>
-                    <p>Please fill out the fields below to enter a new product into the database</p>
+                    <p>Please refer to the different tabs for activities.</p>
                     <hr>
 
 
-                    <asp:Label ID="Welcome" runat="server"></asp:Label>
+                   Welcome back user:<asp:Label ID="Welcome" runat="server"></asp:Label>
 
 
                     <p>
