@@ -133,6 +133,7 @@
                         <li class="active"><a href="#">Add Animal</a></li>
                         <li><a href="delAnimal.aspx">Delete Animal</a></li>
                         <li><a href="updateAnimal.aspx">Update Animal</a></li>
+                        <li><a href="#">Reports</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>
