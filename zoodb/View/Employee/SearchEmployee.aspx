@@ -115,6 +115,7 @@
                         <span style="margin-left: 2em;">
                             <strong>First Name:</strong>
                             <input type="text" placeholder="Employee First Name" name="sf_name" runat="server" id="sf_name" style="width: 200px" />
+                        <asp:Button ID="BFName" runat="server" Text="Search" OnClick="BFName_Click" />
                         </span>
                     </p>
 
@@ -123,26 +124,18 @@
                         <span style="margin-left: 2em;">
                             <strong>Last Name:</strong>
                             <input type="text" placeholder="Employee Last Name" name="sl_name" runat="server" id="sl_name" style="width: 200px" />
+                        <asp:Button ID="BLName" runat="server" Text="Search" OnClick="BLName_Click" />
                         </span>
                     </p>
 
                     <p>
-                        <span style="margin-left: 2em;">
-                            <strong>Exhibit ID:</strong>
-                            <select id="ExhibitID" name="exhibitID" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </span>
-                    </p>
+                        &nbsp;</p>
 
                     <p>
-                        <span style="margin-left: 5em;">
-                            <button type="submit" runat="server" id="search_Emp">Search</button>
-                        </span>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                        </center>
                     </p>
 
                     <p>

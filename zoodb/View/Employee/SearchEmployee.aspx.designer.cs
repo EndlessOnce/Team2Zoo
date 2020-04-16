@@ -33,6 +33,15 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText sf_name;
 
         /// <summary>
+        /// BFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BFName;
+
+        /// <summary>
         /// sl_name control.
         /// </summary>
         /// <remarks>
@@ -42,21 +51,21 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText sl_name;
 
         /// <summary>
-        /// ExhibitID control.
+        /// BLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect ExhibitID;
+        protected global::System.Web.UI.WebControls.Button BLName;
 
         /// <summary>
-        /// search_Emp control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton search_Emp;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
