@@ -144,7 +144,6 @@
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
-    <Content Include="View\Reports\MembershipReport.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -183,17 +182,6 @@
     </None>
     <Content Include="AnimalExhibitDataSet.xss">
       <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
-    </Content>
-    <Content Include="MembershipDataSet.xsc">
-      <DependentUpon>MembershipDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="MembershipDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MembershipDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="MembershipDataSet.xss">
-      <DependentUpon>MembershipDataSet.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -242,16 +230,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MembershipDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MembershipDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ShopDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShopDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Animal\AddAnimal.aspx.cs">
@@ -351,13 +329,6 @@
     </Compile>
     <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
       <DependentUpon>DefaultReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\Reports\MembershipReport.aspx.cs">
-      <DependentUpon>MembershipReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Reports\MembershipReport.aspx.designer.cs">
-      <DependentUpon>MembershipReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
@@ -527,17 +498,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <Content Include="ShopDataSet.xsc">
-      <DependentUpon>ShopDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="ShopDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ShopDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <Content Include="ShopDataSet.xss">
-      <DependentUpon>ShopDataSet.xsd</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -547,7 +507,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Reports\AnimalExhibitReport.rdlc" />
-    <EmbeddedResource Include="View\Reports\MembershipReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
