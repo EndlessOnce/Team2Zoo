@@ -166,11 +166,10 @@
                         </span>
                     </p>
 
-                    <p>
-                        <span style="margin-left: 5em;">
-                            <label id="Label1" runat="server" style="color: red" hidden="hidden">Successfully Updated Employee</label>
-                        </span>
-                    </p>
+                      <p><span style ="margin-left: 2em;">
+            <label id="ueLabel" runat="server" style="color: red" visible="false">Successfully Updated Employee</label>
+            </span>
+        </p>
 
                 </div>
                 <div class="col-sm-2 sidenav">

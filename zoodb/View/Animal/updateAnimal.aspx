@@ -152,7 +152,7 @@
 
                             <p>
                                 <span style="margin-left: 5em;">
-                                    <label id="labelAnimUp" runat="server" style="color: red" hidden="hidden">Successfully Updated Animal</label>
+                                    <label id="labelAnimUp" runat="server" style="color: red" visible="true">Successfully Updated Animal</label>
                                 </span>
                             </p>
 
