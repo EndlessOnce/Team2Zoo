@@ -129,7 +129,10 @@
                     </p>
 
                     <p>
-                        &nbsp;</p>
+                        <strong>Job ID:</strong><asp:DropDownList ID="DDLJobID" runat="server" DataSourceID="SqlDataSource1" DataTextField="Job_ID" AutoPostBack="true" DataValueField="Job_ID" OnSelectedIndexChanged="DDLJobID_SelectedIndexChanged">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Job_ID FROM job ORDER BY Job_ID"></asp:SqlDataSource>
+                    </p>
 
                     <p>
                         <center>
