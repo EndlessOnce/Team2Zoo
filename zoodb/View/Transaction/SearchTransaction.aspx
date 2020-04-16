@@ -117,63 +117,45 @@
                     <p>
                         <strong>Transaction Date:</strong>
                         <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width: 200px" id="showTime" />
+                        <asp:Button ID="BTDate" runat="server" OnClick="BTDate_Click" Text="Search" />
                     </p>
 
 
 
                     <p>
                         <span style="margin-left: 2em;">
-                            <strong>Shop ID:</strong>
-                            <select id="sID" name="sID" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
+                            <strong>Shop Name:</strong>
+                        <asp:DropDownList ID="DDLShopN" runat="server" DataSourceID="SqlDataSource1" DataTextField="Shop_Name" DataValueField="Shop_Name">
+                        </asp:DropDownList>
+                        <span>
+                        <asp:Button ID="BSID" runat="server" OnClick="BSID_Click" Text="Search" Height="25px" Width="68px" />
+                        </span>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Shop_Name FROM shop"></asp:SqlDataSource>
+&nbsp;</span></p>
+
+                    <p>
+                        <span style="margin-left: 2em;">
+                            <strong>Product ID:</strong>&nbsp;
+                        <asp:TextBox ID="ProID" runat="server" placeholder="PID" Width="34px"></asp:TextBox>
+                        <asp:Button ID="BPID" runat="server" OnClick="BPID_Click" Text="Search" />
                         </span>
                     </p>
 
                     <p>
                         <span style="margin-left: 2em;">
-                            <strong>Product ID:</strong>
-                            <select id="pID" name="pID" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
-                        </span>
-                    </p>
-
-                    <p>
-                        <span style="margin-left: 2em;">
-                            <strong>Visitor ID:</strong>
-                            <select id="visId" name="visID" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
+                            <strong>Visitor ID:</strong>&nbsp;
+                        <asp:TextBox ID="TBVis" runat="server" placeholder="Visitor ID"  Width="64px"></asp:TextBox>
+                        <asp:Button ID="BVID" runat="server" OnClick="BVID_Click" Text="Search" />
                         </span>
                     </p>
 
 
                     <p>
-                        <button type="submit" runat="server" id="search_trans">Search</button>
+                        <asp:Button ID="BAll" runat="server" OnClick="BAll_Click" Text="Display All Transactions" />
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                            </center>
                     </p>
 
                     <p>
