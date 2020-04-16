@@ -29,7 +29,7 @@ namespace zoodb
     
         protected void updatePro_Click(object sender, EventArgs e)
         {
-            string animalName = String.Format("{0}", Request.Form["anName"]);
+            string animalName = String.Format("{0}", Request.Form["amName"]);
             string health = String.Format("{0}", Request.Form["SelectH"]);
             string exhibit = String.Format("{0}", Request.Form["ddExh"]);
             string diet = String.Format("{0}", Request.Form["ddDiet"]);
