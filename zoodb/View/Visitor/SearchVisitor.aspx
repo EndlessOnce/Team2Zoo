@@ -111,40 +111,50 @@
                     <p>
                         <strong>Visit Date:</strong>
                         <input type="text" placeholder="YYYY-MM-DD hh:mm:ss" name="datetime" runat="server" style="width: 200px" id="showTime" />
+                        <asp:Button ID="VisitDateButton" runat="server" Text="Search" OnClick="VisitDateButton_Click" />
                     </p>
 
 
                     <p>
                         <strong>First Name:</strong>
                         <input type="text" placeholder="Enter First Name" name="visName" runat="server" id="visName" style="width: 200px" />
+                        <asp:Button ID="FNameButton" runat="server" Text="Search" OnClick="FNameButton_Click" />
                     </p>
 
 
                     <p>
                         <strong>Last Name:</strong>
                         <input type="text" placeholder="Enter Last Name" name="lname" runat="server" id="lname" style="width: 200px" />
+                        <asp:Button ID="LNameButton" runat="server" Text="Search" OnClick="LNameButton_Click" />
                     </p>
 
 
                     <p>
-                        <strong>Member?:</strong>
+                        <strong>Member:</strong>
                         <select id="aMem" runat="server">
                             <option value="0">Yes</option>
                             <option value="1">No</option>
 
                         </select>
+                        <asp:Button ID="MemberButton" runat="server" Text="Search" OnClick="MemberButton_Click" />
+
                     </p>
 
                     <p>
                         <strong>Group ID:</strong>
                         <input type="text" placeholder="Enter Member ID" name="memID" runat="server" id="memID" style="width: 200px" />
+                        <asp:Button ID="GroupButton" runat="server" Text="Search" OnClick="GroupButton_Click" />
                     </p>
 
 
                     <p>
-                        <button type="submit" runat="server" id="search_vis">Search</button>
                     </p>
-
+                     <p>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                        </center>
+                    </p>
                     <table id="visTable" border="1" width="100%" hidden="hidden">
                         <tr>
                             <th>First Name:</th>
