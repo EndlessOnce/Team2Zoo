@@ -14,58 +14,19 @@ namespace zoodb
     public partial class updateEmployee
     {
 
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
+      
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
-        /// <summary>
-        /// f_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText f_name;
+       
+        protected global::System.Web.UI.WebControls.TextBox emFnam;
+        
+        protected global::System.Web.UI.WebControls.TextBox emLnam;
 
-        /// <summary>
-        /// l_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText l_name;
+        protected global::System.Web.UI.WebControls.DropDownList emExdd;
+       
+        protected global::System.Web.UI.WebControls.DropDownList jbUpdd;
 
-        /// <summary>
-        /// ExhibitID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect ExhibitID;
 
-        /// <summary>
-        /// up_Emp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton up_Emp;
-
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label1;
     }
 }
