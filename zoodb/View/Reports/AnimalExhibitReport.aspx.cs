@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace zoodb.View.Reports
 {
-    public partial class AnimalReport : System.Web.UI.Page
+    public partial class AnimalExhibitReport : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

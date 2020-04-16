@@ -142,6 +142,9 @@
     <Content Include="View\Product\AddProduct.aspx" />
     <Content Include="View\Product\delProduct.aspx" />
     <Content Include="View\Product\SearchProduct.aspx" />
+    <Content Include="View\Reports\AnimalExhibitReport.aspx" />
+    <Content Include="View\Reports\AnimalReport.aspx" />
+    <Content Include="View\Reports\DefaultReport.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -170,6 +173,50 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="View\Login\LoginPage.aspx" />
     <Content Include="View\Registration\Registration.aspx" />
+    <Content Include="AnimalDietDataSet.xsc">
+      <DependentUpon>AnimalDietDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="AnimalDietDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimalDietDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AnimalDietDataSet.xss">
+      <DependentUpon>AnimalDietDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="dbq83pweu5kpypDataSet.xsc">
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="AnimalDietDataSet2.xsc">
+      <DependentUpon>AnimalDietDataSet2.xsd</DependentUpon>
+    </Content>
+    <None Include="AnimalDietDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimalDietDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AnimalDietDataSet2.xss">
+      <DependentUpon>AnimalDietDataSet2.xsd</DependentUpon>
+    </Content>
+    <Content Include="AnimalExhibitDataSet.xsc">
+      <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="AnimalExhibitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnimalExhibitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AnimalExhibitDataSet.xss">
+      <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="dbq83pweu5kpypDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbq83pweu5kpypDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dbq83pweu5kpypDataSet.xss">
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -213,6 +260,31 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalDietDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalDietDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalDietDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalDietDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalExhibitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbq83pweu5kpypDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Animal\AddAnimal.aspx.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
@@ -297,6 +369,27 @@
     </Compile>
     <Compile Include="View\Product\SearchProduct.aspx.designer.cs">
       <DependentUpon>SearchProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\AnimalExhibitReport.aspx.cs">
+      <DependentUpon>AnimalExhibitReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\AnimalExhibitReport.aspx.designer.cs">
+      <DependentUpon>AnimalExhibitReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\AnimalReport.aspx.cs">
+      <DependentUpon>AnimalReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\AnimalReport.aspx.designer.cs">
+      <DependentUpon>AnimalReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\DefaultReport.aspx.cs">
+      <DependentUpon>DefaultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
+      <DependentUpon>DefaultReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
@@ -466,6 +559,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="ShopDataSet.xsc">
+      <DependentUpon>ShopDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="ShopDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShopDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ShopDataSet.xss">
+      <DependentUpon>ShopDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -474,7 +578,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="View\Reports\" />
+    <EmbeddedResource Include="View\Reports\AnimalDietReport2.rdlc" />
+    <EmbeddedResource Include="View\Reports\AnimalExhibitReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
