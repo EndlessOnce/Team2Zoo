@@ -127,10 +127,34 @@
                         <asp:Button ID="SpeciesName" runat="server" OnClick="SpeciesName_Click" Text="Search" />
 
                     </p>
+                    <p>
+                        <strong>Exhibit ID: </strong>
+                        <asp:DropDownList ID="DDLEx" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Exhibit_ID" DataValueField="Exhibit_ID" OnSelectedIndexChanged="DDLEx_SelectedIndexChanged">
+                        </asp:DropDownList>
+&nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Exhibit_ID FROM exhibit"></asp:SqlDataSource>
+
+                    </p>
+                    <p>
+                        <strong>Health:</strong><asp:DropDownList ID="DDLHealth" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLHealth_SelectedIndexChanged">
+                            <asp:ListItem>Select Health</asp:ListItem>
+                            <asp:ListItem Value="1">Healthy</asp:ListItem>
+                            <asp:ListItem Value="0">Unhealthy</asp:ListItem>
+                        </asp:DropDownList>
+
+                    </p>
+                    <p>
+                        <strong>Diet:</strong><asp:DropDownList ID="DDLDiet" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLDiet_SelectedIndexChanged">
+                            <asp:ListItem>Select Diet</asp:ListItem>
+                            <asp:ListItem>Carnivore</asp:ListItem>
+                            <asp:ListItem>Herbivore</asp:ListItem>
+                            <asp:ListItem>Omnivore</asp:ListItem>
+                        </asp:DropDownList>
+
+                    </p>
 
                     <center>
                     <hr />
-                    <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                    <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" AutoPostBack="true" emptyDataText="No items found!">
 
 
                     </asp:GridView>

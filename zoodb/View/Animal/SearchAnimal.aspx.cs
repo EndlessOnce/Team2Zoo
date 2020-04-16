@@ -61,5 +61,95 @@ namespace zoodb
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
+
+        protected void BEx_Click(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where exhibit_ID like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLEx.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void BHea_Click(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where health like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLHealth.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void BDiet_Click(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where diet like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLDiet.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void DDLHealth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where health like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLHealth.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void DDLEx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where exhibit_ID like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLEx.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void DDLDiet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string searchQuery = "select * from animal where diet like @species";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@species", $"%{DDLDiet.Text}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
     }
 }

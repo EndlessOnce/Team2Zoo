@@ -48,5 +48,37 @@ namespace zoodb
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
+        
+        protected void DDLStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string typeQuery = String.Format("{0}", Request.Form["DDLStatus"]);
+            string searchQuery = "select * from shop where shop_status like @name";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@name", $"%{typeQuery}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
+
+        protected void DDLType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string typeQuery = String.Format("{0}", Request.Form["DDLType"]);
+            string searchQuery = "select * from shop where shop_type like @name";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@name", $"%{typeQuery}%");
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
     }
 }
