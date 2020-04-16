@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace zoodb.View.Product
+namespace zoodb
 {
 
 
@@ -24,21 +24,39 @@ namespace zoodb.View.Product
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// prod_del control.
+        /// proID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton prod_del;
+        protected global::System.Web.UI.WebControls.TextBox proID;
 
         /// <summary>
-        /// labelAnimUp control.
+        /// proName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelAnimUp;
+        protected global::System.Web.UI.WebControls.TextBox proName;
+
+        /// <summary>
+        /// delPro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button delPro;
+
+        /// <summary>
+        /// labelPro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelPro;
     }
 }
