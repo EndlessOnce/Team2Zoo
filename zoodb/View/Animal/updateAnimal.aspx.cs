@@ -51,7 +51,7 @@ namespace zoodb
 
 
             comm.ExecuteNonQuery();
-         //   labelAnimUp.Visible = true;
+            //labelAnimUp.Visible = true;
             link.Close();
         }
 

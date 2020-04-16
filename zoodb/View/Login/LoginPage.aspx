@@ -34,12 +34,16 @@
         .auto-style7 {
             text-align: center;
         }
+        .auto-style8 {
+            text-align: center;
+            font-size: 40pt;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1 class="auto-style1"><strong>Login Page</strong></h1>
+            <h1 class="auto-style8"><strong>Login Page</strong></h1>
             <p class="auto-style1">Hello! To access the Zoo Database, please log on with your username and password. If you do not have a valid username or password, please register and make an account with us to acces the database.</p>
             <hr />
         </div>

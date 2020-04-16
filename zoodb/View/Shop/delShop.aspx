@@ -81,10 +81,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="delShop.aspx">Delete Entity</a></li>
-                        <li><a href="AddShop.aspx">Add Entity</a></li>
-                        <li><a href="SearchShop.aspx">Search Entity</a></li>
-                        <li><a href="updateShop.aspx">Update Entity</a></li>
+                        <li class="active"><a href="delShop.aspx">Delete Shop</a></li>
+                        <li><a href="AddShop.aspx">Add Shop</a></li>
+                        <li><a href="SearchShop.aspx">Search Shop</a></li>
+                        <li><a href="updateShop.aspx">Update Shop</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>

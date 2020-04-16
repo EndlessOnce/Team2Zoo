@@ -33,6 +33,15 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText showTime;
 
         /// <summary>
+        /// VisitDateButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button VisitDateButton;
+
+        /// <summary>
         /// visName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText visName;
+
+        /// <summary>
+        /// FNameButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button FNameButton;
 
         /// <summary>
         /// lname control.
@@ -51,6 +69,15 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText lname;
 
         /// <summary>
+        /// LNameButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button LNameButton;
+
+        /// <summary>
         /// aMem control.
         /// </summary>
         /// <remarks>
@@ -58,6 +85,15 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlSelect aMem;
+
+        /// <summary>
+        /// MemberButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button MemberButton;
 
         /// <summary>
         /// memID control.
@@ -69,12 +105,21 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText memID;
 
         /// <summary>
-        /// search_vis control.
+        /// GroupButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton search_vis;
+        protected global::System.Web.UI.WebControls.Button GroupButton;
+
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

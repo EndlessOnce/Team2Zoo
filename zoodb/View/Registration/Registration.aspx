@@ -17,14 +17,14 @@
             width: 45%;
             margin: auto;
         }
-        .auto-style8 {
-            text-align: right;
-        }
         .auto-style9 {
             text-align: left;
         }
         .auto-style10 {
             text-align: center;
+        }
+        .auto-style11 {
+            font-size: 40pt;
         }
     </style>
 </head>
@@ -35,7 +35,7 @@
                 <tr>
                     <td class="auto-style10">
                         <div>
-                            <h1><strong>Regirstration Page</strong></h1>
+                            <h1 class="auto-style11"><strong>Regirstration Page</strong></h1>
                             <p> Please enter a Email and Password to register.</p>
                             <hr />
                         </div>
@@ -79,11 +79,12 @@
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style6">
                         <asp:Button ID="Signup" runat="server" OnClick="Registration_Click" Text="Sign-up" />
-                        <input id="Reset1" type="reset" value="reset" /></td>
+                        <input id="Reset1" type="reset" value="reset" />
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/View/Login/LoginPage">Return to Login Page</asp:HyperLink>
+                    </td>
                 </tr>
             </table>
         </div>
-        <asp:SqlDataSource ID="Zoodb" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="select * from db_user"></asp:SqlDataSource>
     </form>
     </body>
 </html>
