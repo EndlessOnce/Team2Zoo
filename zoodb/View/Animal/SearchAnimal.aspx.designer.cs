@@ -42,6 +42,42 @@ namespace zoodb
         protected global::System.Web.UI.WebControls.Button BSearch;
 
         /// <summary>
+        /// TextCommon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextCommon;
+
+        /// <summary>
+        /// CommonName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CommonName;
+
+        /// <summary>
+        /// TextSpecies control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextSpecies;
+
+        /// <summary>
+        /// SpeciesName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SpeciesName;
+
+        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>

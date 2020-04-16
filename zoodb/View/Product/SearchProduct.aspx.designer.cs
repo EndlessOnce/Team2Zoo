@@ -33,6 +33,15 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText pros_name;
 
         /// <summary>
+        /// NameButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NameButton;
+
+        /// <summary>
         /// pros_price control.
         /// </summary>
         /// <remarks>
@@ -42,12 +51,21 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText pros_price;
 
         /// <summary>
-        /// search_pro control.
+        /// PriceButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton search_pro;
+        protected global::System.Web.UI.WebControls.Button PriceButton;
+
+        /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
