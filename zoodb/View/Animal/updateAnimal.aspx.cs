@@ -8,24 +8,20 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 using MySql.Data.MySqlClient;
+
 namespace zoodb
 {
     public partial class updateAnimal : System.Web.UI.Page
     {
-        
-
-        // your logic here
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (Session["aniName"] != null && !IsPostBack)
             {
-                
                 amName.Text = Session["aniName"].ToString();
                 SelectH.SelectedValue = Session["aniHealth"].ToString();
                 ddExh.SelectedValue = Session["aniEx"].ToString();
                 ddDiet.SelectedValue = Session["aniDiet"].ToString();
-                //string passedAnNm = 
 
                 //  amName.Text = passedAnNm;
             }
@@ -33,10 +29,10 @@ namespace zoodb
     
         protected void updatePro_Click(object sender, EventArgs e)
         {
-            string animalName = String.Format("{0}", Request.Form["anName"]);
+            string animalName = String.Format("{0}", Request.Form["amName"]);
             string health = String.Format("{0}", Request.Form["SelectH"]);
-            string exhibit = String.Format("{0}", Request.Form["Exhibit"]);
-            string diet = String.Format("{0}", Request.Form["diet1"]);
+            string exhibit = String.Format("{0}", Request.Form["ddExh"]);
+            string diet = String.Format("{0}", Request.Form["ddDiet"]);
 
 
             MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
@@ -46,14 +42,12 @@ namespace zoodb
             comm.Parameters.AddWithValue("@name", animalName);
             comm.Parameters.AddWithValue("@health", health);
             comm.Parameters.AddWithValue("@exID", exhibit);
-            comm.Parameters.AddWithValue("@Diet", diet);
-
-
+            comm.Parameters.AddWithValue("@diet", diet);
 
             comm.ExecuteNonQuery();
             //labelAnimUp.Visible = true;
             link.Close();
         }
 
-    }
+}
 }

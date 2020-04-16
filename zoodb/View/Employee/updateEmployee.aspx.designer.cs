@@ -27,6 +27,6 @@ namespace zoodb
         protected global::System.Web.UI.WebControls.DropDownList jbUpdd;
 
 
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ueLabel;
     }
 }
