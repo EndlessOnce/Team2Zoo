@@ -114,6 +114,7 @@
                     <p>
                         <strong>Shop Name:</strong>
                         <input type="text" placeholder="Enter Shop Name" name="sName" runat="server" id="sName" style="width: 200px" />
+                        <asp:Button ID="BSName" runat="server" OnClick="BSName_Click" Text="Search" />
                     </p>
 
 
@@ -124,13 +125,11 @@
                             <option value="Gift Shop">Gift Shop</option>
                             <option value="Admissions">Admissions</option>
                         </select>
+                        <asp:Button ID="BSType" runat="server" OnClick="BSType_Click" Text="Search" />
                     </p>
 
                     <p>
-                        <span style="margin-left: 1em;">
-                            <button type="submit" runat="server" id="search_shop">Search</button>
-                        </span>
-                    </p>
+                        &nbsp;</p>
 
                     <p>
                         <table id="shopTable" border="1" width="100%" hidden="hidden">
@@ -140,6 +139,10 @@
                                 <th>Open/Closed:</th>
                             </tr>
                         </table>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                            </center>
                     </p>
 
 
