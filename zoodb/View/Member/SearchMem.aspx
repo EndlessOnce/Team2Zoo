@@ -114,28 +114,32 @@
                     <p>
                         <strong>First Name:</strong>
                         <input type="text" placeholder="Enter First Name" name="fname" runat="server" id="fname" style="width: 200px" />
+                        <asp:Button ID="BFName" runat="server" Text="Search" OnClick="BFName_Click" />
                     </p>
 
 
                     <p>
                         <strong>Last Name:</strong>
                         <input type="text" placeholder="Enter Last Name" name="lname" runat="server" id="lname" style="width: 200px" />
+                        <asp:Button ID="BLName" runat="server" Text="Search" OnClick="BLName_Click" />
                     </p>
 
                     <p>
                         <strong>Phone Number:</strong>
                         <input type="text" placeholder="Enter Phone Number" name="pnum" runat="server" id="pnum" style="width: 200px" />
+                        <asp:Button ID="NPnum" runat="server" Text="Search" OnClick="NPnum_Click" />
                     </p>
 
                     <p>
-                        <strong>Address:</strong>
-                        <input type="text" placeholder="Enter Address" name="memAddy" runat="server" id="memAddy" style="width: 200px" />
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                            </center>
                     </p>
 
 
                     <p>
-                        <button type="submit" runat="server" id="search_mem">Search</button>
-                    </p>
+                        &nbsp;</p>
 
 
                     <table id="memTable" border="1" width="100%" hidden="hidden">

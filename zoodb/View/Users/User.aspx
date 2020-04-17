@@ -89,10 +89,12 @@
                     <a class="navbar-brand" runat="server" href="~/View/Animal/AddAnimal.aspx">Animal</a>
                     <a class="navbar-brand" runat="server" href="~/View/Employee/AddEmployee.aspx">Employee</a>
                     <a class="navbar-brand" runat="server" href="~/View/Shop/AddShop.aspx">Shop</a>
-                    <a class="navbar-brand" runat="server" href="~/View/Animal/AddAnimal.aspx">Member</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Product/AddProduct.aspx">Product</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Member/AddMember.aspx">Member</a>
                     <a class="navbar-brand" runat="server" href="~/View/Show/AddShow.aspx">Show</a>
                     <a class="navbar-brand" runat="server" href="~/View/Transaction/AddTransaction.aspx">Transaction</a>
                     <a class="navbar-brand" runat="server" href="~/View/Visitor/AddVisitor.aspx">Visitor</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Reports/AnimalExhibitReport.aspx">Reports</a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -110,11 +112,11 @@
                 </div>--%>
                 <div>
                     <h1>Welcome to the Zoo</h1>
-                    <p>Please fill out the fields below to enter a new product into the database</p>
+                    <p>Please refer to the different tabs for activities.</p>
                     <hr>
 
 
-                    <asp:Label ID="Welcome" runat="server"></asp:Label>
+                   Welcome back user: <asp:Label ID="Welcome" runat="server"></asp:Label>
 
 
                     <p>

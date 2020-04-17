@@ -30,17 +30,29 @@ namespace zoodb
             comm.Parameters.AddWithValue("@dt", date);
             comm.Parameters.AddWithValue("@shop", shop);
             comm.ExecuteNonQuery();
-/*
-            string insertTwo = "insert into products_of_transaction(Product_ID,Quantity) values (@pro,@quan)";
+
+            string getTransID = "select transaction_ID from transactions where date_time = @dt";
+            MySqlCommand getIDCom = new MySqlCommand(getTransID, link);
+            getIDCom.Parameters.AddWithValue("@dt", date);
+            var rdr = getIDCom.ExecuteReader();
+
+            string transID = "";
+            while(rdr.Read())
+            {
+               transID = rdr.GetString(0);
+            }
+            rdr.Close();
+
+            string insertTwo = "insert into products_of_transaction(Transaction_ID,Product_ID,Quantity) values (@transID,@pro,@quan)";
             MySqlCommand cmd = new MySqlCommand(insertTwo, link);
+            cmd.Parameters.AddWithValue("@transID", transID);
             cmd.Parameters.AddWithValue("@pro", product);
             cmd.Parameters.AddWithValue("@quan", qty);
             cmd.ExecuteNonQuery();
 
- */      
+
             LabelT.Visible = true;
             link.Close();
-        
         }
     }
 }

@@ -33,6 +33,15 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText fname;
 
         /// <summary>
+        /// BFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BFName;
+
+        /// <summary>
         /// lname control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace zoodb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText lname;
+
+        /// <summary>
+        /// BLName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BLName;
 
         /// <summary>
         /// pnum control.
@@ -51,21 +69,21 @@ namespace zoodb
         protected global::System.Web.UI.HtmlControls.HtmlInputText pnum;
 
         /// <summary>
-        /// memAddy control.
+        /// NPnum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText memAddy;
+        protected global::System.Web.UI.WebControls.Button NPnum;
 
         /// <summary>
-        /// search_mem control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton search_mem;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

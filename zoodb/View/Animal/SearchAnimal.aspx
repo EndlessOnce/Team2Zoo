@@ -101,67 +101,64 @@
                 </div>
                 <div class="col-sm-8 text-left">
                     <h1>Search for an Animal</h1>
-                    <p>Please fill out the fields below to enter search for an animal in the database</p>
+                    <p>Please fill out the field either fully or partially below to enter search for an animal in the database</p>
                     <hr>
 
-
-                    <p>
-                        <strong>Name:</strong>
-                        <input type="text" placeholder="Enter Animal Name" name="animal_name" runat="server" style="width: 225px" id="name" />
-                    </p>
-
-
-                    <p>
-                        <strong>Common Name:</strong>
-                        <input type="text" placeholder="Enter Common Name" name="common_name" runat="server" style="width: 160px" id="commonName" />
-
-
-                    </p>
-
-                    <p>
-                        <span style="margin-left: 2em;">
-                            <strong>Gender:</strong>
-                            <asp:CheckBox ID="CheckBoxM" runat="server" Text="Male" padding-right=" 10px" />
-                            <asp:CheckBox ID="CheckBoxF" runat="server" Text="Female" />
-                        </span>
-                    </p>
-
-                    <p>
-                        <span style="margin-left: 2em;">
-                            <strong>Exhibit:</strong>
-                            <select id="Exhibit" name="exhibit" runat="server">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </span>
-                    </p>
 
                     <br />
 
 
-                    <p>
-                        <span style="margin-left: 2em;">
-                            <button type="submit" runat="server" id="search_animal">Search</button>
-                        </span>
-                    </p>
+                   <p>
+                    <strong>Animal Name:</strong>
+                    &nbsp;<asp:TextBox ID="TxtSearch" runat="server" placeholder="Name of Animal"></asp:TextBox>
+                    <asp:Button ID="BSearch" runat="server" Text="Search" OnClick="BSearch_Click" />
+                   </p> 
 
                     <p>
-                        <table id="aniTable" border="1" width="100%" hidden="hidden">
-                            <tr>
-                                <th>Name:</th>
-                                <th>Sex:</th>
-                                <th>Common Name:</th>
-                                <th>Species:</th>
-                                <th>Health:</th>
-                                <th>Diet:</th>
-                                <th>Exhibit ID:</th>
-                            </tr>
-                        </table>
+
+                    <strong>Common Name:</strong>
+                    &nbsp;<asp:TextBox ID="TextCommon" runat="server" placeholder="Common Name"></asp:TextBox>
+                        <asp:Button ID="CommonName" runat="server" OnClick="CommonName_Click" Text="Search" />
+                    </p>
+                    <p>
+                    <strong>Species Name:</strong>
+                    &nbsp;<asp:TextBox ID="TextSpecies" runat="server" placeholder="Species Name"></asp:TextBox>
+
+                        <asp:Button ID="SpeciesName" runat="server" OnClick="SpeciesName_Click" Text="Search" />
+
+                    </p>
+                    <p>
+                        <strong>Exhibit ID: </strong>
+                        <asp:DropDownList ID="DDLEx" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Exhibit_ID" DataValueField="Exhibit_ID" OnSelectedIndexChanged="DDLEx_SelectedIndexChanged">
+                        </asp:DropDownList>
+&nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Exhibit_ID FROM exhibit"></asp:SqlDataSource>
+
+                    </p>
+                    <p>
+                        <strong>Health:</strong><asp:DropDownList ID="DDLHealth" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLHealth_SelectedIndexChanged">
+                            <asp:ListItem>Select Health</asp:ListItem>
+                            <asp:ListItem Value="1">Healthy</asp:ListItem>
+                            <asp:ListItem Value="0">Unhealthy</asp:ListItem>
+                        </asp:DropDownList>
+
+                    </p>
+                    <p>
+                        <strong>Diet:</strong><asp:DropDownList ID="DDLDiet" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLDiet_SelectedIndexChanged">
+                            <asp:ListItem>Select Diet</asp:ListItem>
+                            <asp:ListItem>Carnivore</asp:ListItem>
+                            <asp:ListItem>Herbivore</asp:ListItem>
+                            <asp:ListItem>Omnivore</asp:ListItem>
+                        </asp:DropDownList>
+
                     </p>
 
+                    <center>
+                    <hr />
+                    <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" AutoPostBack="true" emptyDataText="No items found!">
+
+
+                    </asp:GridView>
+                    </center>
 
                 </div>
                 <div class="col-sm-2 sidenav">

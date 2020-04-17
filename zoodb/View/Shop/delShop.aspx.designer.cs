@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace zoodb.View.Shop
+namespace zoodb
 {
 
 
@@ -24,21 +24,39 @@ namespace zoodb.View.Shop
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// shop_del control.
+        /// shopID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton shop_del;
+        protected global::System.Web.UI.WebControls.TextBox shopID;
 
         /// <summary>
-        /// labelAnimUp control.
+        /// shopName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelAnimUp;
+        protected global::System.Web.UI.WebControls.TextBox shopName;
+
+        /// <summary>
+        /// dShop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button dShop;
+
+        /// <summary>
+        /// labelShop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelShop;
     }
 }

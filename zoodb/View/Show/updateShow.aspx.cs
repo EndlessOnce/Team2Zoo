@@ -28,7 +28,7 @@ namespace zoodb
             comm.Parameters.AddWithValue("@loc", loc);
 
             comm.ExecuteNonQuery();
-          //  ssLabel.Visible = true;
+            //ssLabel.Visible = true;
             link.Close();
 
         }
