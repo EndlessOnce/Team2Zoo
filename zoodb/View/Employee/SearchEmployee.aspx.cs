@@ -48,5 +48,21 @@ namespace zoodb
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
+
+        protected void DDLJobID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
+            link.Open();
+
+            string name = String.Format("{0}", Request.Form["DDLJobID"]);
+            string searchQuery = "select employee.Employee_ID,employee.f_name,employee.l_name,employee.job_id, job.job_name,employee.Exhibit_ID,employee.show_ID,employee.shop_ID FROM employee INNER JOIN job ON employee.job_ID = job.job_ID WHERE employee.job_ID = @name";
+            MySqlCommand comm = new MySqlCommand(searchQuery, link);
+            comm.Parameters.AddWithValue("@name", name);
+            DataTable dt = new DataTable();
+            MySqlDataAdapter sda = new MySqlDataAdapter(comm);
+            sda.Fill(dt);
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+        }
     }
 }

@@ -94,6 +94,7 @@
                     <a class="navbar-brand" runat="server" href="~/View/Show/AddShow.aspx">Show</a>
                     <a class="navbar-brand" runat="server" href="~/View/Transaction/AddTransaction.aspx">Transaction</a>
                     <a class="navbar-brand" runat="server" href="~/View/Visitor/AddVisitor.aspx">Visitor</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Reports/AnimalExhibitReport.aspx">Reports</a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -111,11 +112,11 @@
                 </div>--%>
                 <div>
                     <h1>Welcome to the Zoo</h1>
-                    <p>Please fill out the fields below to enter a new product into the database</p>
+                    <p>Please refer to the different tabs for activities.</p>
                     <hr>
 
 
-                    <asp:Label ID="Welcome" runat="server"></asp:Label>
+                   Welcome back user: <asp:Label ID="Welcome" runat="server"></asp:Label>
 
 
                     <p>

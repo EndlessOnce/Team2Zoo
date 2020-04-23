@@ -56,7 +56,6 @@
         h1 {
             text-align: center;
             font-style: italic;
-            font-family: "Lucida Console", Courier, monospace;
         }
 
             h1.inset {
@@ -115,19 +114,14 @@
                     <p>
                         <span style="margin-left: 2em;">
                             <strong>Name:</strong>
-                            <input type="text" placeholder="Enter Product Name" name="pros_name" runat="server" id="pros_name" style="width: 200px" />
-                        <asp:Button ID="NameButton" runat="server" Text="Search" OnClick="NameButton_Click" />
-                        </span>
-                    </p>
+                        <asp:DropDownList ID="DDLPro" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" AutoPostBack="true" DataValueField="Name" OnSelectedIndexChanged="DDLPro_SelectedIndexChanged">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Name FROM product"></asp:SqlDataSource>
+&nbsp;</span></p>
 
 
                     <p>
-                        <span style="margin-left: 2em;">
-                            <strong>Price:</strong>
-                            <input type="text" placeholder="Enter Product Price" name="pros_price" runat="server" id="pros_price" style="width: 200px" />
-                        <asp:Button ID="PriceButton" runat="server" Text="Search" OnClick="PriceButton_Click" />
-                        </span>
-                    </p>
+                        &nbsp;</p>
 
 
                     <p>

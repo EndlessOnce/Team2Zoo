@@ -30,6 +30,7 @@ namespace zoodb
         protected global::System.Web.UI.WebControls.DropDownList ddExh;
 
         protected global::System.Web.UI.WebControls.DropDownList ddDiet;
-
+       
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelAnimUp;
     }
 }

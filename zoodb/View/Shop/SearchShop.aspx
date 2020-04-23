@@ -114,22 +114,23 @@
                     <p>
                         <strong>Shop Name:</strong>
                         <input type="text" placeholder="Enter Shop Name" name="sName" runat="server" id="sName" style="width: 200px" />
+                        <asp:Button ID="BSName" runat="server" OnClick="BSName_Click" Text="Search" />
                     </p>
 
 
                     <p>
                         <strong>Shop Type:</strong>
-                        <select id="shopT" name="shop" runat="server">
-                            <option value="Dining">Dining</option>
-                            <option value="Gift Shop">Gift Shop</option>
-                            <option value="Admissions">Admissions</option>
-                        </select>
-                    </p>
+                        <asp:DropDownList ID="DDLType" runat="server" DataSourceID="SqlDataSource1" DataTextField="Shop_Type" DataValueField="Shop_Type" OnSelectedIndexChanged="DDLType_SelectedIndexChanged" AutoPostBack="true">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT DISTINCT Shop_Type FROM shop"></asp:SqlDataSource>
+&nbsp;</p>
 
                     <p>
-                        <span style="margin-left: 1em;">
-                            <button type="submit" runat="server" id="search_shop">Search</button>
-                        </span>
+                        <strong>Shop Status:</strong><asp:DropDownList ID="DDLStatus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DDLStatus_SelectedIndexChanged">
+                            <asp:ListItem>Select Shop Status</asp:ListItem>
+                            <asp:ListItem>Open</asp:ListItem>
+                            <asp:ListItem>Closed</asp:ListItem>
+                        </asp:DropDownList>
                     </p>
 
                     <p>
@@ -140,6 +141,10 @@
                                 <th>Open/Closed:</th>
                             </tr>
                         </table>
+                        <center>
+                        <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" emptyDataText="No items found!">
+                        </asp:GridView>
+                            </center>
                     </p>
 
 

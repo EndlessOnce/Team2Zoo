@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AnimalExhibitDataSet" targetNamespace="http://tempuri.org/AnimalExhibitDataSet.xsd" xmlns:mstns="http://tempuri.org/AnimalExhibitDataSet.xsd" xmlns="http://tempuri.org/AnimalExhibitDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="zoodb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="zoodb (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.zoodb.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Animal_by_exhibitTableAdapter" GeneratorDataComponentClassName="Animal_by_exhibitTableAdapter" Name="Animal_by_exhibit" UserDataComponentName="Animal_by_exhibitTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectName="dbq83pweu5kpyp.Animal_by_exhibit" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Animals`, `Exhibit_ID` FROM `dbq83pweu5kpyp`.`Animal_by_exhibit`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Animals" DataSetColumn="Animals" />
+              <Mapping SourceColumn="Exhibit_ID" DataSetColumn="Exhibit_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AnimalExhibitDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AnimalExhibitDataSet" msprop:Generator_UserDSName="AnimalExhibitDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Animal_by_exhibit" msprop:Generator_TableClassName="Animal_by_exhibitDataTable" msprop:Generator_TableVarName="tableAnimal_by_exhibit" msprop:Generator_TablePropName="Animal_by_exhibit" msprop:Generator_RowDeletingName="Animal_by_exhibitRowDeleting" msprop:Generator_RowChangingName="Animal_by_exhibitRowChanging" msprop:Generator_RowEvHandlerName="Animal_by_exhibitRowChangeEventHandler" msprop:Generator_RowDeletedName="Animal_by_exhibitRowDeleted" msprop:Generator_UserTableName="Animal_by_exhibit" msprop:Generator_RowChangedName="Animal_by_exhibitRowChanged" msprop:Generator_RowEvArgName="Animal_by_exhibitRowChangeEvent" msprop:Generator_RowClassName="Animal_by_exhibitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Animals" msprop:Generator_ColumnVarNameInTable="columnAnimals" msprop:Generator_ColumnPropNameInRow="Animals" msprop:Generator_ColumnPropNameInTable="AnimalsColumn" msprop:Generator_UserColumnName="Animals" type="xs:long" />
+              <xs:element name="Exhibit_ID" msprop:Generator_ColumnVarNameInTable="columnExhibit_ID" msprop:Generator_ColumnPropNameInRow="Exhibit_ID" msprop:Generator_ColumnPropNameInTable="Exhibit_IDColumn" msprop:Generator_UserColumnName="Exhibit_ID" type="xs:byte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
