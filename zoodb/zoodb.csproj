@@ -125,11 +125,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll" />
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />
-    <Content Include="SqlServerTypes\x86\msvcr120.dll" />
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll" />
     <Content Include="View\Animal\AddAnimal.aspx" />
     <Content Include="View\Animal\delAnimal.aspx" />
     <Content Include="View\Animal\SearchAnimal.aspx" />
@@ -249,7 +244,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RevenueDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\Animal\AddAnimal.aspx.cs">
       <DependentUpon>AddAnimal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
