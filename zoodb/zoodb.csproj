@@ -187,6 +187,7 @@
     <Content Include="RevenueDataSet.xsc">
       <DependentUpon>RevenueDataSet.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="RevenueDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>RevenueDataSet.Designer.cs</LastGenOutput>
