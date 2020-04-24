@@ -144,6 +144,8 @@
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
+    <Content Include="View\Reports\EmployeeReport.aspx" />
+    <Content Include="View\Reports\MemberReport.aspx" />
     <Content Include="View\Reports\RevenueReport.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
@@ -186,6 +188,39 @@
     </Content>
     <Content Include="RevenueDataSet.xsc">
       <DependentUpon>RevenueDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="dbq83pweu5kpypDataSet.xsc">
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="dbq83pweu5kpypDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbq83pweu5kpypDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dbq83pweu5kpypDataSet.xss">
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="EmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="MemberDataSet.xsc">
+      <DependentUpon>MemberDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="MemberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MemberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="MemberDataSet.xss">
+      <DependentUpon>MemberDataSet.xsd</DependentUpon>
     </Content>
     <None Include="RevenueDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
@@ -242,6 +277,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AnimalExhibitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbq83pweu5kpypDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MemberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MemberDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="RevenueDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -346,6 +396,20 @@
     </Compile>
     <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
       <DependentUpon>DefaultReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\EmployeeReport.aspx.cs">
+      <DependentUpon>EmployeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\EmployeeReport.aspx.designer.cs">
+      <DependentUpon>EmployeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\MemberReport.aspx.cs">
+      <DependentUpon>MemberReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\MemberReport.aspx.designer.cs">
+      <DependentUpon>MemberReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Reports\RevenueReport.aspx.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
@@ -531,6 +595,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Reports\AnimalExhibitReport.rdlc" />
+    <EmbeddedResource Include="View\Reports\EmployeeReport.rdlc" />
+    <EmbeddedResource Include="View\Reports\MembershipReport1.rdlc" />
     <EmbeddedResource Include="View\Reports\RevenueReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>

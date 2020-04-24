@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbq83pweu5kpypDataSet" targetNamespace="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns:mstns="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns="http://tempuri.org/dbq83pweu5kpypDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="zoodb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="zoodb (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.zoodb.ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Membership_ratioTableAdapter" GeneratorDataComponentClassName="Membership_ratioTableAdapter" Name="Membership_ratio" UserDataComponentName="Membership_ratioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zoodb (Web.config)" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `No`, `Is_Member` FROM `dbq83pweu5kpyp`.`Membership_ratio`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="No" DataSetColumn="No" />
+              <Mapping SourceColumn="Is_Member" DataSetColumn="Is_Member" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbq83pweu5kpypDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbq83pweu5kpypDataSet" msprop:Generator_UserDSName="dbq83pweu5kpypDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Membership_ratio" msprop:Generator_TableClassName="Membership_ratioDataTable" msprop:Generator_TableVarName="tableMembership_ratio" msprop:Generator_TablePropName="Membership_ratio" msprop:Generator_RowDeletingName="Membership_ratioRowDeleting" msprop:Generator_RowChangingName="Membership_ratioRowChanging" msprop:Generator_RowEvHandlerName="Membership_ratioRowChangeEventHandler" msprop:Generator_RowDeletedName="Membership_ratioRowDeleted" msprop:Generator_UserTableName="Membership_ratio" msprop:Generator_RowChangedName="Membership_ratioRowChanged" msprop:Generator_RowEvArgName="Membership_ratioRowChangeEvent" msprop:Generator_RowClassName="Membership_ratioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnPropNameInTable="NoColumn" msprop:Generator_UserColumnName="No" type="xs:long" />
+              <xs:element name="Is_Member" msprop:Generator_ColumnVarNameInTable="columnIs_Member" msprop:Generator_ColumnPropNameInRow="Is_Member" msprop:Generator_ColumnPropNameInTable="Is_MemberColumn" msprop:Generator_UserColumnName="Is_Member" type="xs:byte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
