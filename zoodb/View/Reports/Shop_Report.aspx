@@ -1,6 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Revenue_Report_Final.aspx.cs" Inherits="zoodb.View.Reports.Revenue_Report_Final" %>
-
-<%@ Register Assembly="Microsoft.ReportViewer.WebForms" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Shop_Report.aspx.cs" Inherits="zoodb.View.Reports.Revenue_Report_Final" %>
 
 <!DOCTYPE html>
 
@@ -78,8 +76,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="Animal_Exhibit_Report.aspx">Animal Exhibit Report</a></li>
-                    <li><a href="#">Revenue Report</a></li>
+                    <li><a href="AnimalExhibitReport.aspx">Animal Exhibit Report</a></li>
+                    <li><a href="Revenue_Report.aspx">Revenue Report</a></li> 
+                    <li><a href="#">Shop Report</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 </ul>
