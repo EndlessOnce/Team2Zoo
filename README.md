@@ -2,7 +2,7 @@
 COSC 3380 - Team 2 - Zoo Project
 
 Website Link:
-http://risebeyond-001-site1.atempurl.com/View/Login/LoginPage.aspx
+http://risezone-001-site1.btempurl.com/View/Login/LoginPage.aspx
 
 Login Information:  
 Admin:  
