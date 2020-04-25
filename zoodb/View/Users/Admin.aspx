@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="User.aspx.cs" Inherits="zoodb.View.Users.User" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="zoodb.View.Users.Admin" %>
 
 
 <!DOCTYPE html>
@@ -85,14 +85,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Home</a>
+                   <a class="navbar-brand" href="#">Home</a>
                     <a class="navbar-brand" runat="server" href="~/View/Animal/AddAnimal.aspx">Animal</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Employee/AddEmployee.aspx">Employee</a>
                     <a class="navbar-brand" runat="server" href="~/View/Shop/AddShop.aspx">Shop</a>
                     <a class="navbar-brand" runat="server" href="~/View/Product/AddProduct.aspx">Product</a>
                     <a class="navbar-brand" runat="server" href="~/View/Member/AddMember.aspx">Member</a>
                     <a class="navbar-brand" runat="server" href="~/View/Show/AddShow.aspx">Show</a>
                     <a class="navbar-brand" runat="server" href="~/View/Transaction/AddTransaction.aspx">Transaction</a>
                     <a class="navbar-brand" runat="server" href="~/View/Visitor/AddVisitor.aspx">Visitor</a>
+                    <a class="navbar-brand" runat="server" href="~/View/Reports/AnimalExhibitReport.aspx">Reports</a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -114,7 +116,7 @@
                     <hr>
 
 
-                   Welcome back user: <asp:Label ID="Welcome" runat="server"></asp:Label>
+                   Welcome back admin: <asp:Label ID="Welcome" runat="server"></asp:Label>
 
 
                     <p>
