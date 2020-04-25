@@ -164,11 +164,19 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style7">Select Role:</td>
+                    <td class="auto-style6">
+                        &nbsp;<asp:DropDownList ID="DDLrole" runat="server">
+                            <asp:ListItem>Admin</asp:ListItem>
+                            <asp:ListItem>Employee</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style6">
                         <asp:Button ID="Signup" runat="server" OnClick="Registration_Click" Text="Sign-up" />
-                        <input id="Reset1" type="reset" value="reset" />
-                    </td>
+                        <input id="Reset1" type="reset" value="reset" /></td>
                 </tr>
             </table>
         </div>

@@ -39,11 +39,13 @@ namespace zoodb
 
                 MySqlConnection con = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
                 con.Open();
-                string insertUser = "insert into db_user (user_id, email, password) values (@User_ID, @Email, @Password)";
+                string insertUser = "insert into db_user (user_id, email, password, role) values (@User_ID, @Email, @Password, @role)";
                 MySqlCommand cmd = new MySqlCommand(insertUser, con);
                 cmd.Parameters.AddWithValue("@User_ID", newGuid.ToString());
                 cmd.Parameters.AddWithValue("@Email", TextBoxEmail.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2PW.Text);
+                cmd.Parameters.AddWithValue("@role", DDLrole.Text);
+
 
                 cmd.ExecuteNonQuery();
                 Response.Redirect("~/View/Login/LoginPage.aspx");
@@ -56,5 +58,7 @@ namespace zoodb
                 Response.Write("Error:" + ex.ToString());
             }
         }
+
+      
     }
 }
