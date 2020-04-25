@@ -149,13 +149,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">Select User Type</td>
+                <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList1" runat="server">
-                        <asp:ListItem>admin</asp:ListItem>
-                        <asp:ListItem>user</asp:ListItem>
-                    </asp:DropDownList>
-                </td>
+                    &nbsp;</td>
                 <td>
                 </td>
             </tr>
