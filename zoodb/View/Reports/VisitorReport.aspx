@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Revenue_Report_Final.aspx.cs" Inherits="zoodb.View.Reports.Revenue_Report_Final" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VisitorReport.aspx.cs" Inherits="zoodb.View.Reports.VisitorReport" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>Revenue Report</title>
+    <title>Visitor Report</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -77,7 +77,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="Animal_Exhibit_Report.aspx">Animal Exhibit Report</a></li>
-                    <li><a href="#">Revenue Report</a></li>
+                    <li><a href="#">Visitor Report</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 </ul>

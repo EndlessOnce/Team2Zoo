@@ -114,7 +114,8 @@
                     <hr>
 
 
-                   Welcome back user: <asp:Label ID="Welcome" runat="server"></asp:Label>
+                   Welcome back user: 
+                    <asp:Label ID="Welcome" runat="server"></asp:Label>
 
 
                     <p>
