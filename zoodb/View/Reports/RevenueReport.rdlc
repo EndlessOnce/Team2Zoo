@@ -203,6 +203,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>RevenueDataSet1</DataSetName>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!Revenue.Value</Value>
+              </SortExpression>
+            </SortExpressions>
             <Top>0.30778in</Top>
             <Left>0.89111in</Left>
             <Height>0.5in</Height>
