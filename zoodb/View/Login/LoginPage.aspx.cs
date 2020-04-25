@@ -35,7 +35,20 @@ namespace zoodb
                 {
                     Session["New"] = TextBoxEmail.Text;
                     Response.Write("Password is correct.");
-                    Response.Redirect("~/View/Users/User.aspx");
+
+                    string getUserRole = "select role from db_user where email='" + TextBoxEmail.Text + "'";
+                    MySqlCommand roleCheck = new MySqlCommand(getUserRole, connection);
+                    string role = roleCheck.ExecuteScalar().ToString();
+
+                    if(role == "Admin")
+                    {
+                        Response.Redirect("~/View/Users/Admin.aspx");
+                    }
+
+                    else if(role == "Emp")
+                    {
+                        Response.Redirect("~/View/Users/User.aspx");
+                    }
                 }
                 else
                 {
