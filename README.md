@@ -11,6 +11,17 @@ Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 This will then fix the error provided by the project.
 You might need to also download the asp.net sdk for the project to work. I will place the download reference links at the bottom.
 
+Login Information:
+Admin:
+Email:uma@db.com
+Password:1234
+Email:TA@db.com
+Password:4567
+Employee:
+Email: c@c.com
+Password: 1234
+
+You can also create these new accounts as admin or as an employee.
 
 
 Download links incase the project doesn't run.
