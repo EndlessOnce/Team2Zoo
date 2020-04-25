@@ -15,6 +15,8 @@ Login Information:
 Admin:
 Email:uma@db.com
 Password:1234
+Email:TA@db.com
+Password:4567
 Employee:
 Email: c@c.com
 Password: 1234
