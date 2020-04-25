@@ -11,7 +11,7 @@ namespace zoodb.View.Reports
 {
 
 
-    public partial class Revenue_Report_Final
+    public partial class ShopRevReport
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace zoodb.View.Reports
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// DDRev control.
+        /// DDShop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDRev;
+        protected global::System.Web.UI.WebControls.DropDownList DDShop;
 
         /// <summary>
         /// SqlDataSource1 control.
@@ -42,12 +42,12 @@ namespace zoodb.View.Reports
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// GridView1 control.
+        /// GridView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
     }
 }

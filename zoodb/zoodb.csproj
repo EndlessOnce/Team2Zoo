@@ -140,7 +140,14 @@
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
     <Content Include="View\Reports\RevenueReport.aspx" />
-    <Content Include="View\Reports\Shop_Report.aspx" />
+    <Compile Include="View\Reports\ShopRevReport.aspx.cs">
+      <DependentUpon>ShopRevReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\ShopRevReport.aspx.designer.cs">
+      <DependentUpon>ShopRevReport.aspx</DependentUpon>
+    </Compile>
+    <Content Include="View\Reports\ShopRevReport.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -382,13 +389,6 @@
     </Compile>
     <Compile Include="View\Reports\RevenueReport.aspx.designer.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\Reports\Shop_Report.aspx.cs">
-      <DependentUpon>Shop_Report.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Reports\Shop_Report.aspx.designer.cs">
-      <DependentUpon>Shop_Report.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>

@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Shop_Report.aspx.cs" Inherits="zoodb.View.Reports.Revenue_Report_Final" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShopRevReport.aspx.cs" Inherits="zoodb.View.Reports.ShopRevReport" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>Revenue Report</title>
+    <title>Shops Report</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -27,11 +27,11 @@
             background-color: #f1f1f1;
             height: 100vh;
         }
+
         p {
             text-align: center;
             font-style: italic;
             #font-family: "Lucida Console", Courier, monospace;
-           
         }
         /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
@@ -39,21 +39,26 @@
                 height: auto;
                 padding: 15px;
             }
+
             .row.content {
                 height: auto;
             }
         }
+
         h1 {
             text-align: center;
             font-style: italic;
             #font-family: "Lucida Console", Courier, monospace;
         }
+
             h1.inset {
                 border-style: inset;
             }
+
         h3 {
             text-align: center;
         }
+
         p {
             text-align: center;
             padding-top: 5px;
@@ -77,7 +82,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="AnimalExhibitReport.aspx">Animal Exhibit Report</a></li>
-                    <li><a href="RevenueReport.aspx">Revenue Report</a></li> 
+                    <li><a href="RevenueReport.aspx">Revenue Report</a></li>
                     <li><a href="#">Shop Report</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -87,28 +92,30 @@
     </nav>
     <form id="form1" runat="server">
         <div>
-         
-                
+
+            <div>
+
+
                 <p>View total revenue for any shop below</p>
-                 <p>
-                <strong>Shop ID: </strong>
-                <asp:DropDownList ID="DDRev" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Shop_ID" DataValueField="Shop_ID" OnSelectedIndexChanged="DDRev_SelectedIndexChanged">
-                </asp:DropDownList>
-                &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Shop_ID FROM shop"></asp:SqlDataSource>
+                <p>
+                    <strong>Shop ID: </strong>
+                    <asp:DropDownList ID="DDShop" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Shop_ID" DataValueField="Shop_ID" OnSelectedIndexChanged="DDShop_SelectedIndexChanged">
+                    </asp:DropDownList>
+                    &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Shop_ID FROM shop"></asp:SqlDataSource>
 
-            </p>
+                </p>
 
-        </div>
-        <div>
-        <center>
+            </div>
+            <div>
+                <center>
                     <hr />
-                    <asp:GridView ID="GridView1" runat="server" ShowHeaderWhenEmpty="true" AutoPostBack="true" emptyDataText="No items found!">
-
+                    <asp:GridView ID="GridView2" runat="server" ShowHeaderWhenEmpty="true" AutoPostBack="true" emptyDataText="No items found!">
 
                     </asp:GridView>
-
+            
            
         </center>
+            </div>
         </div>
     </form>
 </body>

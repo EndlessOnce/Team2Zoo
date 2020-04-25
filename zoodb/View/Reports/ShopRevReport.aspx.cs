@@ -8,30 +8,27 @@ using System.Configuration;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-
 namespace zoodb.View.Reports
 {
-    public partial class Revenue_Report_Final : System.Web.UI.Page
+    public partial class ShopRevReport : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-
-        protected void DDRev_SelectedIndexChanged(object sender, EventArgs e)
+        protected void DDShop_SelectedIndexChanged(object sender, EventArgs e)
         {
             MySqlConnection link = new MySqlConnection(ConfigurationManager.ConnectionStrings["zoodb"].ConnectionString);
             link.Open();
 
             string searchQuery = "select * from Revenue_by_shop where shop_ID like @id ";
             MySqlCommand comm = new MySqlCommand(searchQuery, link);
-            comm.Parameters.AddWithValue("@id", $"%{DDRev.Text}%");
+            comm.Parameters.AddWithValue("@id", $"%{DDShop.Text}%");
             DataTable dt = new DataTable();
             MySqlDataAdapter sda = new MySqlDataAdapter(comm);
             sda.Fill(dt);
-            GridView1.DataSource = dt;
-            GridView1.DataBind();
+            GridView2.DataSource = dt;
+            GridView2.DataBind();
         }
     }
 }
