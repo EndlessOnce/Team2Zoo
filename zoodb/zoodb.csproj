@@ -139,9 +139,7 @@
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
-    <Content Include="View\Reports\EmployeeReport.aspx" />
     <Content Include="View\Reports\ExhibitReport.aspx" />
-    <Content Include="View\Reports\MemberReport.aspx" />
     <Content Include="View\Reports\RevenueReport.aspx" />
     <Content Include="View\Reports\Revenue_Report_Final.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
@@ -152,7 +150,6 @@
     <Content Include="View\Show\ShowSearch.aspx" />
     <Content Include="View\Transaction\AddTransaction.aspx" />
     <Content Include="View\Transaction\SearchTransaction.aspx" />
-    <Content Include="View\Users\Admin.aspx" />
     <Content Include="View\Users\User.aspx" />
     <Content Include="View\Visitor\AddVisitor.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -187,9 +184,6 @@
     <Content Include="RevenueDataSet.xsc">
       <DependentUpon>RevenueDataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="EmployeeDataSet.xsc">
-      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
-    </Content>
     <Content Include="dbq83pweu5kpypDataSet.xsc">
       <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
     </Content>
@@ -200,14 +194,6 @@
     </None>
     <Content Include="dbq83pweu5kpypDataSet.xss">
       <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="EmployeeDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EmployeeDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="EmployeeDataSet.xss">
-      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
     </Content>
     <Content Include="MemberDataSet.xsc">
       <DependentUpon>MemberDataSet.xsd</DependentUpon>
@@ -281,11 +267,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbq83pweu5kpypDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MemberDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -395,26 +376,12 @@
     <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
       <DependentUpon>DefaultReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Reports\EmployeeReport.aspx.cs">
-      <DependentUpon>EmployeeReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Reports\EmployeeReport.aspx.designer.cs">
-      <DependentUpon>EmployeeReport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="View\Reports\ExhibitReport.aspx.cs">
       <DependentUpon>ExhibitReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Reports\ExhibitReport.aspx.designer.cs">
       <DependentUpon>ExhibitReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\Reports\MemberReport.aspx.cs">
-      <DependentUpon>MemberReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Reports\MemberReport.aspx.designer.cs">
-      <DependentUpon>MemberReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Reports\RevenueReport.aspx.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
@@ -485,13 +452,6 @@
     </Compile>
     <Compile Include="View\Transaction\SearchTransaction.aspx.designer.cs">
       <DependentUpon>SearchTransaction.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\Users\Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Users\Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Users\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
@@ -614,8 +574,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Reports\AnimalExhibitReport.rdlc" />
-    <EmbeddedResource Include="View\Reports\EmployeeReport.rdlc" />
-    <EmbeddedResource Include="View\Reports\MembershipReport1.rdlc" />
     <EmbeddedResource Include="View\Reports\RevenueReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
