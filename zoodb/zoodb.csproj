@@ -139,9 +139,8 @@
     <Content Include="View\Product\SearchProduct.aspx" />
     <Content Include="View\Reports\AnimalExhibitReport.aspx" />
     <Content Include="View\Reports\DefaultReport.aspx" />
-    <Content Include="View\Reports\ExhibitReport.aspx" />
     <Content Include="View\Reports\RevenueReport.aspx" />
-    <Content Include="View\Reports\Revenue_Report_Final.aspx" />
+    <Content Include="View\Reports\Shop_Report.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -377,13 +376,6 @@
     <Compile Include="View\Reports\DefaultReport.aspx.designer.cs">
       <DependentUpon>DefaultReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Reports\ExhibitReport.aspx.cs">
-      <DependentUpon>ExhibitReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Reports\ExhibitReport.aspx.designer.cs">
-      <DependentUpon>ExhibitReport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="View\Reports\RevenueReport.aspx.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -391,12 +383,12 @@
     <Compile Include="View\Reports\RevenueReport.aspx.designer.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Reports\Revenue_Report_Final.aspx.cs">
-      <DependentUpon>Revenue_Report_Final.aspx</DependentUpon>
+    <Compile Include="View\Reports\Shop_Report.aspx.cs">
+      <DependentUpon>Shop_Report.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\Reports\Revenue_Report_Final.aspx.designer.cs">
-      <DependentUpon>Revenue_Report_Final.aspx</DependentUpon>
+    <Compile Include="View\Reports\Shop_Report.aspx.designer.cs">
+      <DependentUpon>Shop_Report.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
