@@ -92,8 +92,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="AnimalExhibitReport">Animal Exhibit Report</a></li>
-                        <li><a href="#">Revenue Report</a></li>
+                         <li><a href="AnimalExhibitReport.aspx">Animal Exhibit Report</a></li>
+                    <li><a href="#">Revenue Report</a></li> 
+                    <li><a href="Shop_Report.aspx">Shop Report</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                     </ul>
