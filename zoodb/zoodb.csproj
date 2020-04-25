@@ -150,6 +150,7 @@
     <Content Include="View\Show\ShowSearch.aspx" />
     <Content Include="View\Transaction\AddTransaction.aspx" />
     <Content Include="View\Transaction\SearchTransaction.aspx" />
+    <Content Include="View\Users\Admin.aspx" />
     <Content Include="View\Users\User.aspx" />
     <Content Include="View\Visitor\AddVisitor.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -452,6 +453,13 @@
     </Compile>
     <Compile Include="View\Transaction\SearchTransaction.aspx.designer.cs">
       <DependentUpon>SearchTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Users\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Users\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
