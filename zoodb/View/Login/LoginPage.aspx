@@ -95,6 +95,10 @@
             text-align: center;
             font-size: 40pt;
         }
+        .auto-style9 {
+            margin: auto;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -145,16 +149,21 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style9">Select User Type</td>
                 <td class="auto-style7">
-                    <asp:Button ID="Login" runat="server" OnClick="Login_Click" Text="Login" />
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>admin</asp:ListItem>
+                        <asp:ListItem>user</asp:ListItem>
+                    </asp:DropDownList>
                 </td>
                 <td>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style6">
+                    <asp:Button ID="Login" runat="server" OnClick="Login_Click" Text="Login" />
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
