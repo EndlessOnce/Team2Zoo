@@ -45,7 +45,7 @@ namespace zoodb
                         Response.Redirect("~/View/Users/Admin.aspx");
                     }
 
-                    else if(role == "Emp")
+                    else if(role == "Employee")
                     {
                         Response.Redirect("~/View/Users/User.aspx");
                     }
