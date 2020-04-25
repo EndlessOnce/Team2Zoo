@@ -1,11 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShopRevReport.aspx.cs" Inherits="zoodb.View.Reports.ShopRevReport" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VisitorRep.aspx.cs" Inherits="zoodb.View.Reports.VisitorRep" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
-    <title>Shops Report</title>
+    <title>Visitor Report</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -83,26 +82,28 @@
                 <ul class="nav navbar-nav">
                     <li><a href="AnimalExhibitReport.aspx">Animal Exhibit Report</a></li>
                     <li><a href="RevenueReport.aspx">Revenue Report</a></li>
-                    <li><a href="#">Shop Report</a></li>
-                    <li><a href="VisitorRep.aspx">Visitor Report</a></li>
+                    <li><a href="ShopRevReport.aspx">Shop Report</a></li>
+                    <li><a href="#">Visitor Report</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 </ul>
             </div>
         </div>
     </nav>
+
     <form id="form1" runat="server">
         <div>
-
             <div>
 
 
-                <p>View total revenue for any shop below</p>
+                <p>View visitors for each month and year below</p>
                 <p>
-                    <strong>Shop ID: </strong>
-                    <asp:DropDownList ID="DDShop" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Shop_ID" DataValueField="Shop_ID" OnSelectedIndexChanged="DDShop_SelectedIndexChanged">
+                    <strong>Choose Time Frame: </strong>
+                   
+                    <asp:DropDownList ID="DDVS" runat="server" DataSourceID="SqlDataSource1" AutoPostBack="true" DataTextField="Date" DataValueField="Date" OnSelectedIndexChanged="DDVS_SelectedIndexChanged">
                     </asp:DropDownList>
-                    &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Shop_ID FROM shop"></asp:SqlDataSource>
+                    &nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:zoodb %>" ProviderName="<%$ ConnectionStrings:zoodb.ProviderName %>" SelectCommand="SELECT Date FROM visitor_month"></asp:SqlDataSource>
+
 
                 </p>
 

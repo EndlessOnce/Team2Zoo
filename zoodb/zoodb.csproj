@@ -148,6 +148,7 @@
       <DependentUpon>ShopRevReport.aspx</DependentUpon>
     </Compile>
     <Content Include="View\Reports\ShopRevReport.aspx" />
+    <Content Include="View\Reports\VisitorRep.aspx" />
     <Content Include="View\Shop\AddShop.aspx" />
     <Content Include="View\Shop\delShop.aspx" />
     <Content Include="View\Shop\SearchShop.aspx" />
@@ -389,6 +390,13 @@
     </Compile>
     <Compile Include="View\Reports\RevenueReport.aspx.designer.cs">
       <DependentUpon>RevenueReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\VisitorRep.aspx.cs">
+      <DependentUpon>VisitorRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reports\VisitorRep.aspx.designer.cs">
+      <DependentUpon>VisitorRep.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Shop\AddShop.aspx.cs">
       <DependentUpon>AddShop.aspx</DependentUpon>
